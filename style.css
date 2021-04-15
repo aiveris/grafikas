@@ -12,8 +12,8 @@ body {
   display: block;
   margin-bottom: 1px;
   box-shadow: 0 0 10px #201d1c;
-  margin: 0 auto;
-  margin-top: 1px;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .jzdcal {
@@ -33,8 +33,6 @@ body {
 
 .jzdcal span {
   font: 20px "Roboto";
-  /* font-weight: 500; */
-  /* color: #f7f3eb; */
   text-align: center;
   width: 40px;
   height: 38px;
