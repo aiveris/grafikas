@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+
+body {
+  background-color: #988ff0;
+}
+
+.jzdbox1 {
+  width: 315px;
+  background: #332f2e;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 1px;
+  box-shadow: 0 0 10px #201d1c;
+  margin: 0 auto;
+  margin-top: 1px;
+}
+
+.jzdcal {
+  background: #f586ca;
+}
+
+.jzdcalt {
+  font: 20px "Roboto";
+  font-weight: bold;
+  color: rgb(7, 7, 7);
+  display: block;
+  margin: 18px 0 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.jzdcal span {
+  font: 20px "Roboto";
+  /* font-weight: 500; */
+  /* color: #f7f3eb; */
+  text-align: center;
+  width: 40px;
+  height: 38px;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 40px;
+}
+
+.free {
+  box-sizing: border-box;
+  border-radius: 100px;
+  color: white;
+  /* border: 1px solid #f30e0e; */
+  background: #f586ca;
+  transform: scale(0.9);
+  box-shadow: 0 0 10px #fff;
+}
+
+.work {
+  /* border: 0px solid #a0ee7c; */
+  box-sizing: border-box;
+  border-radius: 100px;
+  background: #64d30a;
+  transform: scale(0.8);
+  box-shadow: 0 0 8px #201d1c;
+}
+
+.workToday {
+  /* border: 0px solid #a0ee7c; */
+  box-sizing: border-box;
+  border-radius: 100px;
+  color: white;
+  background: #64d30a;
+  transform: scale(0.8);
+  box-shadow: 0 0 10px white;
+}
+
+/* span[data-title]:hover:after,
+div[data-title]:hover:after {
+  font: 11px "Roboto";
+  font-weight: 400;
+  content: attr(data-title);
+  position: absolute;
+  margin:0 0 100px;
+  background: #5c11a3;
+  color: #f7f3eb;
+  padding: 5px;
+  z-index: 9999;
+  min-width: 30px;
+  max-width: 50px;
+}*/
