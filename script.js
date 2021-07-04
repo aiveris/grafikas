@@ -7,8 +7,8 @@ window.onload = function () {
 function today() {
   const date = new Date();
   const day = date.getDate();
-  const day = 20;
-  // console.log(day);
+//  const day = 20;
+   console.log(day);
 
   switch (day) {
     case 1:
@@ -26,7 +26,7 @@ function today() {
       document.getElementById("4").className = "workToday";
       break;
     case 5:
-      document.getElementById("5").className = "workToday";
+      document.getElementById("5").className = "free";
       break;
     case 6:
       document.getElementById("6").className = "free";
@@ -41,13 +41,13 @@ function today() {
       document.getElementById("9").className = "workToday";
       break;
     case 10:
-      document.getElementById("10").className = "free";
+      document.getElementById("10").className = "workToday";
       break;
     case 11:
-      document.getElementById("11").className = "workToday";
+      document.getElementById("11").className = "free";
       break;
     case 12:
-      document.getElementById("12").className = "workToday";
+      document.getElementById("12").className = "free";
       break;
     case 13:
       document.getElementById("13").className = "workToday";
@@ -56,10 +56,10 @@ function today() {
       document.getElementById("14").className = "workToday";
       break;
     case 15:
-      document.getElementById("15").className = "free";
+      document.getElementById("15").className = "workToday";
       break;
     case 16:
-      document.getElementById("16").className = "free";
+      document.getElementById("16").className = "workToday";
       break;
     case 17:
       document.getElementById("17").className = "workToday";
@@ -68,7 +68,7 @@ function today() {
       document.getElementById("18").className = "free";
       break;
     case 19:
-      document.getElementById("19").className = "workToday";
+      document.getElementById("19").className = "free";
       break;
     case 20:
       document.getElementById("20").className = "workToday";
@@ -80,10 +80,10 @@ function today() {
       document.getElementById("22").className = "workToday";
       break;
     case 23:
-      document.getElementById("23").className = "free";
+      document.getElementById("23").className = "workToday";
       break;
     case 24:
-      document.getElementById("24").className = "workToday";
+      document.getElementById("24").className = "free";
       break;
     case 25:
       document.getElementById("25").className = "free";
@@ -101,10 +101,10 @@ function today() {
       document.getElementById("29").className = "workToday";
       break;
     case 30:
-      document.getElementById("30").className = "free";
+      document.getElementById("30").className = "workToday";
       break;
     case 31:
-      document.getElementById("31").className = "workToday";
+      document.getElementById("31").className = "free";
       break;
   } //switch
 } //today()
