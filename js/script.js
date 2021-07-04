@@ -7,8 +7,8 @@ window.onload = function () {
 function today() {
   const date = new Date();
   const day = date.getDate();
-  // const day = 20;
-  console.log(day);
+  const day = 20;
+  // console.log(day);
 
   switch (day) {
     case 1:
@@ -106,5 +106,9 @@ function today() {
     case 31:
       document.getElementById("31").className = "workToday";
       break;
-  }
+  } //switch
+} //today()
+function todo() {
+  console.log("day");
+  alert("sfsdgf");
 }
