@@ -50,7 +50,7 @@ function today() {
       document.getElementById("12").className = "free";
       break;
     case 13:
-      document.getElementById("13").className = "workToday";
+      document.getElementById("13").className = "free";
       break;
     case 14:
       document.getElementById("14").className = "workToday";
