@@ -108,7 +108,4 @@ function today() {
       break;
   } //switch
 } //today()
-function todo() {
-  console.log("day");
-  alert("sfsdgf");
-}
+
