@@ -20,10 +20,10 @@ function today() {
       document.getElementById("2").className = "free";
       break;
     case 3:
-      document.getElementById("3").className = "free";
+      document.getElementById("3").className = "workToday";
       break;
     case 4:
-      document.getElementById("4").className = "free";
+      document.getElementById("4").className = "workToday";
       break;
     case 5:
       document.getElementById("5").className = "free";
@@ -74,13 +74,13 @@ function today() {
       document.getElementById("20").className = "workToday";
       break;
     case 21:
-      document.getElementById("21").className = "workToday";
+      document.getElementById("21").className = "free";
       break;
     case 22:
       document.getElementById("22").className = "free";
       break;
     case 23:
-      document.getElementById("23").className = "free";
+      document.getElementById("23").className = "workToday";
       break;
     case 24:
       document.getElementById("24").className = "workToday";
@@ -89,13 +89,13 @@ function today() {
       document.getElementById("25").className = "workToday";
       break;
     case 26:
-      document.getElementById("26").className = "free";
+      document.getElementById("26").className = "workToday";
       break;
     case 27:
-      document.getElementById("27").className = "workToday";
+      document.getElementById("27").className = "free";
       break;
     case 28:
-      document.getElementById("28").className = "workToday";
+      document.getElementById("28").className = "free";
       break;
     case 29:
       document.getElementById("29").className = "workToday";
