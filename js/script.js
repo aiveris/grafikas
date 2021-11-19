@@ -107,3 +107,19 @@ function today() {
       break;
   } //switch
 } //today()
+
+function todo_1() {
+  open("html/todo_1.html");
+}
+function todo_2() {
+  open("html/todo_2.html");
+}
+function todo_3() {
+  open("html/todo_3.html");
+}
+function todo_4() {
+  open("html/todo_4.html");
+}
+function todo_5() {
+  open("html/todo_5.html");
+}

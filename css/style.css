@@ -58,10 +58,10 @@ button:hover {
   background: #78f711;
 }
 .workDay {
-  background: #b5b1f7;
+  background: #c2c2c5;
 }
 .weekend {
-  background: #f77d87;
+  background: #c2c2c5;
 }
 .today {
   box-shadow: 0 0 6px white;
