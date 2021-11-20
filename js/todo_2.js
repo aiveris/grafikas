@@ -14,7 +14,7 @@ const LINE_THROUGH = "lineThrough";
 // Variables
 let LIST, id;
 
-// get item from localstorage
+// get item from local storage
 let data = localStorage.getItem("TODO");
 
 // check if data is not empty
@@ -42,8 +42,8 @@ clear.addEventListener("click", function () {
 });
 
 // Show todays date
-const options = { weekday: "long", month: "short", day: "numeric" };
-const today = new Date();
+//const options = { weekday: "long", month: "short", day: "numeric" };
+//const today = new Date();
 
 // dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
@@ -85,7 +85,7 @@ document.addEventListener("keyup", function (even) {
         trash: false,
       });
 
-      // add item to localstorage ( this code must be added where the LIST array is updated)
+      // add item to local storage ( this code must be added where the LIST array is updated)
       localStorage.setItem("TODO", JSON.stringify(LIST));
 
       id++;
