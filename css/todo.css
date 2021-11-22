@@ -23,11 +23,12 @@ body {
 header {
   width: 100%;
   background: #f586ca;
+  /* background-image: url("../img/bg.jpg"); */
   padding: 1rem;
   border-radius: 10px 10px 0px 0px;
 }
 header h3 {
-  color: white;
+  color: black;
   margin-left: 1rem;
 }
 .table-todos {
@@ -50,13 +51,15 @@ header h3 {
 }
 .btn {
   background: transparent;
-  width: 2.8rem;
+  width: 3rem;
   height: 1.5rem;
   border-radius: 1rem;
   cursor: pointer;
   outline: none;
   transition: all 0.5s ease;
   right: 15px;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 .btn-edit {
   color: #78f711;
@@ -131,7 +134,8 @@ header h3 {
 }
 input {
   width: 10rem;
-  height: 2rem;
+  height: 2.2rem;
   outline: none;
   text-indent: 0.5rem;
+  font-size: large;
 }

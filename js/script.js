@@ -201,3 +201,6 @@ function todo_30() {
 function todo_31() {
   open("html/todo_31.html");
 }
+function todo_m() {
+  open("html/todo_m.html");
+}

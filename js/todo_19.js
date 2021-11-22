@@ -20,7 +20,7 @@ const renderTodo = (doc) => {
       <td>${doc.data().todo}</td>        
       <th>         
         <button class="btn btn-edit">Edit</button>
-        <button class="btn btn-delete">Delete</button>        
+        <button class="btn btn-delete">Del</button>        
       </th>
     </tr>
   `;
