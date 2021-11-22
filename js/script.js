@@ -123,3 +123,81 @@ function todo_4() {
 function todo_5() {
   open("html/todo_5.html");
 }
+function todo_6() {
+  open("html/todo_6.html");
+}
+function todo_7() {
+  open("html/todo_7.html");
+}
+function todo_8() {
+  open("html/todo_8.html");
+}
+function todo_9() {
+  open("html/todo_9.html");
+}
+function todo_10() {
+  open("html/todo_10.html");
+}
+function todo_11() {
+  open("html/todo_11.html");
+}
+function todo_12() {
+  open("html/todo_12.html");
+}
+function todo_13() {
+  open("html/todo_13.html");
+}
+function todo_14() {
+  open("html/todo_14.html");
+}
+function todo_15() {
+  open("html/todo_15.html");
+}
+function todo_16() {
+  open("html/todo_16.html");
+}
+function todo_17() {
+  open("html/todo_17.html");
+}
+function todo_18() {
+  open("html/todo_18.html");
+}
+function todo_19() {
+  open("html/todo_19.html");
+}
+function todo_20() {
+  open("html/todo_20.html");
+}
+function todo_21() {
+  open("html/todo_21.html");
+}
+function todo_22() {
+  open("html/todo_22.html");
+}
+function todo_23() {
+  open("html/todo_23.html");
+}
+function todo_24() {
+  open("html/todo_24.html");
+}
+function todo_25() {
+  open("html/todo_25.html");
+}
+function todo_26() {
+  open("html/todo_26.html");
+}
+function todo_27() {
+  open("html/todo_27.html");
+}
+function todo_28() {
+  open("html/todo_28.html");
+}
+function todo_29() {
+  open("html/todo_29.html");
+}
+function todo_30() {
+  open("html/todo_30.html");
+}
+function todo_31() {
+  open("html/todo_31.html");
+}
