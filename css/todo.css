@@ -1,19 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 
-:root {
-  --primary-color: #f586ca;
-  --secodary-color: orange;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  /* font-family: "Open Sans", sans-serif;
-  font-family: "Roboto", sans-serif; */
   font-family: "Titillium Web", sans-serif;
   background: #988ff0;
+  font-size: large;
 }
 .container {
   max-width: 20rem;
@@ -27,7 +22,7 @@ body {
 }
 header {
   width: 100%;
-  background: var(--primary-color);
+  background: #f586ca;
   padding: 1rem;
   border-radius: 10px 10px 0px 0px;
 }
@@ -128,7 +123,7 @@ header h3 {
   padding: 2rem;
 }
 .btn-modal {
-  background: var(--primary-color);
+  background: #f586ca;
   border: none;
   color: #fff;
   width: 5rem;

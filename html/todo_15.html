@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="../css/todo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h3>Lapkričio 15</h3>
+      </header>
+      <div class="table-wrapper">
+        <table class="table-todos">
+          <!-- <tr>
+            <td></td>
+          </tr> -->
+        </table>
+        <div class="add-todo">
+          <form class="form" autocomplete="off">
+            <input type="text" name="todo" placeholder="Add todo" />
+          </form>
+        </div>
+      </div>
+      <!-- Edit Modal -->
+      <div class="edit-modal modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>Edit todo</h3></div>
+          <div class="modal-body">
+            <form class="form" autocomplete="off">
+              <input type="text" name="todo" placeholder="Todo" />
+              <button class="btn btn-modal">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBRGzlhoLa3nF5GvrVNyujEUnFfZScIgfI",
+        authDomain: "todo-cffb3.firebaseapp.com",
+        projectId: "todo-cffb3",
+        storageBucket: "todo-cffb3.appspot.com",
+        messagingSenderId: "443340056048",
+        appId: "1:443340056048:web:2d2f242baa6bcc9ccda935",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src="../js/todo_15.js"></script>
+  </body>
+</html>
