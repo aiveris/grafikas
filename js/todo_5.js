@@ -37,7 +37,7 @@ const renderTodo = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("1")
+    db.collection("5")
       .doc(`${doc.id}`)
       .delete()
       .then(() => {
@@ -58,7 +58,7 @@ window.addEventListener("click", (e) => {
   }
 });
 // Real time listener
-db.collection("1").onSnapshot((snapshot) => {
+db.collection("5").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo(change.doc);
@@ -79,7 +79,7 @@ db.collection("1").onSnapshot((snapshot) => {
 
 addTodoForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("1").add({
+  db.collection("5").add({
     todo: addTodoForm.todo.value,
   });
   addTodoForm.todo.value = "";
@@ -88,7 +88,7 @@ addTodoForm.addEventListener("submit", (e) => {
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("1").doc(id).update({
+  db.collection("5").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");

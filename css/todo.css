@@ -1,191 +1,142 @@
-/* ------------ youtube.com/CodeExplained ------------ */
-body{
-    padding: 0;
-    margin: 0;
-    background-color: rgba(0,0,0,0.1);
-    font-family: 'Titillium Web', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 
-
+:root {
+  --primary-color: #f586ca;
+  --secodary-color: orange;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif; */
+  font-family: "Titillium Web", sans-serif;
+  background: #988ff0;
+}
+.container {
+  max-width: 20rem;
+  margin: 2rem auto;
+  padding-bottom: 1rem;
+  -webkit-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  background: #fff;
+}
+header {
+  width: 100%;
+  background: var(--primary-color);
+  padding: 1rem;
+  border-radius: 10px 10px 0px 0px;
+}
+header h3 {
+  color: white;
+  margin-left: 1rem;
+}
+.table-todos {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  /* margin-left: 1rem; */
+}
+.table-todos td {
+  text-align: left;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0.2rem;
+}
+.table-todos th {
+  padding: 1rem auto;
+  text-align: right;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.btn {
+  background: transparent;
+  width: 2.8rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease;
+  right: 15px;
+}
+.btn-edit {
+  color: #78f711;
+  border: 1px solid #78f711;
+}
+.btn-edit:hover {
+  background: #78f711;
+  color: #ffff;
+}
+.btn-delete {
+  color: red;
+  border: 1px solid red;
+}
+.btn-delete:hover {
+  background: red;
+  color: #ffff;
+}
+.table-wrapper {
+  text-align: center;
+}
+/* Modal */
+.modal-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #00000067;
+  display: none;
+}
+.modal {
+  position: relative;
+  background: white;
+  text-align: center;
+  width: 15rem;
+  margin: 5rem auto;
+  -webkit-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 5px 5px 5px 5px;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
-/* ------------ container ------------ */
-.container{
-    padding:10px;
-    width:340px;
-    margin:0 auto;
-
+.modal-show {
+  display: block;
 }
-
-/* ------------ header ------------ */
-.header{
-    width: 340px;
-    height:120px;
-    background-image: url('../img/bg.jpg');
-    background-size: 100% 200%;
-    background-repeat: no-repeat;
-    border-radius: 15px 15px 0 0;
-    position: relative;
+.modal-header {
+  margin-bottom: 1rem;
+  background: white;
+  padding: 2rem;
 }
-.clear{
-    width : 30px;
-    height: 30px;
-    position: absolute;
-    right:20px;
-    top: 20px;
+.modal-body {
+  padding: 2rem;
 }
-.clear i{
-    font-size: 30px;
-    color: #FFF;
+.btn-modal {
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  width: 5rem;
+  margin-top: 1rem;
 }
-.clear i:hover{
-    cursor: pointer;
-    text-shadow: 1px 3px 5px #000;
-    transform: rotate(45deg);
+input {
+  width: 10rem;
+  height: 2rem;
+  outline: none;
+  text-indent: 0.5rem;
 }
-#date{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #FFF;
-    font-size: 25px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-/* ------------ content ------------ */
-.content{
-    width:340px;
-    height: 440px;
-    max-height:440px;
-    background-color: #FFF;
-    overflow: auto;
-
-}
-.content::-webkit-scrollbar { 
-    display: none; 
-}
-.content ul{
-    padding:0;
-    margin:0;
-}
-.item{
-    width:340px;
-    height: 45px;
-    min-height: 45px;
-    position: relative;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.item i.co{
-    position: absolute;
-    font-size: 25px;
-    padding-left:5px;
-    left:15px;
-    top:10px;
-}
-.item i.co:hover{
-    cursor: pointer;
-}
-.fa-check-circle{
-    color:#6eb200;
-}
-.item p.text{
-    position: absolute;
-    padding:0;
-    margin:0;
-    font-size: 20px;
-    left:50px;
-    top:5px;
-    background-color: #FFF;
-    max-width:285px;
-}
-.lineThrough{
-    text-decoration: line-through;
-    color : #ccc;
-}
-.item i.de{
-    position: absolute;
-    font-size: 25px;
-    right:15px;
-    top:10px;
-}
-.item i.de:hover{
-    color:#af0000;
-    cursor: pointer;
-}
-/* ------------ add item ------------ */
-.add-to-do{
-    position: relative;
-    width: 320px;
-    height:40px;
-    background-color: #FFF;
-    padding: 10px;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    border-radius: 0 0 15px 15px;
-}
-.add-to-do i{
-    position: absolute;
-    font-size: 40px;
-    color: #4162f6;
-}
-
-.add-to-do input{
-    position: absolute;
-    /* left: 50px; */
-    height: 35px;
-    width: 250px;
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    padding-left:10px;
-}
-.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input::-moz-placeholder { /* Firefox 19+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input:-ms-input-placeholder { /* IE 10+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input:-moz-placeholder { /* Firefox 18- */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

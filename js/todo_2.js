@@ -1,127 +1,95 @@
-// CODE EXPLAINED channel
-
-// Select the Elements
-const clear = document.querySelector(".clear");
-const dateElement = document.getElementById("date");
-const list = document.getElementById("list");
-const input = document.getElementById("input");
-
-// Classes names
+const modalWrapper = document.querySelector(".modal-wrapper");
+// modal add
+const addTodo = document.querySelector(".add-todo");
+const addTodoForm = document.querySelector(".add-todo .form");
+// modal edit
+const editModal = document.querySelector(".edit-modal");
+const doneTodo = document.querySelector(".done");
+const editModalForm = document.querySelector(".edit-modal .form");
+const btnAdd = document.querySelector(".btn-add");
+const tableTodos = document.querySelector(".table-todos");
+let id;
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle-thin";
 const LINE_THROUGH = "lineThrough";
 
-// Variables
-let LIST, id;
+// Create element and render to-do
+const renderTodo = (doc) => {
+  const tr = `  
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>        
+      <th>         
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Delete</button>        
+      </th>
+    </tr>
+  `;
+  tableTodos.insertAdjacentHTML("beforeend", tr);
 
-// get item from local storage
-let data = localStorage.getItem("TODO");
-
-// check if data is not empty
-if (data) {
-  LIST = JSON.parse(data);
-  id = LIST.length; // set the id to the last one in the list
-  loadList(LIST); // load the list to the user interface
-} else {
-  // if data isn't empty
-  LIST = [];
-  id = 0;
-}
-
-// load items to the user's interface
-function loadList(array) {
-  array.forEach(function (item) {
-    addToDo(item.name, item.id, item.done, item.trash);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
   });
-}
 
-// clear the local storage
-clear.addEventListener("click", function () {
-  localStorage.clear();
-  location.reload();
-});
-
-// Show todays date
-//const options = { weekday: "long", month: "short", day: "numeric" };
-//const today = new Date();
-
-// dateElement.innerHTML = today.toLocaleDateString("en-US", options);
-
-// add to do function
-
-function addToDo(toDo, id, done, trash) {
-  if (trash) {
-    return;
-  }
-
-  const DONE = done ? CHECK : UNCHECK;
-  const LINE = done ? LINE_THROUGH : "";
-
-  const item = `<li class="item">
-                    <i class="fa ${DONE} co" job="complete" id="${id}"></i>
-                    <p class="text ${LINE}">${toDo}</p>
-                    <i class="fa fa-trash-o de" job="delete" id="${id}"></i>
-                  </li>
-                `;
-
-  const position = "beforeend";
-
-  list.insertAdjacentHTML(position, item);
-}
-
-// add an item to the list user the enter key
-document.addEventListener("keyup", function (even) {
-  if (event.keyCode == 13) {
-    const toDo = input.value;
-
-    // if the input isn't empty
-    if (toDo) {
-      addToDo(toDo, id, false, false);
-
-      LIST.push({
-        name: toDo,
-        id: id,
-        done: false,
-        trash: false,
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("2")
+      .doc(`${doc.id}`)
+      .delete()
+      .then(() => {
+        console.log("Document succesfully deleted!");
+      })
+      .catch((err) => {
+        console.log("Error removing document", err);
       });
-
-      // add item to local storage ( this code must be added where the LIST array is updated)
-      localStorage.setItem("TODO", JSON.stringify(LIST));
-
-      id++;
-    }
-    input.value = "";
+  });
+};
+// User click anyware outside the modal
+window.addEventListener("click", (e) => {
+  if (e.target === addTodo) {
+    addModal.classList.remove("modal-show");
+  }
+  if (e.target === editModal) {
+    editModal.classList.remove("modal-show");
   }
 });
+// Real time listener
+db.collection("2").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodo(change.doc);
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodos.removeChild(tbody);
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodos.removeChild(tbody);
+      renderTodo(change.doc);
+    }
+  });
+});
 
-// complete to do
-function completeToDo(element) {
-  element.classList.toggle(CHECK);
-  element.classList.toggle(UNCHECK);
-  element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
+addTodoForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("2").add({
+    todo: addTodoForm.todo.value,
+  });
+  addTodoForm.todo.value = "";
+});
 
-  LIST[element.id].done = LIST[element.id].done ? false : true;
-}
-
-// remove to do
-function removeToDo(element) {
-  element.parentNode.parentNode.removeChild(element.parentNode);
-
-  LIST[element.id].trash = true;
-}
-
-// target the items created dynamically
-
-list.addEventListener("click", function (event) {
-  const element = event.target; // return the clicked element inside list
-  const elementJob = element.attributes.job.value; // complete or delete
-
-  if (elementJob == "complete") {
-    completeToDo(element);
-  } else if (elementJob == "delete") {
-    removeToDo(element);
-  }
-
-  // add item to localstorage ( this code must be added where the LIST array is updated)
-  localStorage.setItem("TODO", JSON.stringify(LIST));
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("2").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
 });
