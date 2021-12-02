@@ -10,8 +10,8 @@ const editModal = document.querySelector(".edit-modal");
 const doneTodo = document.querySelector(".done");
 const editModalForm = document.querySelector(".edit-modal .form");
 const btnAdd = document.querySelector(".btn-add");
-const tableTodos1 = document.querySelector(".table-1");
-const tableTodos2 = document.querySelector(".table-1");
+const tableTodos = document.querySelector(".table-1");
+const tableTodos2 = document.querySelector(".table-2");
 let id;
 
 window.onload = function () {
@@ -230,7 +230,7 @@ const renderTodo = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos1.insertAdjacentHTML("beforeend", tr);
+  tableTodos.insertAdjacentHTML("beforeend", tr);
 
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
