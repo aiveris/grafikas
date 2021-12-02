@@ -6,13 +6,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Titillium Web", sans-serif;
   background: #457b9d;
   font-size: large;
 }
-
 .board {
   width: 312px;
   border-radius: 10px;
@@ -43,9 +41,8 @@ body {
 }
 .container {
   max-width: 20rem;
-  min-height: 20rem;
   margin: 2rem auto;
-  padding-bottom: 1rem;
+  padding-bottom: 15px;
   -webkit-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
@@ -99,7 +96,6 @@ button:hover {
   box-shadow: 0 0 6px white;
   color: white;
 }
-
 header {
   width: 100%;
   background: #f586ca;
@@ -175,7 +171,6 @@ table th {
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
-
 @keyframes animatetop {
   from {
     top: -300px;
@@ -186,7 +181,6 @@ table th {
     opacity: 1;
   }
 }
-
 .modal-show {
   display: block;
 }
@@ -209,9 +203,6 @@ table th {
 .btn-modal:hover {
   background: #457b9d;
   color: #ffff;
-}
-.form-container {
-  padding-right: 8rem;
 }
 input {
   width: 10rem;
