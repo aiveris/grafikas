@@ -7,13 +7,11 @@ const editModal = document.querySelector(".edit-modal");
 const doneTodo = document.querySelector(".done");
 const editModalForm = document.querySelector(".edit-modal .form");
 const btnAdd = document.querySelector(".btn-add");
+const showTodo1 = document.querySelector(".show-modal");
 const tableTodos = document.querySelector(".table-todos");
 let id;
-const CHECK = "fa-check-circle";
-const UNCHECK = "fa-circle-thin";
-const LINE_THROUGH = "lineThrough";
 
-// Create element and render to-do
+// Create element and render to-do day 1
 const renderTodo = (doc) => {
   const tr = `  
     <tr data-id='${doc.id}'>
@@ -25,7 +23,6 @@ const renderTodo = (doc) => {
     </tr>
   `;
   tableTodos.insertAdjacentHTML("beforeend", tr);
-
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -33,7 +30,6 @@ const renderTodo = (doc) => {
     id = doc.id;
     editModalForm.todo.value = doc.data().todo;
   });
-
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
@@ -56,6 +52,9 @@ window.addEventListener("click", (e) => {
   if (e.target === editModal) {
     editModal.classList.remove("modal-show");
   }
+  if (e.target === showTodo1) {
+    showTodo1.classList.remove("modal-show");
+  }
 });
 // Real time listener
 db.collection("1").onSnapshot((snapshot) => {
@@ -76,7 +75,6 @@ db.collection("1").onSnapshot((snapshot) => {
     }
   });
 });
-
 addTodoForm.addEventListener("submit", (e) => {
   e.preventDefault();
   db.collection("1").add({
@@ -84,7 +82,6 @@ addTodoForm.addEventListener("submit", (e) => {
   });
   addTodoForm.todo.value = "";
 });
-
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
