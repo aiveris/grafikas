@@ -133,6 +133,34 @@ const btnAdd = document.querySelector(".btn-add");
 const plans1 = document.querySelector(".button1");
 const plans2 = document.querySelector(".button2");
 const plans3 = document.querySelector(".button3");
+const plans4 = document.querySelector(".button4");
+const plans5 = document.querySelector(".button5");
+const plans6 = document.querySelector(".button6");
+const plans7 = document.querySelector(".button7");
+const plans8 = document.querySelector(".button8");
+const plans9 = document.querySelector(".button9");
+const plans10 = document.querySelector(".button10");
+const plans11 = document.querySelector(".button11");
+const plans12 = document.querySelector(".button12");
+const plans13 = document.querySelector(".button13");
+const plans14 = document.querySelector(".button14");
+const plans15 = document.querySelector(".button15");
+const plans16 = document.querySelector(".button16");
+const plans17 = document.querySelector(".button17");
+const plans18 = document.querySelector(".button18");
+const plans19 = document.querySelector(".button19");
+const plans20 = document.querySelector(".button20");
+const plans21 = document.querySelector(".button21");
+const plans22 = document.querySelector(".button22");
+const plans23 = document.querySelector(".button23");
+const plans24 = document.querySelector(".button24");
+const plans25 = document.querySelector(".button25");
+const plans26 = document.querySelector(".button26");
+const plans27 = document.querySelector(".button27");
+const plans28 = document.querySelector(".button28");
+const plans29 = document.querySelector(".button29");
+const plans30 = document.querySelector(".button30");
+const plans31 = document.querySelector(".button31");
 
 let id;
 
@@ -464,7 +492,6 @@ const renderTodo = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("1").doc(`${doc.id}`).delete();
-    plans1.classList.remove("addedPlans");
   });
 };
 // // Real time listener
@@ -472,11 +499,13 @@ db.collection("1").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo(change.doc);
+      plans1.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos.removeChild(tbody);
+      plans1.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -492,7 +521,6 @@ addTodoForm.addEventListener("submit", (e) => {
     todo: addTodoForm.todo.value,
   });
   addTodoForm.todo.value = "";
-  plans1.classList.add("addedPlans");
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
@@ -526,7 +554,6 @@ const renderTodo2 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("2").doc(`${doc.id}`).delete();
-    plans2.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -534,11 +561,13 @@ db.collection("2").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo2(change.doc);
+      plans2.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos2.removeChild(tbody);
+      plans2.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -554,7 +583,6 @@ addTodoForm2.addEventListener("submit", (e) => {
     todo: addTodoForm2.todo.value,
   });
   addTodoForm2.todo.value = "";
-  plans2.classList.add("addedPlans");
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
@@ -588,7 +616,6 @@ const renderTodo3 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("3").doc(`${doc.id}`).delete();
-    plans3.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -596,11 +623,13 @@ db.collection("3").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo3(change.doc);
+      plans3.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos3.removeChild(tbody);
+      plans3.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -616,7 +645,6 @@ addTodoForm3.addEventListener("submit", (e) => {
     todo: addTodoForm3.todo.value,
   });
   addTodoForm3.todo.value = "";
-  plans3.classList.add("addedPlans");
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
@@ -658,11 +686,13 @@ db.collection("4").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo4(change.doc);
+      plans4.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos4.removeChild(tbody);
+      plans4.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -719,11 +749,13 @@ db.collection("5").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo5(change.doc);
+      plans5.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos5.removeChild(tbody);
+      plans5.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -780,11 +812,13 @@ db.collection("6").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo6(change.doc);
+      plans6.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos6.removeChild(tbody);
+      plans6.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -841,11 +875,13 @@ db.collection("7").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo7(change.doc);
+      plans7.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos7.removeChild(tbody);
+      plans7.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -902,11 +938,13 @@ db.collection("8").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo8(change.doc);
+      plans8.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos8.removeChild(tbody);
+      plans8.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -963,11 +1001,13 @@ db.collection("9").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo9(change.doc);
+      plans9.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos9.removeChild(tbody);
+      plans9.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1024,11 +1064,13 @@ db.collection("10").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo10(change.doc);
+      plans10.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos10.removeChild(tbody);
+      plans10.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1084,11 +1126,13 @@ db.collection("11").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo11(change.doc);
+      plans11.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos11.removeChild(tbody);
+      plans11.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1144,11 +1188,13 @@ db.collection("12").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo12(change.doc);
+      plans12.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos12.removeChild(tbody);
+      plans12.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1204,11 +1250,13 @@ db.collection("13").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo13(change.doc);
+      plans13.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos13.removeChild(tbody);
+      plans13.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1264,11 +1312,13 @@ db.collection("14").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo14(change.doc);
+      plans14.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos14.removeChild(tbody);
+      plans14.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1324,11 +1374,13 @@ db.collection("15").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo15(change.doc);
+      plans15.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos15.removeChild(tbody);
+      plans15.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1384,11 +1436,13 @@ db.collection("16").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo16(change.doc);
+      plans16.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos16.removeChild(tbody);
+      plans16.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1444,11 +1498,13 @@ db.collection("17").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo17(change.doc);
+      plans17.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos17.removeChild(tbody);
+      plans17.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1504,11 +1560,13 @@ db.collection("18").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo18(change.doc);
+      plans18.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos18.removeChild(tbody);
+      plans18.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1564,11 +1622,13 @@ db.collection("19").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo19(change.doc);
+      plans19.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos19.removeChild(tbody);
+      plans19.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1624,11 +1684,13 @@ db.collection("20").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo20(change.doc);
+      plans20.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos20.removeChild(tbody);
+      plans20.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1684,11 +1746,13 @@ db.collection("21").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo21(change.doc);
+      plans21.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos21.removeChild(tbody);
+      plans21.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1744,11 +1808,13 @@ db.collection("22").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo22(change.doc);
+      plans22.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos22.removeChild(tbody);
+      plans22.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1804,11 +1870,13 @@ db.collection("23").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo23(change.doc);
+      plans23.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos23.removeChild(tbody);
+      plans23.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1864,11 +1932,13 @@ db.collection("24").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo24(change.doc);
+      plans24.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos24.removeChild(tbody);
+      plans24.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1924,11 +1994,13 @@ db.collection("25").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo25(change.doc);
+      plans25.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos25.removeChild(tbody);
+      plans25.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -1984,11 +2056,13 @@ db.collection("26").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo26(change.doc);
+      plans26.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos26.removeChild(tbody);
+      plans26.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -2044,11 +2118,13 @@ db.collection("27").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo27(change.doc);
+      plans27.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos27.removeChild(tbody);
+      plans27.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -2104,11 +2180,13 @@ db.collection("28").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo28(change.doc);
+      plans28.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos28.removeChild(tbody);
+      plans28.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -2164,11 +2242,13 @@ db.collection("29").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo29(change.doc);
+      plans29.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos29.removeChild(tbody);
+      plans29.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -2224,11 +2304,13 @@ db.collection("30").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo30(change.doc);
+      plans30.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos30.removeChild(tbody);
+      plans30.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -2284,11 +2366,13 @@ db.collection("31").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
       renderTodo31(change.doc);
+      plans31.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos31.removeChild(tbody);
+      plans31.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
