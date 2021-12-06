@@ -130,6 +130,9 @@ const tableTodos31 = document.querySelector(".table-31");
 const editModal = document.querySelector(".edit-modal");
 const editModalForm = document.querySelector(".edit-modal .form");
 const btnAdd = document.querySelector(".btn-add");
+const plans1 = document.querySelector(".button1");
+const plans2 = document.querySelector(".button2");
+const plans3 = document.querySelector(".button3");
 
 let id;
 
@@ -461,6 +464,7 @@ const renderTodo = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("1").doc(`${doc.id}`).delete();
+    plans1.classList.remove("addedPlans");
   });
 };
 // // Real time listener
@@ -488,6 +492,7 @@ addTodoForm.addEventListener("submit", (e) => {
     todo: addTodoForm.todo.value,
   });
   addTodoForm.todo.value = "";
+  plans1.classList.add("addedPlans");
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
@@ -521,6 +526,7 @@ const renderTodo2 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("2").doc(`${doc.id}`).delete();
+    plans2.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -548,6 +554,7 @@ addTodoForm2.addEventListener("submit", (e) => {
     todo: addTodoForm2.todo.value,
   });
   addTodoForm2.todo.value = "";
+  plans2.classList.add("addedPlans");
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
@@ -581,6 +588,7 @@ const renderTodo3 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("3").doc(`${doc.id}`).delete();
+    plans3.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -608,6 +616,7 @@ addTodoForm3.addEventListener("submit", (e) => {
     todo: addTodoForm3.todo.value,
   });
   addTodoForm3.todo.value = "";
+  plans3.classList.add("addedPlans");
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
@@ -641,6 +650,7 @@ const renderTodo4 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("4").doc(`${doc.id}`).delete();
+    plans4.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -701,6 +711,7 @@ const renderTodo5 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("5").doc(`${doc.id}`).delete();
+    plans5.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -761,6 +772,7 @@ const renderTodo6 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("6").doc(`${doc.id}`).delete();
+    plans6.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -821,6 +833,7 @@ const renderTodo7 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("7").doc(`${doc.id}`).delete();
+    plans7.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -881,6 +894,7 @@ const renderTodo8 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("8").doc(`${doc.id}`).delete();
+    plans8.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -941,6 +955,7 @@ const renderTodo9 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("9").doc(`${doc.id}`).delete();
+    plans9.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1001,6 +1016,7 @@ const renderTodo10 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("10").doc(`${doc.id}`).delete();
+    plans10.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1060,6 +1076,7 @@ const renderTodo11 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("11").doc(`${doc.id}`).delete();
+    plans11.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1119,6 +1136,7 @@ const renderTodo12 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("12").doc(`${doc.id}`).delete();
+    plans12.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1178,6 +1196,7 @@ const renderTodo13 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("13").doc(`${doc.id}`).delete();
+    plans13.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1237,6 +1256,7 @@ const renderTodo14 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("14").doc(`${doc.id}`).delete();
+    plans14.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1296,6 +1316,7 @@ const renderTodo15 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("15").doc(`${doc.id}`).delete();
+    plans15.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1355,6 +1376,7 @@ const renderTodo16 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("16").doc(`${doc.id}`).delete();
+    plans16.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1414,6 +1436,7 @@ const renderTodo17 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("17").doc(`${doc.id}`).delete();
+    plans17.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1473,6 +1496,7 @@ const renderTodo18 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("18").doc(`${doc.id}`).delete();
+    plans18.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1532,6 +1556,7 @@ const renderTodo19 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("19").doc(`${doc.id}`).delete();
+    plans19.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1591,6 +1616,7 @@ const renderTodo20 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("20").doc(`${doc.id}`).delete();
+    plans20.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1650,6 +1676,7 @@ const renderTodo21 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("21").doc(`${doc.id}`).delete();
+    plans21.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1709,6 +1736,7 @@ const renderTodo22 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("22").doc(`${doc.id}`).delete();
+    plans22.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1768,6 +1796,7 @@ const renderTodo23 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("23").doc(`${doc.id}`).delete();
+    plans23.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1827,6 +1856,7 @@ const renderTodo24 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("24").doc(`${doc.id}`).delete();
+    plans24.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1886,6 +1916,7 @@ const renderTodo25 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("25").doc(`${doc.id}`).delete();
+    plans25.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -1945,6 +1976,7 @@ const renderTodo26 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("26").doc(`${doc.id}`).delete();
+    plans26.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -2004,6 +2036,7 @@ const renderTodo27 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("27").doc(`${doc.id}`).delete();
+    plans27.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -2063,6 +2096,7 @@ const renderTodo28 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("28").doc(`${doc.id}`).delete();
+    plans28.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -2122,6 +2156,7 @@ const renderTodo29 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("29").doc(`${doc.id}`).delete();
+    plans29.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -2181,6 +2216,7 @@ const renderTodo30 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("30").doc(`${doc.id}`).delete();
+    plans30.classList.remove("addedPlans");
   });
 };
 // Real time listener
@@ -2240,6 +2276,7 @@ const renderTodo31 = (doc) => {
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
     db.collection("31").doc(`${doc.id}`).delete();
+    plans31.classList.remove("addedPlans");
   });
 };
 // Real time listener
