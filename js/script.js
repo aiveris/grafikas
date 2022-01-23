@@ -252,7 +252,7 @@ function today() {
       document.getElementById("25").className = "work today";
       break;
     case 26:
-      document.getElementById("26").className = "work today";
+      document.getElementById("26").className = "free today";
       break;
     case 27:
       document.getElementById("27").className = "work today";
