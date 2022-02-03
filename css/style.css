@@ -23,6 +23,7 @@ body {
   box-shadow: 0 0 10px #201d1c;
   /* margin: auto; */
   margin-top: 20px;
+  margin-bottom: 0px;
   background: #f586ca;
   padding: 2px;
 }
