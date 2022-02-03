@@ -21,8 +21,8 @@ body {
   width: 312px;
   border-radius: 10px;
   box-shadow: 0 0 10px #201d1c;
-  margin: auto;
-  margin-top: 40px;
+  /* margin: auto; */
+  margin-top: 20px;
   background: #f586ca;
   padding: 2px;
 }
@@ -31,7 +31,7 @@ body {
   font-weight: bold;
   color: black;
   display: block;
-  margin: 10px 0 10px 0;
+  margin: 5px 0 7px 0;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;

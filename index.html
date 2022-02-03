@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="board">
-      <div class="men-pav">Sausis</div>
+      <div class="men-pav">Vasaris</div>
       <button class="workDay">Pi</button>
       <button class="workDay">An</button>
       <button class="workDay">Tr</button>
@@ -18,10 +18,469 @@
       <button class="workDay">Še</button>
       <button class="weekend">Se</button>
       <div class="men-pav"></div>
+
       <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <button onclick="todo_1()" id="1" class="free button1">1</button>
+      <button onclick="todo_2()" id="2" class="free button2">2</button>
+      <button onclick="todo_3()" id="3" class="work button3">3</button>
+      <button onclick="todo_4()" id="4" class="work button4">4</button>
+      <button onclick="todo_5()" id="5" class="free button5">5</button>
+      <button onclick="todo_6()" id="6" class="work button6">6</button>
+      <button onclick="todo_7()" id="7" class="work button7">7</button>
+      <button onclick="todo_8()" id="8" class="work button8">8</button>
+      <button onclick="todo_9()" id="9" class="free button9">9</button>
+      <button onclick="todo_10()" id="10" class="free button10">10</button>
+      <button onclick="todo_11()" id="11" class="work button11">11</button>
+      <button onclick="todo_12()" id="12" class="work button12">12</button>
+      <button onclick="todo_13()" id="13" class="work button13">13</button>
+      <button onclick="todo_14()" id="14" class="work button14">14</button>
+      <button onclick="todo_15()" id="15" class="free button15">15</button>
+      <button onclick="todo_16()" id="16" class="work button16">16</button>
+      <button onclick="todo_17()" id="17" class="work button17">17</button>
+      <button onclick="todo_18()" id="18" class="work button18">18</button>
+      <button onclick="todo_19()" id="19" class="free button19">19</button>
+      <button onclick="todo_20()" id="20" class="free button20">20</button>
+      <button onclick="todo_21()" id="21" class="work button21">21</button>
+      <button onclick="todo_22()" id="22" class="work button22">22</button>
+      <button onclick="todo_23()" id="23" class="work button23">23</button>
+      <button onclick="todo_24()" id="24" class="free button24">24</button>
+      <button onclick="todo_25()" id="25" class="work button25">25</button>
+      <button onclick="todo_26()" id="26" class="free button26">26</button>
+      <button onclick="todo_27()" id="27" class="work button27">27</button>
+      <button onclick="todo_28()" id="28" class="free button28">28</button>
+      <!-- <button onclick="todo_29()" id="29" class="work button29">29</button>
+      <button onclick="todo_30()" id="30" class="work button30">30</button>
+      <button onclick="todo_31()" id="31" class="work button31">31</button> -->
+
+      <!-- Add Modal -->
+      <div class="show-modal-1 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>1</h3></div>
+          <div class="table-wrapper">
+            <table class="table-1"></table>
+            <div class="add-todo">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-2 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>2</h3></div>
+          <div class="table-wrapper">
+            <table class="table-2"></table>
+            <div class="add-todo-2">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-3 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>3</h3></div>
+          <div class="table-wrapper">
+            <table class="table-3"></table>
+            <div class="add-todo-3">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-4 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>4</h3></div>
+          <div class="table-wrapper">
+            <table class="table-4"></table>
+            <div class="add-todo-4">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-5 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>5</h3></div>
+          <div class="table-wrapper">
+            <table class="table-5"></table>
+            <div class="add-todo-5">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-6 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>6</h3></div>
+          <div class="table-wrapper">
+            <table class="table-6"></table>
+            <div class="add-todo-6">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-7 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>7</h3></div>
+          <div class="table-wrapper">
+            <table class="table-7"></table>
+            <div class="add-todo-7">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-8 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>8</h3></div>
+          <div class="table-wrapper">
+            <table class="table-8"></table>
+            <div class="add-todo-8">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-9 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>9</h3></div>
+          <div class="table-wrapper">
+            <table class="table-9"></table>
+            <div class="add-todo-9">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-10 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>10</h3></div>
+          <div class="table-wrapper">
+            <table class="table-10"></table>
+            <div class="add-todo-10">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-11 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>11</h3></div>
+          <div class="table-wrapper">
+            <table class="table-11"></table>
+            <div class="add-todo-11">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-12 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>12</h3></div>
+          <div class="table-wrapper">
+            <table class="table-12"></table>
+            <div class="add-todo-12">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-13 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>13</h3></div>
+          <div class="table-wrapper">
+            <table class="table-13"></table>
+            <div class="add-todo-13">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-14 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>14</h3></div>
+          <div class="table-wrapper">
+            <table class="table-14"></table>
+            <div class="add-todo-14">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-15 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>15</h3></div>
+          <div class="table-wrapper">
+            <table class="table-15"></table>
+            <div class="add-todo-15">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-16 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>16</h3></div>
+          <div class="table-wrapper">
+            <table class="table-16"></table>
+            <div class="add-todo-16">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-17 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>17</h3></div>
+          <div class="table-wrapper">
+            <table class="table-17"></table>
+            <div class="add-todo-17">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-18 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>18</h3></div>
+          <div class="table-wrapper">
+            <table class="table-18"></table>
+            <div class="add-todo-18">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-19 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>19</h3></div>
+          <div class="table-wrapper">
+            <table class="table-19"></table>
+            <div class="add-todo-19">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-20 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>20</h3></div>
+          <div class="table-wrapper">
+            <table class="table-20"></table>
+            <div class="add-todo-20">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-21 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>21</h3></div>
+          <div class="table-wrapper">
+            <table class="table-21"></table>
+            <div class="add-todo-21">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-22 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>22</h3></div>
+          <div class="table-wrapper">
+            <table class="table-22"></table>
+            <div class="add-todo-22">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-23 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>23</h3></div>
+          <div class="table-wrapper">
+            <table class="table-23"></table>
+            <div class="add-todo-23">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-24 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>24</h3></div>
+          <div class="table-wrapper">
+            <table class="table-24"></table>
+            <div class="add-todo-24">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-25 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>25</h3></div>
+          <div class="table-wrapper">
+            <table class="table-25"></table>
+            <div class="add-todo-25">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-26 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>26</h3></div>
+          <div class="table-wrapper">
+            <table class="table-26"></table>
+            <div class="add-todo-26">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-27 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>27</h3></div>
+          <div class="table-wrapper">
+            <table class="table-27"></table>
+            <div class="add-todo-27">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-28 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>28</h3></div>
+          <div class="table-wrapper">
+            <table class="table-28"></table>
+            <div class="add-todo-28">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-29 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>29</h3></div>
+          <div class="table-wrapper">
+            <table class="table-29"></table>
+            <div class="add-todo-29">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-30 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>30</h3></div>
+          <div class="table-wrapper">
+            <table class="table-30"></table>
+            <div class="add-todo-30">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-modal-31 modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>31</h3></div>
+          <div class="table-wrapper">
+            <table class="table-31"></table>
+            <div class="add-todo-31">
+              <form class="form" autocomplete="off">
+                <input type="text" name="todo" placeholder="Add todo" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Edit Modal -->
+      <div class="edit-modal modal-wrapper edit">
+        <div class="modal">
+          <div class="modal-header"><h3>Edit todo</h3></div>
+          <div class="modal-body">
+            <form class="form" autocomplete="off">
+              <input type="text" name="todo" placeholder="Todo" />
+              <button class="btn btn-modal">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------- -->
+    <div class="board">
+      <div class="men-pav">Kovas</div>
+      <button class="workDay">Pi</button>
+      <button class="workDay">An</button>
+      <button class="workDay">Tr</button>
+      <button class="workDay">Ke</button>
+      <button class="workDay">Pe</button>
+      <button class="workDay">Še</button>
+      <button class="weekend">Se</button>
+      <div class="men-pav"></div>
+
       <span></span>
       <button onclick="todo_1()" id="1" class="free button1">1</button>
       <button onclick="todo_2()" id="2" class="free button2">2</button>
@@ -472,7 +931,6 @@
         </div>
       </div>
     </div>
-
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
 
