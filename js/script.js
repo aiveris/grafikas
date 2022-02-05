@@ -189,13 +189,13 @@ function today() {
       document.getElementById("4").className = "work today";
       break;
     case 5:
-      document.getElementById("5").className = "free today";
+      document.getElementById("5").className = "work today";
       break;
     case 6:
-      document.getElementById("6").className = "work today";
+      document.getElementById("6").className = "free today";
       break;
     case 7:
-      document.getElementById("7").className = "work today";
+      document.getElementById("7").className = "free today";
       break;
     case 8:
       document.getElementById("8").className = "work today";
@@ -210,16 +210,16 @@ function today() {
       document.getElementById("11").className = "work today";
       break;
     case 12:
-      document.getElementById("12").className = "work today";
+      document.getElementById("12").className = "free today";
       break;
     case 13:
-      document.getElementById("13").className = "work today";
+      document.getElementById("13").className = "free today";
       break;
     case 14:
       document.getElementById("14").className = "work today";
       break;
     case 15:
-      document.getElementById("15").className = "free today";
+      document.getElementById("15").className = "work today";
       break;
     case 16:
       document.getElementById("16").className = "work today";

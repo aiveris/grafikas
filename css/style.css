@@ -41,7 +41,7 @@ body {
   font: 20px "Roboto";
   text-align: center;
   width: 39px;
-  height: 30px;
+  /* height: 20px; */
   display: inline-block;
   overflow: hidden;
   line-height: 40px;
