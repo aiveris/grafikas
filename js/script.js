@@ -1,167 +1,320 @@
 "use strict";
-const showTodo1 = document.querySelector(".show-modal-1");
-const showTodo2 = document.querySelector(".show-modal-2");
-const showTodo3 = document.querySelector(".show-modal-3");
-const showTodo4 = document.querySelector(".show-modal-4");
-const showTodo5 = document.querySelector(".show-modal-5");
-const showTodo6 = document.querySelector(".show-modal-6");
-const showTodo7 = document.querySelector(".show-modal-7");
-const showTodo8 = document.querySelector(".show-modal-8");
-const showTodo9 = document.querySelector(".show-modal-9");
-const showTodo10 = document.querySelector(".show-modal-10");
-const showTodo11 = document.querySelector(".show-modal-11");
-const showTodo12 = document.querySelector(".show-modal-12");
-const showTodo13 = document.querySelector(".show-modal-13");
-const showTodo14 = document.querySelector(".show-modal-14");
-const showTodo15 = document.querySelector(".show-modal-15");
-const showTodo16 = document.querySelector(".show-modal-16");
-const showTodo17 = document.querySelector(".show-modal-17");
-const showTodo18 = document.querySelector(".show-modal-18");
-const showTodo19 = document.querySelector(".show-modal-19");
-const showTodo20 = document.querySelector(".show-modal-20");
-const showTodo21 = document.querySelector(".show-modal-21");
-const showTodo22 = document.querySelector(".show-modal-22");
-const showTodo23 = document.querySelector(".show-modal-23");
-const showTodo24 = document.querySelector(".show-modal-24");
-const showTodo25 = document.querySelector(".show-modal-25");
-const showTodo26 = document.querySelector(".show-modal-26");
-const showTodo27 = document.querySelector(".show-modal-27");
-const showTodo28 = document.querySelector(".show-modal-28");
-const showTodo29 = document.querySelector(".show-modal-29");
-const showTodo30 = document.querySelector(".show-modal-30");
-const showTodo31 = document.querySelector(".show-modal-31");
+const showTodoA1 = document.querySelector(".show-modal-a1");
+const showTodoA2 = document.querySelector(".show-modal-a2");
+const showTodoA3 = document.querySelector(".show-modal-a3");
+const showTodoA4 = document.querySelector(".show-modal-a4");
+const showTodoA5 = document.querySelector(".show-modal-a5");
+const showTodoA6 = document.querySelector(".show-modal-a6");
+const showTodoA7 = document.querySelector(".show-modal-a7");
+const showTodoA8 = document.querySelector(".show-modal-a8");
+const showTodoA9 = document.querySelector(".show-modal-a9");
+const showTodoA10 = document.querySelector(".show-modal-a10");
+const showTodoA11 = document.querySelector(".show-modal-a11");
+const showTodoA12 = document.querySelector(".show-modal-a12");
+const showTodoA13 = document.querySelector(".show-modal-a13");
+const showTodoA14 = document.querySelector(".show-modal-a14");
+const showTodoA15 = document.querySelector(".show-modal-a15");
+const showTodoA16 = document.querySelector(".show-modal-a16");
+const showTodoA17 = document.querySelector(".show-modal-a17");
+const showTodoA18 = document.querySelector(".show-modal-a18");
+const showTodoA19 = document.querySelector(".show-modal-a19");
+const showTodoA20 = document.querySelector(".show-modal-a20");
+const showTodoA21 = document.querySelector(".show-modal-a21");
+const showTodoA22 = document.querySelector(".show-modal-a22");
+const showTodoA23 = document.querySelector(".show-modal-a23");
+const showTodoA24 = document.querySelector(".show-modal-a24");
+const showTodoA25 = document.querySelector(".show-modal-a25");
+const showTodoA26 = document.querySelector(".show-modal-a26");
+const showTodoA27 = document.querySelector(".show-modal-a27");
+const showTodoA28 = document.querySelector(".show-modal-a28");
+const showTodoA29 = document.querySelector(".show-modal-a29");
+const showTodoA30 = document.querySelector(".show-modal-a30");
+const showTodoA31 = document.querySelector(".show-modal-a31");
+const showTodoB1 = document.querySelector(".show-modal-b1");
+const showTodoB2 = document.querySelector(".show-modal-b2");
+const showTodoB3 = document.querySelector(".show-modal-b3");
+const showTodoB4 = document.querySelector(".show-modal-b4");
+const showTodoB5 = document.querySelector(".show-modal-b5");
+const showTodoB6 = document.querySelector(".show-modal-b6");
+const showTodoB7 = document.querySelector(".show-modal-b7");
+const showTodoB8 = document.querySelector(".show-modal-b8");
+const showTodoB9 = document.querySelector(".show-modal-b9");
+const showTodoB10 = document.querySelector(".show-modal-b10");
+const showTodoB11 = document.querySelector(".show-modal-b11");
+const showTodoB12 = document.querySelector(".show-modal-b12");
+const showTodoB13 = document.querySelector(".show-modal-b13");
+const showTodoB14 = document.querySelector(".show-modal-b14");
+const showTodoB15 = document.querySelector(".show-modal-b15");
+const showTodoB16 = document.querySelector(".show-modal-b16");
+const showTodoB17 = document.querySelector(".show-modal-b17");
+const showTodoB18 = document.querySelector(".show-modal-b18");
+const showTodoB19 = document.querySelector(".show-modal-b19");
+const showTodoB20 = document.querySelector(".show-modal-b20");
+const showTodoB21 = document.querySelector(".show-modal-b21");
+const showTodoB22 = document.querySelector(".show-modal-b22");
+const showTodoB23 = document.querySelector(".show-modal-b23");
+const showTodoB24 = document.querySelector(".show-modal-b24");
+const showTodoB25 = document.querySelector(".show-modal-b25");
+const showTodoB26 = document.querySelector(".show-modal-b26");
+const showTodoB27 = document.querySelector(".show-modal-b27");
+const showTodoB28 = document.querySelector(".show-modal-b28");
+const showTodoB29 = document.querySelector(".show-modal-b29");
+const showTodoB30 = document.querySelector(".show-modal-b30");
+const showTodoB31 = document.querySelector(".show-modal-b31");
 const modalWrapper = document.querySelector(".modal-wrapper");
 // modal add
-const addTodo = document.querySelector(".add-todo");
-const addTodo2 = document.querySelector(".add-todo-2");
-const addTodo3 = document.querySelector(".add-todo-3");
-const addTodo4 = document.querySelector(".add-todo-4");
-const addTodo5 = document.querySelector(".add-todo-5");
-const addTodo6 = document.querySelector(".add-todo-6");
-const addTodo7 = document.querySelector(".add-todo-7");
-const addTodo8 = document.querySelector(".add-todo-8");
-const addTodo9 = document.querySelector(".add-todo-9");
-const addTodo10 = document.querySelector(".add-todo-10");
-const addTodo11 = document.querySelector(".add-todo-11");
-const addTodo12 = document.querySelector(".add-todo-12");
-const addTodo13 = document.querySelector(".add-todo-13");
-const addTodo14 = document.querySelector(".add-todo-14");
-const addTodo15 = document.querySelector(".add-todo-15");
-const addTodo16 = document.querySelector(".add-todo-16");
-const addTodo17 = document.querySelector(".add-todo-17");
-const addTodo18 = document.querySelector(".add-todo-18");
-const addTodo19 = document.querySelector(".add-todo-19");
-const addTodo20 = document.querySelector(".add-todo-20");
-const addTodo21 = document.querySelector(".add-todo-21");
-const addTodo22 = document.querySelector(".add-todo-22");
-const addTodo23 = document.querySelector(".add-todo-23");
-const addTodo24 = document.querySelector(".add-todo-24");
-const addTodo25 = document.querySelector(".add-todo-25");
-const addTodo26 = document.querySelector(".add-todo-26");
-const addTodo27 = document.querySelector(".add-todo-27");
-const addTodo28 = document.querySelector(".add-todo-28");
-const addTodo29 = document.querySelector(".add-todo-29");
-const addTodo30 = document.querySelector(".add-todo-30");
-const addTodo31 = document.querySelector(".add-todo-31");
-const addTodoForm = document.querySelector(".add-todo .form");
-const addTodoForm2 = document.querySelector(".add-todo-2 .form");
-const addTodoForm3 = document.querySelector(".add-todo-3 .form");
-const addTodoForm4 = document.querySelector(".add-todo-4 .form");
-const addTodoForm5 = document.querySelector(".add-todo-5 .form");
-const addTodoForm6 = document.querySelector(".add-todo-6 .form");
-const addTodoForm7 = document.querySelector(".add-todo-7 .form");
-const addTodoForm8 = document.querySelector(".add-todo-8 .form");
-const addTodoForm9 = document.querySelector(".add-todo-9 .form");
-const addTodoForm10 = document.querySelector(".add-todo-10 .form");
-const addTodoForm11 = document.querySelector(".add-todo-11 .form");
-const addTodoForm12 = document.querySelector(".add-todo-12 .form");
-const addTodoForm13 = document.querySelector(".add-todo-13 .form");
-const addTodoForm14 = document.querySelector(".add-todo-14 .form");
-const addTodoForm15 = document.querySelector(".add-todo-15 .form");
-const addTodoForm16 = document.querySelector(".add-todo-16 .form");
-const addTodoForm17 = document.querySelector(".add-todo-17 .form");
-const addTodoForm18 = document.querySelector(".add-todo-18 .form");
-const addTodoForm19 = document.querySelector(".add-todo-19 .form");
-const addTodoForm20 = document.querySelector(".add-todo-20 .form");
-const addTodoForm21 = document.querySelector(".add-todo-21 .form");
-const addTodoForm22 = document.querySelector(".add-todo-22 .form");
-const addTodoForm23 = document.querySelector(".add-todo-23 .form");
-const addTodoForm24 = document.querySelector(".add-todo-24 .form");
-const addTodoForm25 = document.querySelector(".add-todo-25 .form");
-const addTodoForm26 = document.querySelector(".add-todo-26 .form");
-const addTodoForm27 = document.querySelector(".add-todo-27 .form");
-const addTodoForm28 = document.querySelector(".add-todo-28 .form");
-const addTodoForm29 = document.querySelector(".add-todo-29 .form");
-const addTodoForm30 = document.querySelector(".add-todo-30 .form");
-const addTodoForm31 = document.querySelector(".add-todo-31 .form");
-
-const tableTodos = document.querySelector(".table-1");
-const tableTodos2 = document.querySelector(".table-2");
-const tableTodos3 = document.querySelector(".table-3");
-const tableTodos4 = document.querySelector(".table-4");
-const tableTodos5 = document.querySelector(".table-5");
-const tableTodos6 = document.querySelector(".table-6");
-const tableTodos7 = document.querySelector(".table-7");
-const tableTodos8 = document.querySelector(".table-8");
-const tableTodos9 = document.querySelector(".table-9");
-const tableTodos10 = document.querySelector(".table-10");
-const tableTodos11 = document.querySelector(".table-11");
-const tableTodos12 = document.querySelector(".table-12");
-const tableTodos13 = document.querySelector(".table-13");
-const tableTodos14 = document.querySelector(".table-14");
-const tableTodos15 = document.querySelector(".table-15");
-const tableTodos16 = document.querySelector(".table-16");
-const tableTodos17 = document.querySelector(".table-17");
-const tableTodos18 = document.querySelector(".table-18");
-const tableTodos19 = document.querySelector(".table-19");
-const tableTodos20 = document.querySelector(".table-20");
-const tableTodos21 = document.querySelector(".table-21");
-const tableTodos22 = document.querySelector(".table-22");
-const tableTodos23 = document.querySelector(".table-23");
-const tableTodos24 = document.querySelector(".table-24");
-const tableTodos25 = document.querySelector(".table-25");
-const tableTodos26 = document.querySelector(".table-26");
-const tableTodos27 = document.querySelector(".table-27");
-const tableTodos28 = document.querySelector(".table-28");
-const tableTodos29 = document.querySelector(".table-29");
-const tableTodos30 = document.querySelector(".table-30");
-const tableTodos31 = document.querySelector(".table-31");
-// modal edit
+const addTodoA1 = document.querySelector(".add-todo-a1");
+const addTodoA2 = document.querySelector(".add-todo-a2");
+const addTodoA3 = document.querySelector(".add-todo-a3");
+const addTodoA4 = document.querySelector(".add-todo-a4");
+const addTodoA5 = document.querySelector(".add-todo-a5");
+const addTodoA6 = document.querySelector(".add-todo-a6");
+const addTodoA7 = document.querySelector(".add-todo-a7");
+const addTodoA8 = document.querySelector(".add-todo-a8");
+const addTodoA9 = document.querySelector(".add-todo-a9");
+const addTodoA10 = document.querySelector(".add-todo-a10");
+const addTodoA11 = document.querySelector(".add-todo-a11");
+const addTodoA12 = document.querySelector(".add-todo-a12");
+const addTodoA13 = document.querySelector(".add-todo-a13");
+const addTodoA14 = document.querySelector(".add-todo-a14");
+const addTodoA15 = document.querySelector(".add-todo-a15");
+const addTodoA16 = document.querySelector(".add-todo-a16");
+const addTodoA17 = document.querySelector(".add-todo-a17");
+const addTodoA18 = document.querySelector(".add-todo-a18");
+const addTodoA19 = document.querySelector(".add-todo-a19");
+const addTodoA20 = document.querySelector(".add-todo-a20");
+const addTodoA21 = document.querySelector(".add-todo-a21");
+const addTodoA22 = document.querySelector(".add-todo-a22");
+const addTodoA23 = document.querySelector(".add-todo-a23");
+const addTodoA24 = document.querySelector(".add-todo-a24");
+const addTodoA25 = document.querySelector(".add-todo-a25");
+const addTodoA26 = document.querySelector(".add-todo-a26");
+const addTodoA27 = document.querySelector(".add-todo-a27");
+const addTodoA28 = document.querySelector(".add-todo-a28");
+const addTodoA29 = document.querySelector(".add-todo-a29");
+const addTodoA30 = document.querySelector(".add-todo-a30");
+const addTodoA31 = document.querySelector(".add-todo-a31");
+const addTodoB1 = document.querySelector(".add-todo-b1");
+const addTodoB2 = document.querySelector(".add-todo-b2");
+const addTodoB3 = document.querySelector(".add-todo-b3");
+const addTodoB4 = document.querySelector(".add-todo-b4");
+const addTodoB5 = document.querySelector(".add-todo-b5");
+const addTodoB6 = document.querySelector(".add-todo-b6");
+const addTodoB7 = document.querySelector(".add-todo-b7");
+const addTodoB8 = document.querySelector(".add-todo-b8");
+const addTodoB9 = document.querySelector(".add-todo-b9");
+const addTodoB10 = document.querySelector(".add-todo-b10");
+const addTodoB11 = document.querySelector(".add-todo-b11");
+const addTodoB12 = document.querySelector(".add-todo-b12");
+const addTodoB13 = document.querySelector(".add-todo-b13");
+const addTodoB14 = document.querySelector(".add-todo-b14");
+const addTodoB15 = document.querySelector(".add-todo-b15");
+const addTodoB16 = document.querySelector(".add-todo-b16");
+const addTodoB17 = document.querySelector(".add-todo-b17");
+const addTodoB18 = document.querySelector(".add-todo-b18");
+const addTodoB19 = document.querySelector(".add-todo-b19");
+const addTodoB20 = document.querySelector(".add-todo-b20");
+const addTodoB21 = document.querySelector(".add-todo-b21");
+const addTodoB22 = document.querySelector(".add-todo-b22");
+const addTodoB23 = document.querySelector(".add-todo-b23");
+const addTodoB24 = document.querySelector(".add-todo-b24");
+const addTodoB25 = document.querySelector(".add-todo-b25");
+const addTodoB26 = document.querySelector(".add-todo-b26");
+const addTodoB27 = document.querySelector(".add-todo-b27");
+const addTodoB28 = document.querySelector(".add-todo-b28");
+const addTodoB29 = document.querySelector(".add-todo-b29");
+const addTodoB30 = document.querySelector(".add-todo-b30");
+const addTodoB31 = document.querySelector(".add-todo-b31");
+const addTodoFormA1 = document.querySelector(".add-todo-a1 .form");
+const addTodoFormA2 = document.querySelector(".add-todo-a2 .form");
+const addTodoFormA3 = document.querySelector(".add-todo-a3 .form");
+const addTodoFormA4 = document.querySelector(".add-todo-a4 .form");
+const addTodoFormA5 = document.querySelector(".add-todo-a5 .form");
+const addTodoFormA6 = document.querySelector(".add-todo-a6 .form");
+const addTodoFormA7 = document.querySelector(".add-todo-a7 .form");
+const addTodoFormA8 = document.querySelector(".add-todo-a8 .form");
+const addTodoFormA9 = document.querySelector(".add-todo-a9 .form");
+const addTodoFormA10 = document.querySelector(".add-todo-a10 .form");
+const addTodoFormA11 = document.querySelector(".add-todo-a11 .form");
+const addTodoFormA12 = document.querySelector(".add-todo-a12 .form");
+const addTodoFormA13 = document.querySelector(".add-todo-a13 .form");
+const addTodoFormA14 = document.querySelector(".add-todo-a14 .form");
+const addTodoFormA15 = document.querySelector(".add-todo-a15 .form");
+const addTodoFormA16 = document.querySelector(".add-todo-a16 .form");
+const addTodoFormA17 = document.querySelector(".add-todo-a17 .form");
+const addTodoFormA18 = document.querySelector(".add-todo-a18 .form");
+const addTodoFormA19 = document.querySelector(".add-todo-a19 .form");
+const addTodoFormA20 = document.querySelector(".add-todo-a20 .form");
+const addTodoFormA21 = document.querySelector(".add-todo-a21 .form");
+const addTodoFormA22 = document.querySelector(".add-todo-a22 .form");
+const addTodoFormA23 = document.querySelector(".add-todo-a23 .form");
+const addTodoFormA24 = document.querySelector(".add-todo-a24 .form");
+const addTodoFormA25 = document.querySelector(".add-todo-a25 .form");
+const addTodoFormA26 = document.querySelector(".add-todo-a26 .form");
+const addTodoFormA27 = document.querySelector(".add-todo-a27 .form");
+const addTodoFormA28 = document.querySelector(".add-todo-a28 .form");
+const addTodoFormA29 = document.querySelector(".add-todo-a29 .form");
+const addTodoFormA30 = document.querySelector(".add-todo-a30 .form");
+const addTodoFormA31 = document.querySelector(".add-todo-a31 .form");
+const addTodoFormB1 = document.querySelector(".add-todo-b1 .form");
+const addTodoFormB2 = document.querySelector(".add-todo-b2 .form");
+const addTodoFormB3 = document.querySelector(".add-todo-b3 .form");
+const addTodoFormB4 = document.querySelector(".add-todo-b4 .form");
+const addTodoFormB5 = document.querySelector(".add-todo-b5 .form");
+const addTodoFormB6 = document.querySelector(".add-todo-b6 .form");
+const addTodoFormB7 = document.querySelector(".add-todo-b7 .form");
+const addTodoFormB8 = document.querySelector(".add-todo-b8 .form");
+const addTodoFormB9 = document.querySelector(".add-todo-b9 .form");
+const addTodoFormB10 = document.querySelector(".add-todo-b10 .form");
+const addTodoFormB11 = document.querySelector(".add-todo-b11 .form");
+const addTodoFormB12 = document.querySelector(".add-todo-b12 .form");
+const addTodoFormB13 = document.querySelector(".add-todo-b13 .form");
+const addTodoFormB14 = document.querySelector(".add-todo-b14 .form");
+const addTodoFormB15 = document.querySelector(".add-todo-b15 .form");
+const addTodoFormB16 = document.querySelector(".add-todo-b16 .form");
+const addTodoFormB17 = document.querySelector(".add-todo-b17 .form");
+const addTodoFormB18 = document.querySelector(".add-todo-b18 .form");
+const addTodoFormB19 = document.querySelector(".add-todo-b19 .form");
+const addTodoFormB20 = document.querySelector(".add-todo-b20 .form");
+const addTodoFormB21 = document.querySelector(".add-todo-b21 .form");
+const addTodoFormB22 = document.querySelector(".add-todo-b22 .form");
+const addTodoFormB23 = document.querySelector(".add-todo-b23 .form");
+const addTodoFormB24 = document.querySelector(".add-todo-b24 .form");
+const addTodoFormB25 = document.querySelector(".add-todo-b25 .form");
+const addTodoFormB26 = document.querySelector(".add-todo-b26 .form");
+const addTodoFormB27 = document.querySelector(".add-todo-b27 .form");
+const addTodoFormB28 = document.querySelector(".add-todo-b28 .form");
+const addTodoFormB29 = document.querySelector(".add-todo-b29 .form");
+const addTodoFormB30 = document.querySelector(".add-todo-b30 .form");
+const addTodoFormB31 = document.querySelector(".add-todo-b31 .form");
+const tableTodosA1 = document.querySelector(".table-a1");
+const tableTodosA2 = document.querySelector(".table-a2");
+const tableTodosA3 = document.querySelector(".table-a3");
+const tableTodosA4 = document.querySelector(".table-a4");
+const tableTodosA5 = document.querySelector(".table-a5");
+const tableTodosA6 = document.querySelector(".table-a6");
+const tableTodosA7 = document.querySelector(".table-a7");
+const tableTodosA8 = document.querySelector(".table-a8");
+const tableTodosA9 = document.querySelector(".table-a9");
+const tableTodosA10 = document.querySelector(".table-a10");
+const tableTodosA11 = document.querySelector(".table-a11");
+const tableTodosA12 = document.querySelector(".table-a12");
+const tableTodosA13 = document.querySelector(".table-a13");
+const tableTodosA14 = document.querySelector(".table-a14");
+const tableTodosA15 = document.querySelector(".table-a15");
+const tableTodosA16 = document.querySelector(".table-a16");
+const tableTodosA17 = document.querySelector(".table-a17");
+const tableTodosA18 = document.querySelector(".table-a18");
+const tableTodosA19 = document.querySelector(".table-a19");
+const tableTodosA20 = document.querySelector(".table-a20");
+const tableTodosA21 = document.querySelector(".table-a21");
+const tableTodosA22 = document.querySelector(".table-a22");
+const tableTodosA23 = document.querySelector(".table-a23");
+const tableTodosA24 = document.querySelector(".table-a24");
+const tableTodosA25 = document.querySelector(".table-a25");
+const tableTodosA26 = document.querySelector(".table-a26");
+const tableTodosA27 = document.querySelector(".table-a27");
+const tableTodosA28 = document.querySelector(".table-a28");
+const tableTodosA29 = document.querySelector(".table-a29");
+const tableTodosA30 = document.querySelector(".table-a30");
+const tableTodosA31 = document.querySelector(".table-a31");
+const tableTodosB1 = document.querySelector(".table-b1");
+const tableTodosB2 = document.querySelector(".table-b2");
+const tableTodosB3 = document.querySelector(".table-b3");
+const tableTodosB4 = document.querySelector(".table-b4");
+const tableTodosB5 = document.querySelector(".table-b5");
+const tableTodosB6 = document.querySelector(".table-b6");
+const tableTodosB7 = document.querySelector(".table-b7");
+const tableTodosB8 = document.querySelector(".table-b8");
+const tableTodosB9 = document.querySelector(".table-b9");
+const tableTodosB10 = document.querySelector(".table-b10");
+const tableTodosB11 = document.querySelector(".table-b11");
+const tableTodosB12 = document.querySelector(".table-b12");
+const tableTodosB13 = document.querySelector(".table-b13");
+const tableTodosB14 = document.querySelector(".table-b14");
+const tableTodosB15 = document.querySelector(".table-b15");
+const tableTodosB16 = document.querySelector(".table-b16");
+const tableTodosB17 = document.querySelector(".table-b17");
+const tableTodosB18 = document.querySelector(".table-b18");
+const tableTodosB19 = document.querySelector(".table-b19");
+const tableTodosB20 = document.querySelector(".table-b20");
+const tableTodosB21 = document.querySelector(".table-b21");
+const tableTodosB22 = document.querySelector(".table-b22");
+const tableTodosB23 = document.querySelector(".table-b23");
+const tableTodosB24 = document.querySelector(".table-b24");
+const tableTodosB25 = document.querySelector(".table-b25");
+const tableTodosB26 = document.querySelector(".table-b26");
+const tableTodosB27 = document.querySelector(".table-b27");
+const tableTodosB28 = document.querySelector(".table-b28");
+const tableTodosB29 = document.querySelector(".table-b29");
+const tableTodosB30 = document.querySelector(".table-b30");
+const tableTodosB31 = document.querySelector(".table-b31");
+// modal editconst tableTodosA1 = document.querySelector(".table-a1");
 const editModal = document.querySelector(".edit-modal");
 const editModalForm = document.querySelector(".edit-modal .form");
 const btnAdd = document.querySelector(".btn-add");
-const plans1 = document.querySelector(".button1");
-const plans2 = document.querySelector(".button2");
-const plans3 = document.querySelector(".button3");
-const plans4 = document.querySelector(".button4");
-const plans5 = document.querySelector(".button5");
-const plans6 = document.querySelector(".button6");
-const plans7 = document.querySelector(".button7");
-const plans8 = document.querySelector(".button8");
-const plans9 = document.querySelector(".button9");
-const plans10 = document.querySelector(".button10");
-const plans11 = document.querySelector(".button11");
-const plans12 = document.querySelector(".button12");
-const plans13 = document.querySelector(".button13");
-const plans14 = document.querySelector(".button14");
-const plans15 = document.querySelector(".button15");
-const plans16 = document.querySelector(".button16");
-const plans17 = document.querySelector(".button17");
-const plans18 = document.querySelector(".button18");
-const plans19 = document.querySelector(".button19");
-const plans20 = document.querySelector(".button20");
-const plans21 = document.querySelector(".button21");
-const plans22 = document.querySelector(".button22");
-const plans23 = document.querySelector(".button23");
-const plans24 = document.querySelector(".button24");
-const plans25 = document.querySelector(".button25");
-const plans26 = document.querySelector(".button26");
-const plans27 = document.querySelector(".button27");
-const plans28 = document.querySelector(".button28");
-const plans29 = document.querySelector(".button29");
-const plans30 = document.querySelector(".button30");
-const plans31 = document.querySelector(".button31");
-
+const plansA1 = document.querySelector(".buttonA1");
+const plansA2 = document.querySelector(".buttonA2");
+const plansA3 = document.querySelector(".buttonA3");
+const plansA4 = document.querySelector(".buttonA4");
+const plansA5 = document.querySelector(".buttonA5");
+const plansA6 = document.querySelector(".buttonA6");
+const plansA7 = document.querySelector(".buttonA7");
+const plansA8 = document.querySelector(".buttonA8");
+const plansA9 = document.querySelector(".buttonA9");
+const plansA10 = document.querySelector(".buttonA10");
+const plansA11 = document.querySelector(".buttonA11");
+const plansA12 = document.querySelector(".buttonA12");
+const plansA13 = document.querySelector(".buttonA13");
+const plansA14 = document.querySelector(".buttonA14");
+const plansA15 = document.querySelector(".buttonA15");
+const plansA16 = document.querySelector(".buttonA16");
+const plansA17 = document.querySelector(".buttonA17");
+const plansA18 = document.querySelector(".buttonA18");
+const plansA19 = document.querySelector(".buttonA19");
+const plansA20 = document.querySelector(".buttonA20");
+const plansA21 = document.querySelector(".buttonA21");
+const plansA22 = document.querySelector(".buttonA22");
+const plansA23 = document.querySelector(".buttonA23");
+const plansA24 = document.querySelector(".buttonA24");
+const plansA25 = document.querySelector(".buttonA25");
+const plansA26 = document.querySelector(".buttonA26");
+const plansA27 = document.querySelector(".buttonA27");
+const plansA28 = document.querySelector(".buttonA28");
+const plansA29 = document.querySelector(".buttonA29");
+const plansA30 = document.querySelector(".buttonA30");
+const plansA31 = document.querySelector(".buttonA31");
+const plansB1 = document.querySelector(".buttonB1");
+const plansB2 = document.querySelector(".buttonB2");
+const plansB3 = document.querySelector(".buttonB3");
+const plansB4 = document.querySelector(".buttonB4");
+const plansB5 = document.querySelector(".buttonB5");
+const plansB6 = document.querySelector(".buttonB6");
+const plansB7 = document.querySelector(".buttonB7");
+const plansB8 = document.querySelector(".buttonB8");
+const plansB9 = document.querySelector(".buttonB9");
+const plansB10 = document.querySelector(".buttonB10");
+const plansB11 = document.querySelector(".buttonB11");
+const plansB12 = document.querySelector(".buttonB12");
+const plansB13 = document.querySelector(".buttonB13");
+const plansB14 = document.querySelector(".buttonB14");
+const plansB15 = document.querySelector(".buttonB15");
+const plansB16 = document.querySelector(".buttonB16");
+const plansB17 = document.querySelector(".buttonB17");
+const plansB18 = document.querySelector(".buttonB18");
+const plansB19 = document.querySelector(".buttonB19");
+const plansB20 = document.querySelector(".buttonB20");
+const plansB21 = document.querySelector(".buttonB21");
+const plansB22 = document.querySelector(".buttonB22");
+const plansB23 = document.querySelector(".buttonB23");
+const plansB24 = document.querySelector(".buttonB24");
+const plansb25 = document.querySelector(".buttonB25");
+const plansB26 = document.querySelector(".buttonB26");
+const plansB27 = document.querySelector(".buttonB27");
+const plansB28 = document.querySelector(".buttonB28");
+const plansB29 = document.querySelector(".buttonB29");
+const plansB30 = document.querySelector(".buttonB30");
+const plansB31 = document.querySelector(".buttonB31");
 let id;
 
 window.onload = function () {
@@ -169,308 +322,661 @@ window.onload = function () {
 };
 
 function today() {
-  const date = new Date();
-  const day = date.getDate();
+  const date1 = new Date();
+  const month = date1.getMonth() + 1;
+  // const month = 3;
+  let date2 = new Date();
+  let day = date2.getDate();
+
+  if (month == 3) {
+    day = date2.getDate() + 100;
+  }
+  // const day = 3;
   // console.log(day);
-  // const day = 27;
+  // console.log(month);
 
   switch (day) {
     case 1:
-      // document.getElementById("1").innerHTML = "1";
-      document.getElementById("1").className = "free today";
+      document.getElementById("a1").className = "work today";
       break;
     case 2:
-      document.getElementById("2").className = "free today";
+      document.getElementById("a2").className = "work today";
       break;
     case 3:
-      document.getElementById("3").className = "work today";
+      document.getElementById("a3").className = "work today";
       break;
     case 4:
-      document.getElementById("4").className = "work today";
+      document.getElementById("a4").className = "work today";
       break;
     case 5:
-      document.getElementById("5").className = "work today";
+      document.getElementById("a5").className = "work today";
       break;
     case 6:
-      document.getElementById("6").className = "free today";
+      document.getElementById("a6").className = "free today";
       break;
     case 7:
-      document.getElementById("7").className = "free today";
+      document.getElementById("a7").className = "free today";
       break;
     case 8:
-      document.getElementById("8").className = "work today";
+      document.getElementById("a8").className = "work today";
       break;
     case 9:
-      document.getElementById("9").className = "free today";
+      document.getElementById("a9").className = "free today";
       break;
     case 10:
-      document.getElementById("10").className = "free today";
+      document.getElementById("a10").className = "free today";
       break;
     case 11:
-      document.getElementById("11").className = "work today";
+      document.getElementById("a11").className = "work today";
       break;
     case 12:
-      document.getElementById("12").className = "free today";
+      document.getElementById("a12").className = "free today";
       break;
     case 13:
-      document.getElementById("13").className = "free today";
+      document.getElementById("a13").className = "free today";
       break;
     case 14:
-      document.getElementById("14").className = "work today";
+      document.getElementById("a14").className = "work today";
       break;
     case 15:
-      document.getElementById("15").className = "work today";
+      document.getElementById("a15").className = "work today";
       break;
     case 16:
-      document.getElementById("16").className = "work today";
+      document.getElementById("a16").className = "work today";
       break;
     case 17:
-      document.getElementById("17").className = "work today";
+      document.getElementById("a17").className = "work today";
       break;
     case 18:
-      document.getElementById("18").className = "work today";
+      document.getElementById("a18").className = "free today";
       break;
     case 19:
-      document.getElementById("19").className = "free today";
+      document.getElementById("a19").className = "free today";
       break;
     case 20:
-      document.getElementById("20").className = "free today";
+      document.getElementById("a20").className = "work today";
       break;
     case 21:
-      document.getElementById("21").className = "work today";
+      document.getElementById("a21").className = "free today";
       break;
     case 22:
-      document.getElementById("22").className = "work today";
+      document.getElementById("a22").className = "work today";
       break;
     case 23:
-      document.getElementById("23").className = "work today";
+      document.getElementById("a23").className = "work today";
       break;
     case 24:
-      document.getElementById("24").className = "free today";
+      document.getElementById("a24").className = "free today";
       break;
     case 25:
-      document.getElementById("25").className = "work today";
+      document.getElementById("a25").className = "work today";
       break;
     case 26:
-      document.getElementById("26").className = "free today";
+      document.getElementById("a26").className = "work today";
       break;
     case 27:
-      document.getElementById("27").className = "work today";
+      document.getElementById("a27").className = "work today";
       break;
     case 28:
-      document.getElementById("28").className = "free today";
+      document.getElementById("a28").className = "free today";
       break;
     case 29:
-      document.getElementById("29").className = "work today";
+      document.getElementById("a29").className = "work today";
       break;
     case 30:
-      document.getElementById("30").className = "work today";
+      document.getElementById("a30").className = "work today";
       break;
     case 31:
-      document.getElementById("31").className = "work today";
+      document.getElementById("a31").className = "work today";
+      break;
+    case 101:
+      document.getElementById("b1").className = "free today";
+      break;
+    case 102:
+      document.getElementById("b2").className = "free today";
+      break;
+    case 103:
+      document.getElementById("b3").className = "work today";
+      break;
+    case 104:
+      document.getElementById("b4").className = "work today";
+      break;
+    case 105:
+      document.getElementById("b5").className = "work today";
+      break;
+    case 106:
+      document.getElementById("b6").className = "free today";
+      break;
+    case 107:
+      document.getElementById("b7").className = "free today";
+      break;
+    case 108:
+      document.getElementById("b8").className = "work today";
+      break;
+    case 109:
+      document.getElementById("b9").className = "free today";
+      break;
+    case 110:
+      document.getElementById("b10").className = "free today";
+      break;
+    case 111:
+      document.getElementById("b11").className = "work today";
+      break;
+    case 112:
+      document.getElementById("b12").className = "free today";
+      break;
+    case 113:
+      document.getElementById("b13").className = "free today";
+      break;
+    case 114:
+      document.getElementById("b14").className = "work today";
+      break;
+    case 115:
+      document.getElementById("b15").className = "work today";
+      break;
+    case 116:
+      document.getElementById("b16").className = "work today";
+      break;
+    case 117:
+      document.getElementById("b17").className = "work today";
+      break;
+    case 118:
+      document.getElementById("b18").className = "free today";
+      break;
+    case 119:
+      document.getElementById("b19").className = "free today";
+      break;
+    case 120:
+      document.getElementById("b20").className = "work today";
+      break;
+    case 121:
+      document.getElementById("b21").className = "free today";
+      break;
+    case 122:
+      document.getElementById("b22").className = "work today";
+      break;
+    case 123:
+      document.getElementById("b23").className = "work today";
+      break;
+    case 124:
+      document.getElementById("b24").className = "free today";
+      break;
+    case 125:
+      document.getElementById("b25").className = "work today";
+      break;
+    case 126:
+      document.getElementById("b26").className = "work today";
+      break;
+    case 127:
+      document.getElementById("b27").className = "work today";
+      break;
+    case 128:
+      document.getElementById("b28").className = "free today";
+      break;
+    case 129:
+      document.getElementById("b29").className = "work today";
+      break;
+    case 130:
+      document.getElementById("b30").className = "work today";
+      break;
+    case 131:
+      document.getElementById("b31").className = "work today";
       break;
   } //switch
 } //today()
 
-function todo_1() {
-  showTodo1.classList.add("modal-show");
+function todo_a1() {
+  showTodoA1.classList.add("modal-show");
 }
-function todo_2() {
-  showTodo2.classList.add("modal-show");
+function todo_a2() {
+  showTodoA2.classList.add("modal-show");
 }
-function todo_3() {
-  showTodo3.classList.add("modal-show");
+function todo_a3() {
+  showTodoA3.classList.add("modal-show");
 }
-function todo_4() {
-  showTodo4.classList.add("modal-show");
+function todo_a4() {
+  showTodoA4.classList.add("modal-show");
 }
-function todo_5() {
-  showTodo5.classList.add("modal-show");
+function todo_a5() {
+  showTodoA5.classList.add("modal-show");
 }
-function todo_6() {
-  showTodo6.classList.add("modal-show");
+function todo_a6() {
+  showTodoA6.classList.add("modal-show");
 }
-function todo_7() {
-  showTodo7.classList.add("modal-show");
+function todo_a7() {
+  showTodoA7.classList.add("modal-show");
 }
-function todo_8() {
-  showTodo8.classList.add("modal-show");
+function todo_a8() {
+  showTodoA8.classList.add("modal-show");
 }
-function todo_9() {
-  showTodo9.classList.add("modal-show");
+function todo_a9() {
+  showTodoA9.classList.add("modal-show");
 }
-function todo_10() {
-  showTodo10.classList.add("modal-show");
+function todo_a10() {
+  showTodoA10.classList.add("modal-show");
 }
-function todo_11() {
-  showTodo11.classList.add("modal-show");
+function todo_a11() {
+  showTodoA11.classList.add("modal-show");
 }
-function todo_12() {
-  showTodo12.classList.add("modal-show");
+function todo_a12() {
+  showTodoA12.classList.add("modal-show");
 }
-function todo_13() {
-  showTodo13.classList.add("modal-show");
+function todo_a13() {
+  showTodoA13.classList.add("modal-show");
 }
-function todo_14() {
-  showTodo14.classList.add("modal-show");
+function todo_a14() {
+  showTodoA14.classList.add("modal-show");
 }
-function todo_15() {
-  showTodo15.classList.add("modal-show");
+function todo_a15() {
+  showTodoA15.classList.add("modal-show");
 }
-function todo_16() {
-  showTodo16.classList.add("modal-show");
+function todo_a16() {
+  showTodoA16.classList.add("modal-show");
 }
-function todo_17() {
-  showTodo17.classList.add("modal-show");
+function todo_a17() {
+  showTodoA17.classList.add("modal-show");
 }
-function todo_18() {
-  showTodo18.classList.add("modal-show");
+function todo_a18() {
+  showTodoA18.classList.add("modal-show");
 }
-function todo_19() {
-  showTodo19.classList.add("modal-show");
+function todo_a19() {
+  showTodoA19.classList.add("modal-show");
 }
-function todo_20() {
-  showTodo20.classList.add("modal-show");
+function todo_a20() {
+  showTodoA20.classList.add("modal-show");
 }
-function todo_21() {
-  showTodo21.classList.add("modal-show");
+function todo_a21() {
+  showTodoA21.classList.add("modal-show");
 }
-function todo_22() {
-  showTodo22.classList.add("modal-show");
+function todo_a22() {
+  showTodoA22.classList.add("modal-show");
 }
-function todo_23() {
-  showTodo23.classList.add("modal-show");
+function todo_a23() {
+  showTodoA23.classList.add("modal-show");
 }
-function todo_24() {
-  showTodo24.classList.add("modal-show");
+function todo_a24() {
+  showTodoA24.classList.add("modal-show");
 }
-function todo_25() {
-  showTodo25.classList.add("modal-show");
+function todo_a25() {
+  showTodoA25.classList.add("modal-show");
 }
-function todo_26() {
-  showTodo26.classList.add("modal-show");
+function todo_a26() {
+  showTodoA26.classList.add("modal-show");
 }
-function todo_27() {
-  showTodo27.classList.add("modal-show");
+function todo_a27() {
+  showTodoA27.classList.add("modal-show");
 }
-function todo_28() {
-  showTodo28.classList.add("modal-show");
+function todo_a28() {
+  showTodoA28.classList.add("modal-show");
 }
-function todo_29() {
-  showTodo29.classList.add("modal-show");
+function todo_a29() {
+  showTodoA29.classList.add("modal-show");
 }
-function todo_30() {
-  showTodo30.classList.add("modal-show");
+function todo_a30() {
+  showTodoA30.classList.add("modal-show");
 }
-function todo_31() {
-  showTodo31.classList.add("modal-show");
+function todo_a31() {
+  showTodoA31.classList.add("modal-show");
 }
-
+function todo_b1() {
+  showTodoB1.classList.add("modal-show");
+}
+function todo_b2() {
+  showTodoB2.classList.add("modal-show");
+}
+function todo_b3() {
+  showTodoB3.classList.add("modal-show");
+}
+function todo_b4() {
+  showTodoB4.classList.add("modal-show");
+}
+function todo_b5() {
+  showTodoB5.classList.add("modal-show");
+}
+function todo_b6() {
+  showTodoB6.classList.add("modal-show");
+}
+function todo_b7() {
+  showTodoB7.classList.add("modal-show");
+}
+function todo_b8() {
+  showTodoB8.classList.add("modal-show");
+}
+function todo_b9() {
+  showTodoB9.classList.add("modal-show");
+}
+function todo_b10() {
+  showTodoB10.classList.add("modal-show");
+}
+function todo_b11() {
+  showTodoB11.classList.add("modal-show");
+}
+function todo_b12() {
+  showTodoB12.classList.add("modal-show");
+}
+function todo_b13() {
+  showTodoB13.classList.add("modal-show");
+}
+function todo_b14() {
+  showTodoB14.classList.add("modal-show");
+}
+function todo_b15() {
+  showTodoB15.classList.add("modal-show");
+}
+function todo_b16() {
+  showTodoB16.classList.add("modal-show");
+}
+function todo_b17() {
+  showTodoB17.classList.add("modal-show");
+}
+function todo_b18() {
+  showTodoB18.classList.add("modal-show");
+}
+function todo_b19() {
+  showTodoB19.classList.add("modal-show");
+}
+function todo_b20() {
+  showTodoB20.classList.add("modal-show");
+}
+function todo_b21() {
+  showTodoB21.classList.add("modal-show");
+}
+function todo_b22() {
+  showTodoB22.classList.add("modal-show");
+}
+function todo_b23() {
+  showTodoB23.classList.add("modal-show");
+}
+function todo_b24() {
+  showTodoB24.classList.add("modal-show");
+}
+function todo_b25() {
+  showTodoB25.classList.add("modal-show");
+}
+function todo_b26() {
+  showTodoB26.classList.add("modal-show");
+}
+function todo_b27() {
+  showTodoB27.classList.add("modal-show");
+}
+function todo_b28() {
+  showTodoB28.classList.add("modal-show");
+}
+function todo_b29() {
+  showTodoB29.classList.add("modal-show");
+}
+function todo_b30() {
+  showTodoB30.classList.add("modal-show");
+}
+function todo_b31() {
+  showTodoB31.classList.add("modal-show");
+}
 // // User click anyware outside the modal
 window.addEventListener("click", (e) => {
-  if (e.target === addTodo) {
+  if (e.target === addTodoA1) {
     addModal.classList.remove("modal-show");
   }
   if (e.target === editModal) {
     editModal.classList.remove("modal-show");
   }
-  if (e.target === showTodo1) {
-    showTodo1.classList.remove("modal-show");
+  if (e.target === showTodoA1) {
+    showTodoA1.classList.remove("modal-show");
   }
-  if (e.target === showTodo2) {
-    showTodo2.classList.remove("modal-show");
+  if (e.target === showTodoA2) {
+    showTodoA2.classList.remove("modal-show");
   }
-  if (e.target === showTodo3) {
-    showTodo3.classList.remove("modal-show");
+  if (e.target === showTodoA3) {
+    showTodoA3.classList.remove("modal-show");
   }
-  if (e.target === showTodo4) {
-    showTodo4.classList.remove("modal-show");
+  if (e.target === showTodoA4) {
+    showTodoA4.classList.remove("modal-show");
   }
-  if (e.target === showTodo5) {
-    showTodo5.classList.remove("modal-show");
+  if (e.target === showTodoA5) {
+    showTodoA5.classList.remove("modal-show");
   }
-  if (e.target === showTodo6) {
-    showTodo6.classList.remove("modal-show");
+  if (e.target === showTodoA6) {
+    showTodoA6.classList.remove("modal-show");
   }
-  if (e.target === showTodo7) {
-    showTodo7.classList.remove("modal-show");
+  if (e.target === showTodoA7) {
+    showTodoA7.classList.remove("modal-show");
   }
-  if (e.target === showTodo8) {
-    showTodo8.classList.remove("modal-show");
+  if (e.target === showTodoA8) {
+    showTodoA8.classList.remove("modal-show");
   }
-  if (e.target === showTodo9) {
-    showTodo9.classList.remove("modal-show");
+  if (e.target === showTodoA9) {
+    showTodoA9.classList.remove("modal-show");
   }
-  if (e.target === showTodo10) {
-    showTodo10.classList.remove("modal-show");
+  if (e.target === showTodoA10) {
+    showTodoA10.classList.remove("modal-show");
   }
-  if (e.target === showTodo11) {
-    showTodo11.classList.remove("modal-show");
+  if (e.target === showTodoA11) {
+    showTodoA11.classList.remove("modal-show");
   }
-  if (e.target === showTodo12) {
-    showTodo12.classList.remove("modal-show");
+  if (e.target === showTodoA12) {
+    showTodoA12.classList.remove("modal-show");
   }
-  if (e.target === showTodo13) {
-    showTodo13.classList.remove("modal-show");
+  if (e.target === showTodoA13) {
+    showTodoA13.classList.remove("modal-show");
   }
-  if (e.target === showTodo14) {
-    showTodo14.classList.remove("modal-show");
+  if (e.target === showTodoA14) {
+    showTodoA14.classList.remove("modal-show");
   }
-  if (e.target === showTodo15) {
-    showTodo15.classList.remove("modal-show");
+  if (e.target === showTodoA15) {
+    showTodoA15.classList.remove("modal-show");
   }
-  if (e.target === showTodo16) {
-    showTodo16.classList.remove("modal-show");
+  if (e.target === showTodoA16) {
+    showTodoA16.classList.remove("modal-show");
   }
-  if (e.target === showTodo17) {
-    showTodo17.classList.remove("modal-show");
+  if (e.target === showTodoA17) {
+    showTodoA17.classList.remove("modal-show");
   }
-  if (e.target === showTodo18) {
-    showTodo18.classList.remove("modal-show");
+  if (e.target === showTodoA18) {
+    showTodoA18.classList.remove("modal-show");
   }
-  if (e.target === showTodo19) {
-    showTodo19.classList.remove("modal-show");
+  if (e.target === showTodoA19) {
+    showTodoA19.classList.remove("modal-show");
   }
-  if (e.target === showTodo20) {
-    showTodo20.classList.remove("modal-show");
+  if (e.target === showTodoA20) {
+    showTodoA20.classList.remove("modal-show");
   }
-  if (e.target === showTodo21) {
-    showTodo21.classList.remove("modal-show");
+  if (e.target === showTodoA21) {
+    showTodoA21.classList.remove("modal-show");
   }
-  if (e.target === showTodo22) {
-    showTodo22.classList.remove("modal-show");
+  if (e.target === showTodoA22) {
+    showTodoA22.classList.remove("modal-show");
   }
-  if (e.target === showTodo23) {
-    showTodo23.classList.remove("modal-show");
+  if (e.target === showTodoA23) {
+    showTodoA23.classList.remove("modal-show");
   }
-  if (e.target === showTodo24) {
-    showTodo24.classList.remove("modal-show");
+  if (e.target === showTodoA24) {
+    showTodoA24.classList.remove("modal-show");
   }
-  if (e.target === showTodo25) {
-    showTodo25.classList.remove("modal-show");
+  if (e.target === showTodoA25) {
+    showTodoA25.classList.remove("modal-show");
   }
-  if (e.target === showTodo26) {
-    showTodo26.classList.remove("modal-show");
+  if (e.target === showTodoA26) {
+    showTodoA26.classList.remove("modal-show");
   }
-  if (e.target === showTodo27) {
-    showTodo27.classList.remove("modal-show");
+  if (e.target === showTodoA27) {
+    showTodoA27.classList.remove("modal-show");
   }
-  if (e.target === showTodo28) {
-    showTodo28.classList.remove("modal-show");
+  if (e.target === showTodoA28) {
+    showTodoA28.classList.remove("modal-show");
   }
-  if (e.target === showTodo29) {
-    showTodo29.classList.remove("modal-show");
+  if (e.target === showTodoA29) {
+    showTodoA29.classList.remove("modal-show");
   }
-  if (e.target === showTodo30) {
-    showTodo30.classList.remove("modal-show");
+  if (e.target === showTodoA30) {
+    showTodoA30.classList.remove("modal-show");
   }
-  if (e.target === showTodo31) {
-    showTodo31.classList.remove("modal-show");
+  if (e.target === showTodoA31) {
+    showTodoA31.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB1) {
+    showTodoB1.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB2) {
+    showTodoB2.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB3) {
+    showTodoB3.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB4) {
+    showTodoB4.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB5) {
+    showTodoB5.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB6) {
+    showTodoB6.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB7) {
+    showTodoB7.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB8) {
+    showTodoB8.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB9) {
+    showTodoB9.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB10) {
+    showTodoB10.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB11) {
+    showTodoB11.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB12) {
+    showTodoB12.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB13) {
+    showTodoB13.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB14) {
+    showTodoB14.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB15) {
+    showTodoB15.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB16) {
+    showTodoB16.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB17) {
+    showTodoB17.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB18) {
+    showTodoB18.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB19) {
+    showTodoB19.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB20) {
+    showTodoB20.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB21) {
+    showTodoB21.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB22) {
+    showTodoB22.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB23) {
+    showTodoB23.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB24) {
+    showTodoB24.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB25) {
+    showTodoB25.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB26) {
+    showTodoB26.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB27) {
+    showTodoB27.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB28) {
+    showTodoB28.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB29) {
+    showTodoB29.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB30) {
+    showTodoB30.classList.remove("modal-show");
+  }
+  if (e.target === showTodoB31) {
+    showTodoB31.classList.remove("modal-show");
   }
 });
 
-// Create element and render to-do 1 ----------------------------------
-const renderTodo = (doc) => {
+document.addEventListener("keydown", (event) => {
+  if (event.code === "Escape" || event.code === 27) {
+    editModal.classList.remove("modal-show");
+    showTodoA1.classList.remove("modal-show");
+    showTodoA2.classList.remove("modal-show");
+    showTodoA3.classList.remove("modal-show");
+    showTodoA4.classList.remove("modal-show");
+    showTodoA5.classList.remove("modal-show");
+    showTodoA6.classList.remove("modal-show");
+    showTodoA7.classList.remove("modal-show");
+    showTodoA8.classList.remove("modal-show");
+    showTodoA9.classList.remove("modal-show");
+    showTodoA10.classList.remove("modal-show");
+    showTodoA11.classList.remove("modal-show");
+    showTodoA12.classList.remove("modal-show");
+    showTodoA13.classList.remove("modal-show");
+    showTodoA14.classList.remove("modal-show");
+    showTodoA15.classList.remove("modal-show");
+    showTodoA16.classList.remove("modal-show");
+    showTodoA17.classList.remove("modal-show");
+    showTodoA18.classList.remove("modal-show");
+    showTodoA19.classList.remove("modal-show");
+    showTodoA20.classList.remove("modal-show");
+    showTodoA21.classList.remove("modal-show");
+    showTodoA22.classList.remove("modal-show");
+    showTodoA23.classList.remove("modal-show");
+    showTodoA24.classList.remove("modal-show");
+    showTodoA25.classList.remove("modal-show");
+    showTodoA26.classList.remove("modal-show");
+    showTodoA27.classList.remove("modal-show");
+    showTodoA28.classList.remove("modal-show");
+    showTodoA29.classList.remove("modal-show");
+    showTodoA30.classList.remove("modal-show");
+    showTodoA31.classList.remove("modal-show");
+    showTodoB1.classList.remove("modal-show");
+    showTodoB2.classList.remove("modal-show");
+    showTodoB3.classList.remove("modal-show");
+    showTodoB4.classList.remove("modal-show");
+    showTodoB5.classList.remove("modal-show");
+    showTodoB6.classList.remove("modal-show");
+    showTodoB7.classList.remove("modal-show");
+    showTodoB8.classList.remove("modal-show");
+    showTodoB9.classList.remove("modal-show");
+    showTodoB10.classList.remove("modal-show");
+    showTodoB11.classList.remove("modal-show");
+    showTodoB12.classList.remove("modal-show");
+    showTodoB13.classList.remove("modal-show");
+    showTodoB14.classList.remove("modal-show");
+    showTodoB15.classList.remove("modal-show");
+    showTodoB16.classList.remove("modal-show");
+    showTodoB17.classList.remove("modal-show");
+    showTodoB18.classList.remove("modal-show");
+    showTodoB19.classList.remove("modal-show");
+    showTodoB20.classList.remove("modal-show");
+    showTodoB21.classList.remove("modal-show");
+    showTodoB22.classList.remove("modal-show");
+    showTodoB23.classList.remove("modal-show");
+    showTodoB24.classList.remove("modal-show");
+    showTodoB25.classList.remove("modal-show");
+    showTodoB26.classList.remove("modal-show");
+    showTodoB27.classList.remove("modal-show");
+    showTodoB28.classList.remove("modal-show");
+    showTodoB29.classList.remove("modal-show");
+    showTodoB30.classList.remove("modal-show");
+    showTodoB31.classList.remove("modal-show");
+  }
+});
+
+// Create element and render to-do a1 ----------------------------------
+const renderTodoA1 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -480,59 +986,59 @@ const renderTodo = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos.insertAdjacentHTML("beforeend", tr);
+  tableTodosA1.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
-    editModal.classList.add("modal-show");
+    editModaal.classList.add("modal-show");
     id = doc.id;
     editModalForm.todo.value = doc.data().todo;
   });
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("1").doc(`${doc.id}`).delete();
+    db.collection("a1").doc(`${doc.id}`).delete();
   });
 };
 // // Real time listener
-db.collection("1").onSnapshot((snapshot) => {
+db.collection("a1").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo(change.doc);
-      plans1.classList.add("addedPlans");
+      renderTodoA1(change.doc);
+      plansA1.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos.removeChild(tbody);
-      plans1.classList.remove("addedPlans");
+      tableTodosA1.removeChild(tbody);
+      plansA1.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos.removeChild(tbody);
-      renderTodo(change.doc);
+      tableTodosA1.removeChild(tbody);
+      renderTodoA1(change.doc);
     }
   });
 });
-addTodoForm.addEventListener("submit", (e) => {
+addTodoFormA1.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("1").add({
-    todo: addTodoForm.todo.value,
+  db.collection("a1").add({
+    todo: addTodoFormA1.todo.value,
   });
-  addTodoForm.todo.value = "";
+  addTodoFormA1.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("1").doc(id).update({
+  db.collection("a1").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
 
-// Create element and render to-do 2----------------------------------
-const renderTodo2 = (doc) => {
+// Create element and render to-do a2----------------------------------
+const renderTodoA2 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -542,7 +1048,7 @@ const renderTodo2 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos2.insertAdjacentHTML("beforeend", tr);
+  tableTodosA2.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -553,48 +1059,48 @@ const renderTodo2 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("2").doc(`${doc.id}`).delete();
+    db.collection("a2").doc(`${doc.id}`).delete();
   });
 };
 // Real time listener
-db.collection("2").onSnapshot((snapshot) => {
+db.collection("a2").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo2(change.doc);
-      plans2.classList.add("addedPlans");
+      renderTodoA2(change.doc);
+      plansA2.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos2.removeChild(tbody);
-      plans2.classList.remove("addedPlans");
+      tableTodosA2.removeChild(tbody);
+      plansA2.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos2.removeChild(tbody);
-      renderTodo2(change.doc);
+      tableTodosA2.removeChild(tbody);
+      renderTodoA2(change.doc);
     }
   });
 });
-addTodoForm2.addEventListener("submit", (e) => {
+addTodoFormA2.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("2").add({
-    todo: addTodoForm2.todo.value,
+  db.collection("a2").add({
+    todo: addTodoFormA2.todo.value,
   });
-  addTodoForm2.todo.value = "";
+  addTodoFormA2.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("2").doc(id).update({
+  db.collection("a2").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
 
-// Create element and render to-do 3--------------------------------
-const renderTodo3 = (doc) => {
+// Create element and render to-do a3--------------------------------
+const renderTodoA3 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -604,7 +1110,7 @@ const renderTodo3 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos3.insertAdjacentHTML("beforeend", tr);
+  tableTodosA3.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -615,48 +1121,48 @@ const renderTodo3 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("3").doc(`${doc.id}`).delete();
+    db.collection("a3").doc(`${doc.id}`).delete();
   });
 };
 // Real time listener
-db.collection("3").onSnapshot((snapshot) => {
+db.collection("a3").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo3(change.doc);
-      plans3.classList.add("addedPlans");
+      renderTodoA3(change.doc);
+      plansA3.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos3.removeChild(tbody);
-      plans3.classList.remove("addedPlans");
+      tableTodosA3.removeChild(tbody);
+      plansA3.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos3.removeChild(tbody);
-      renderTodo3(change.doc);
+      tableTodosA3.removeChild(tbody);
+      renderTodoA3(change.doc);
     }
   });
 });
-addTodoForm3.addEventListener("submit", (e) => {
+addTodoFormA3.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("3").add({
-    todo: addTodoForm3.todo.value,
+  db.collection("a3").add({
+    todo: addTodoFormA3.todo.value,
   });
-  addTodoForm3.todo.value = "";
+  addTodoFormA3.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("3").doc(id).update({
+  db.collection("a3").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
 
-// Create element and render to-do 4--------------------------------
-const renderTodo4 = (doc) => {
+// Create element and render to-do a4--------------------------------
+const renderTodoA4 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -666,7 +1172,7 @@ const renderTodo4 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos4.insertAdjacentHTML("beforeend", tr);
+  tableTodosA4.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -677,49 +1183,49 @@ const renderTodo4 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("4").doc(`${doc.id}`).delete();
-    plans4.classList.remove("addedPlans");
+    db.collection("a4").doc(`${doc.id}`).delete();
+    plansA4.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("4").onSnapshot((snapshot) => {
+db.collection("a4").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo4(change.doc);
-      plans4.classList.add("addedPlans");
+      renderTodoA4(change.doc);
+      plansA4.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodos4.removeChild(tbody);
-      plans4.classList.remove("addedPlans");
+      plansA4.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos4.removeChild(tbody);
-      renderTodo4(change.doc);
+      tableTodosA4.removeChild(tbody);
+      renderTodoA4(change.doc);
     }
   });
 });
-addTodoForm4.addEventListener("submit", (e) => {
+addTodoFormA4.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("4").add({
-    todo: addTodoForm4.todo.value,
+  db.collection("a4").add({
+    todo: addTodoFormA4.todo.value,
   });
-  addTodoForm4.todo.value = "";
+  addTodoFormA4.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("4").doc(id).update({
+  db.collection("a4").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
 
-// Create element and render to-do 5--------------------------------
-const renderTodo5 = (doc) => {
+// Create element and render to-do a5--------------------------------
+const renderTodoA5 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -729,7 +1235,7 @@ const renderTodo5 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos5.insertAdjacentHTML("beforeend", tr);
+  tableTodosA5.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -740,49 +1246,49 @@ const renderTodo5 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("5").doc(`${doc.id}`).delete();
-    plans5.classList.remove("addedPlans");
+    db.collection("a5").doc(`${doc.id}`).delete();
+    plansA5.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("5").onSnapshot((snapshot) => {
+db.collection("a5").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo5(change.doc);
-      plans5.classList.add("addedPlans");
+      renderTodoA5(change.doc);
+      plansA5.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos5.removeChild(tbody);
-      plans5.classList.remove("addedPlans");
+      tableTodosA5.removeChild(tbody);
+      plansA5.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos5.removeChild(tbody);
-      renderTodo5(change.doc);
+      tableTodosA5.removeChild(tbody);
+      renderTodoA5(change.doc);
     }
   });
 });
-addTodoForm5.addEventListener("submit", (e) => {
+addTodoFormA5.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("5").add({
-    todo: addTodoForm5.todo.value,
+  db.collection("a5").add({
+    todo: addTodoFormA5.todo.value,
   });
-  addTodoForm5.todo.value = "";
+  addTodoFormA5.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("5").doc(id).update({
+  db.collection("a5").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
 
-// Create element and render to-do 6--------------------------------
-const renderTodo6 = (doc) => {
+// Create element and render to-do a6--------------------------------
+const renderTodoA6 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -792,7 +1298,7 @@ const renderTodo6 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos6.insertAdjacentHTML("beforeend", tr);
+  tableTodosA6.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -803,49 +1309,49 @@ const renderTodo6 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("6").doc(`${doc.id}`).delete();
-    plans6.classList.remove("addedPlans");
+    db.collection("a6").doc(`${doc.id}`).delete();
+    plansA6.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("6").onSnapshot((snapshot) => {
+db.collection("a6").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo6(change.doc);
-      plans6.classList.add("addedPlans");
+      renderTodoA6(change.doc);
+      plansA6.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos6.removeChild(tbody);
-      plans6.classList.remove("addedPlans");
+      tableTodosA6.removeChild(tbody);
+      plansA6.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos6.removeChild(tbody);
-      renderTodo6(change.doc);
+      tableTodosA6.removeChild(tbody);
+      renderTodoA6(change.doc);
     }
   });
 });
-addTodoForm6.addEventListener("submit", (e) => {
+addTodoFormA6.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("6").add({
-    todo: addTodoForm6.todo.value,
+  db.collection("a6").add({
+    todo: addTodoFormA6.todo.value,
   });
-  addTodoForm6.todo.value = "";
+  addTodoFormA6.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("6").doc(id).update({
+  db.collection("a6").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
 
-// Create element and render to-do 7--------------------------------
-const renderTodo7 = (doc) => {
+// Create element and render to-do a7--------------------------------
+const renderTodoA7 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -855,7 +1361,7 @@ const renderTodo7 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos7.insertAdjacentHTML("beforeend", tr);
+  tableTodosA7.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -866,49 +1372,49 @@ const renderTodo7 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("7").doc(`${doc.id}`).delete();
-    plans7.classList.remove("addedPlans");
+    db.collection("a7").doc(`${doc.id}`).delete();
+    plansA7.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("7").onSnapshot((snapshot) => {
+db.collection("a7").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo7(change.doc);
-      plans7.classList.add("addedPlans");
+      renderTodoA7(change.doc);
+      plansA7.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos7.removeChild(tbody);
-      plans7.classList.remove("addedPlans");
+      tableTodosA7.removeChild(tbody);
+      plansA7.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos7.removeChild(tbody);
-      renderTodo7(change.doc);
+      tableTodosA7.removeChild(tbody);
+      renderTodoA7(change.doc);
     }
   });
 });
-addTodoForm7.addEventListener("submit", (e) => {
+addTodoFormA7.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("7").add({
-    todo: addTodoForm7.todo.value,
+  db.collection("a7").add({
+    todo: addTodoFormA7.todo.value,
   });
-  addTodoForm7.todo.value = "";
+  addTodoFormA7.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("7").doc(id).update({
+  db.collection("a7").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
 
-// Create element and render to-do 8--------------------------------
-const renderTodo8 = (doc) => {
+// Create element and render to-do a8--------------------------------
+const renderTodoA8 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -918,7 +1424,7 @@ const renderTodo8 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos8.insertAdjacentHTML("beforeend", tr);
+  tableTodosA8.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -929,49 +1435,49 @@ const renderTodo8 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("8").doc(`${doc.id}`).delete();
-    plans8.classList.remove("addedPlans");
+    db.collection("a8").doc(`${doc.id}`).delete();
+    plansA8.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("8").onSnapshot((snapshot) => {
+db.collection("a8").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo8(change.doc);
-      plans8.classList.add("addedPlans");
+      renderTodoA8(change.doc);
+      plansA8.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos8.removeChild(tbody);
+      tableTodosA8.removeChild(tbody);
       plans8.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos8.removeChild(tbody);
-      renderTodo8(change.doc);
+      tableTodosA8.removeChild(tbody);
+      renderTodoA8(change.doc);
     }
   });
 });
-addTodoForm8.addEventListener("submit", (e) => {
+addTodoFormA8.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("8").add({
-    todo: addTodoForm8.todo.value,
+  db.collection("a8").add({
+    todo: addTodoFormA8.todo.value,
   });
-  addTodoForm8.todo.value = "";
+  addTodoFormA8.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("8").doc(id).update({
+  db.collection("a8").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
 
-// Create element and render to-do 9--------------------------------
-const renderTodo9 = (doc) => {
+// Create element and render to-do a9--------------------------------
+const renderTodoA9 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -981,7 +1487,7 @@ const renderTodo9 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos9.insertAdjacentHTML("beforeend", tr);
+  tableTodosA9.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -992,49 +1498,49 @@ const renderTodo9 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("9").doc(`${doc.id}`).delete();
-    plans9.classList.remove("addedPlans");
+    db.collection("a9").doc(`${doc.id}`).delete();
+    plansA9.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("9").onSnapshot((snapshot) => {
+db.collection("a9").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo9(change.doc);
-      plans9.classList.add("addedPlans");
+      renderTodoA9(change.doc);
+      plansA9.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos9.removeChild(tbody);
-      plans9.classList.remove("addedPlans");
+      tableTodosA9.removeChild(tbody);
+      plansA9.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos9.removeChild(tbody);
-      renderTodo9(change.doc);
+      tableTodosA9.removeChild(tbody);
+      renderTodoA9(change.doc);
     }
   });
 });
-addTodoForm9.addEventListener("submit", (e) => {
+addTodoFormA9.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("9").add({
-    todo: addTodoForm9.todo.value,
+  db.collection("a9").add({
+    todo: addTodoFormA9.todo.value,
   });
-  addTodoForm9.todo.value = "";
+  addTodoFormA9.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("9").doc(id).update({
+  db.collection("a9").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
 
-// Create element and render to-do 10--------------------------------
-const renderTodo10 = (doc) => {
+// Create element and render to-do a10--------------------------------
+const renderTodoA10 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1044,7 +1550,7 @@ const renderTodo10 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos10.insertAdjacentHTML("beforeend", tr);
+  tableTodosA10.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1055,48 +1561,48 @@ const renderTodo10 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("10").doc(`${doc.id}`).delete();
-    plans10.classList.remove("addedPlans");
+    db.collection("a10").doc(`${doc.id}`).delete();
+    plansA10.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("10").onSnapshot((snapshot) => {
+db.collection("a10").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo10(change.doc);
-      plans10.classList.add("addedPlans");
+      renderTodoA10(change.doc);
+      plansA10.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos10.removeChild(tbody);
+      tableTodosA10.removeChild(tbody);
       plans10.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos10.removeChild(tbody);
-      renderTodo10(change.doc);
+      tableTodosA10.removeChild(tbody);
+      renderTodoA10(change.doc);
     }
   });
 });
-addTodoForm10.addEventListener("submit", (e) => {
+addTodoFormA10.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("10").add({
-    todo: addTodoForm10.todo.value,
+  db.collection("a10").add({
+    todo: addTodoFormA10.todo.value,
   });
-  addTodoForm10.todo.value = "";
+  addTodoFormA10.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("10").doc(id).update({
+  db.collection("a10").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 11--------------------------------
-const renderTodo11 = (doc) => {
+// Create element and render to-do a11--------------------------------
+const renderTodoA11 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1106,7 +1612,7 @@ const renderTodo11 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos11.insertAdjacentHTML("beforeend", tr);
+  tableTodosA11.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1117,48 +1623,48 @@ const renderTodo11 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("11").doc(`${doc.id}`).delete();
-    plans11.classList.remove("addedPlans");
+    db.collection("a11").doc(`${doc.id}`).delete();
+    plansA11.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("11").onSnapshot((snapshot) => {
+db.collection("a11").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo11(change.doc);
-      plans11.classList.add("addedPlans");
+      renderTodoA11(change.doc);
+      plansA11.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos11.removeChild(tbody);
-      plans11.classList.remove("addedPlans");
+      tableTodosA11.removeChild(tbody);
+      plansA11.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos11.removeChild(tbody);
-      renderTodo11(change.doc);
+      tableTodosA11.removeChild(tbody);
+      renderTodoA11(change.doc);
     }
   });
 });
-addTodoForm11.addEventListener("submit", (e) => {
+addTodoFormA11.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("11").add({
-    todo: addTodoForm11.todo.value,
+  db.collection("a11").add({
+    todo: addTodoFormA11.todo.value,
   });
-  addTodoForm11.todo.value = "";
+  addTodoFormA11.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("11").doc(id).update({
+  db.collection("a11").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 12--------------------------------
-const renderTodo12 = (doc) => {
+// Create element and render to-do a12--------------------------------
+const renderTodoA12 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1168,7 +1674,7 @@ const renderTodo12 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos12.insertAdjacentHTML("beforeend", tr);
+  tableTodosA12.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1179,48 +1685,48 @@ const renderTodo12 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("12").doc(`${doc.id}`).delete();
-    plans12.classList.remove("addedPlans");
+    db.collection("a12").doc(`${doc.id}`).delete();
+    plansA12.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("12").onSnapshot((snapshot) => {
+db.collection("a12").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo12(change.doc);
-      plans12.classList.add("addedPlans");
+      renderTodoA12(change.doc);
+      plansA12.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos12.removeChild(tbody);
-      plans12.classList.remove("addedPlans");
+      tableTodosA12.removeChild(tbody);
+      plansA12.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos12.removeChild(tbody);
-      renderTodo12(change.doc);
+      tableTodosA12.removeChild(tbody);
+      renderTodoA12(change.doc);
     }
   });
 });
-addTodoForm12.addEventListener("submit", (e) => {
+addTodoFormA12.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("12").add({
-    todo: addTodoForm12.todo.value,
+  db.collection("a12").add({
+    todo: addTodoFormA12.todo.value,
   });
-  addTodoForm12.todo.value = "";
+  addTodoFormA12.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("12").doc(id).update({
+  db.collection("a12").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 13--------------------------------
-const renderTodo13 = (doc) => {
+// Create element and render to-do a13--------------------------------
+const renderTodoA13 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1230,7 +1736,7 @@ const renderTodo13 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos13.insertAdjacentHTML("beforeend", tr);
+  tableTodosA13.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1241,48 +1747,48 @@ const renderTodo13 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("13").doc(`${doc.id}`).delete();
-    plans13.classList.remove("addedPlans");
+    db.collection("a13").doc(`${doc.id}`).delete();
+    plansA13.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("13").onSnapshot((snapshot) => {
+db.collection("a13").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo13(change.doc);
-      plans13.classList.add("addedPlans");
+      renderTodoA13(change.doc);
+      plansA13.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos13.removeChild(tbody);
-      plans13.classList.remove("addedPlans");
+      tableTodosA13.removeChild(tbody);
+      plansA13.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos13.removeChild(tbody);
-      renderTodo13(change.doc);
+      tableTodosA13.removeChild(tbody);
+      renderTodoA13(change.doc);
     }
   });
 });
-addTodoForm13.addEventListener("submit", (e) => {
+addTodoFormA13.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("13").add({
-    todo: addTodoForm13.todo.value,
+  db.collection("a13").add({
+    todo: addTodoFormA13.todo.value,
   });
-  addTodoForm13.todo.value = "";
+  addTodoFormA13.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("13").doc(id).update({
+  db.collection("a13").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 14--------------------------------
-const renderTodo14 = (doc) => {
+// Create element and render to-do a14--------------------------------
+const renderTodoA14 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1292,7 +1798,7 @@ const renderTodo14 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos14.insertAdjacentHTML("beforeend", tr);
+  tableTodosA14.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1303,48 +1809,48 @@ const renderTodo14 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("14").doc(`${doc.id}`).delete();
-    plans14.classList.remove("addedPlans");
+    db.collection("a14").doc(`${doc.id}`).delete();
+    plansA14.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("14").onSnapshot((snapshot) => {
+db.collection("a14").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo14(change.doc);
-      plans14.classList.add("addedPlans");
+      renderTodoA14(change.doc);
+      plansA14.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos14.removeChild(tbody);
-      plans14.classList.remove("addedPlans");
+      tableTodosA14.removeChild(tbody);
+      plansA14.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos14.removeChild(tbody);
-      renderTodo14(change.doc);
+      tableTodosA14.removeChild(tbody);
+      renderTodoA14(change.doc);
     }
   });
 });
-addTodoForm14.addEventListener("submit", (e) => {
+addTodoFormA14.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("14").add({
-    todo: addTodoForm14.todo.value,
+  db.collection("a14").add({
+    todo: addTodoFormA14.todo.value,
   });
-  addTodoForm14.todo.value = "";
+  addTodoFormA14.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("14").doc(id).update({
+  db.collection("a14").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 15--------------------------------
-const renderTodo15 = (doc) => {
+// Create element and render to-do a15--------------------------------
+const renderTodoA15 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1354,7 +1860,7 @@ const renderTodo15 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos15.insertAdjacentHTML("beforeend", tr);
+  tableTodosA15.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1365,48 +1871,48 @@ const renderTodo15 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("15").doc(`${doc.id}`).delete();
-    plans15.classList.remove("addedPlans");
+    db.collection("a15").doc(`${doc.id}`).delete();
+    plansA15.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("15").onSnapshot((snapshot) => {
+db.collection("a15").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo15(change.doc);
-      plans15.classList.add("addedPlans");
+      renderTodoA15(change.doc);
+      plansA15.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos15.removeChild(tbody);
-      plans15.classList.remove("addedPlans");
+      tableTodosA15.removeChild(tbody);
+      plansA15.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos15.removeChild(tbody);
-      renderTodo15(change.doc);
+      tableTodosA15.removeChild(tbody);
+      renderTodoA15(change.doc);
     }
   });
 });
-addTodoForm15.addEventListener("submit", (e) => {
+addTodoFormA15.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("15").add({
-    todo: addTodoForm15.todo.value,
+  db.collection("a15").add({
+    todo: addTodoFormA15.todo.value,
   });
-  addTodoForm15.todo.value = "";
+  addTodoFormA15.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("15").doc(id).update({
+  db.collection("a15").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 16--------------------------------
-const renderTodo16 = (doc) => {
+// Create element and render to-do a16--------------------------------
+const renderTodoA16 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1416,7 +1922,7 @@ const renderTodo16 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos16.insertAdjacentHTML("beforeend", tr);
+  tableTodosA16.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1427,48 +1933,48 @@ const renderTodo16 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("16").doc(`${doc.id}`).delete();
-    plans16.classList.remove("addedPlans");
+    db.collection("a16").doc(`${doc.id}`).delete();
+    plansA16.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("16").onSnapshot((snapshot) => {
+db.collection("a16").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo16(change.doc);
-      plans16.classList.add("addedPlans");
+      renderTodoA16(change.doc);
+      plansA16.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos16.removeChild(tbody);
+      tableTodosA16.removeChild(tbody);
       plans16.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos16.removeChild(tbody);
-      renderTodo16(change.doc);
+      tableTodosA16.removeChild(tbody);
+      renderTodoA16(change.doc);
     }
   });
 });
-addTodoForm16.addEventListener("submit", (e) => {
+addTodoFormA16.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("16").add({
-    todo: addTodoForm16.todo.value,
+  db.collection("a16").add({
+    todo: addTodoFormA16.todo.value,
   });
-  addTodoForm16.todo.value = "";
+  addTodoFormA16.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("16").doc(id).update({
+  db.collection("a16").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 17--------------------------------
-const renderTodo17 = (doc) => {
+// Create element and render to-do a17--------------------------------
+const renderTodoA17 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1478,7 +1984,7 @@ const renderTodo17 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos17.insertAdjacentHTML("beforeend", tr);
+  tableTodosA17.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1489,48 +1995,48 @@ const renderTodo17 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("17").doc(`${doc.id}`).delete();
-    plans17.classList.remove("addedPlans");
+    db.collection("a17").doc(`${doc.id}`).delete();
+    plansA17.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("17").onSnapshot((snapshot) => {
+db.collection("a17").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo17(change.doc);
-      plans17.classList.add("addedPlans");
+      renderTodoA17(change.doc);
+      plansA17.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos17.removeChild(tbody);
-      plans17.classList.remove("addedPlans");
+      tableTodosA17.removeChild(tbody);
+      plansA17.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos17.removeChild(tbody);
-      renderTodo17(change.doc);
+      tableTodosA17.removeChild(tbody);
+      renderTodoA17(change.doc);
     }
   });
 });
-addTodoForm17.addEventListener("submit", (e) => {
+addTodoFormA17.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("17").add({
-    todo: addTodoForm17.todo.value,
+  db.collection("a17").add({
+    todo: addTodoFormA17.todo.value,
   });
-  addTodoForm17.todo.value = "";
+  addTodoFormA17.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("17").doc(id).update({
+  db.collection("a17").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 18--------------------------------
-const renderTodo18 = (doc) => {
+// Create element and render to-do a18--------------------------------
+const renderTodoA18 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1540,7 +2046,7 @@ const renderTodo18 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos18.insertAdjacentHTML("beforeend", tr);
+  tableTodosA18.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1551,48 +2057,48 @@ const renderTodo18 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("18").doc(`${doc.id}`).delete();
-    plans18.classList.remove("addedPlans");
+    db.collection("a18").doc(`${doc.id}`).delete();
+    plansA18.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("18").onSnapshot((snapshot) => {
+db.collection("a18").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo18(change.doc);
-      plans18.classList.add("addedPlans");
+      renderTodoA18(change.doc);
+      plansA18.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos18.removeChild(tbody);
-      plans18.classList.remove("addedPlans");
+      tableTodosA18.removeChild(tbody);
+      plansA18.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos18.removeChild(tbody);
-      renderTodo18(change.doc);
+      tableTodosA18.removeChild(tbody);
+      renderTodoA18(change.doc);
     }
   });
 });
-addTodoForm18.addEventListener("submit", (e) => {
+addTodoFormA18.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("18").add({
-    todo: addTodoForm18.todo.value,
+  db.collection("a18").add({
+    todo: addTodoFormA18.todo.value,
   });
-  addTodoForm18.todo.value = "";
+  addTodoFormA18.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("18").doc(id).update({
+  db.collection("a18").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 19--------------------------------
-const renderTodo19 = (doc) => {
+// Create element and render to-do a19--------------------------------
+const renderTodoA19 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1602,7 +2108,7 @@ const renderTodo19 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos19.insertAdjacentHTML("beforeend", tr);
+  tableTodosA19.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1613,48 +2119,48 @@ const renderTodo19 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("19").doc(`${doc.id}`).delete();
-    plans19.classList.remove("addedPlans");
+    db.collection("a19").doc(`${doc.id}`).delete();
+    plansA19.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("19").onSnapshot((snapshot) => {
+db.collection("a19").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo19(change.doc);
-      plans19.classList.add("addedPlans");
+      renderTodoA19(change.doc);
+      plansA19.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos19.removeChild(tbody);
-      plans19.classList.remove("addedPlans");
+      tableTodosA19.removeChild(tbody);
+      plansA19.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos19.removeChild(tbody);
-      renderTodo19(change.doc);
+      tableTodosA19.removeChild(tbody);
+      renderTodoA19(change.doc);
     }
   });
 });
-addTodoForm19.addEventListener("submit", (e) => {
+addTodoFormA19.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("19").add({
-    todo: addTodoForm19.todo.value,
+  db.collection("a19").add({
+    todo: addTodoFormA19.todo.value,
   });
-  addTodoForm19.todo.value = "";
+  addTodoFormA19.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("19").doc(id).update({
+  db.collection("a19").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 20--------------------------------
-const renderTodo20 = (doc) => {
+// Create element and render to-do a20--------------------------------
+const renderTodoA20 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1664,7 +2170,7 @@ const renderTodo20 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos20.insertAdjacentHTML("beforeend", tr);
+  tableTodosA20.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1675,48 +2181,48 @@ const renderTodo20 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("20").doc(`${doc.id}`).delete();
-    plans20.classList.remove("addedPlans");
+    db.collection("a20").doc(`${doc.id}`).delete();
+    plansA20.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("20").onSnapshot((snapshot) => {
+db.collection("a20").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo20(change.doc);
-      plans20.classList.add("addedPlans");
+      renderTodoA20(change.doc);
+      plansA20.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos20.removeChild(tbody);
-      plans20.classList.remove("addedPlans");
+      tableTodosA20.removeChild(tbody);
+      plansA20.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos20.removeChild(tbody);
-      renderTodo20(change.doc);
+      tableTodosA20.removeChild(tbody);
+      renderTodoA20(change.doc);
     }
   });
 });
-addTodoForm20.addEventListener("submit", (e) => {
+addTodoFormA20.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("20").add({
-    todo: addTodoForm20.todo.value,
+  db.collection("a20").add({
+    todo: addTodoFormA20.todo.value,
   });
-  addTodoForm20.todo.value = "";
+  addTodoFormA20.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("20").doc(id).update({
+  db.collection("a20").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 21--------------------------------
-const renderTodo21 = (doc) => {
+// Create element and render to-do a21--------------------------------
+const renderTodoA21 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1726,7 +2232,7 @@ const renderTodo21 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos21.insertAdjacentHTML("beforeend", tr);
+  tableTodosA21.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1737,48 +2243,48 @@ const renderTodo21 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("21").doc(`${doc.id}`).delete();
-    plans21.classList.remove("addedPlans");
+    db.collection("a21").doc(`${doc.id}`).delete();
+    plansA21.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("21").onSnapshot((snapshot) => {
+db.collection("a21").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo21(change.doc);
-      plans21.classList.add("addedPlans");
+      renderTodoA21(change.doc);
+      plansA21.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos21.removeChild(tbody);
-      plans21.classList.remove("addedPlans");
+      tableTodosA21.removeChild(tbody);
+      plansA21.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos21.removeChild(tbody);
-      renderTodo21(change.doc);
+      tableTodosA21.removeChild(tbody);
+      renderTodoA21(change.doc);
     }
   });
 });
-addTodoForm21.addEventListener("submit", (e) => {
+addTodoFormA21.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("21").add({
-    todo: addTodoForm21.todo.value,
+  db.collection("a21").add({
+    todo: addTodoFormA21.todo.value,
   });
-  addTodoForm21.todo.value = "";
+  addTodoFormA21.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("21").doc(id).update({
+  db.collection("a21").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 22--------------------------------
-const renderTodo22 = (doc) => {
+// Create element and render to-do a22--------------------------------
+const renderTodoA22 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1788,7 +2294,7 @@ const renderTodo22 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos22.insertAdjacentHTML("beforeend", tr);
+  tableTodosA22.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1799,48 +2305,48 @@ const renderTodo22 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("22").doc(`${doc.id}`).delete();
-    plans22.classList.remove("addedPlans");
+    db.collection("a22").doc(`${doc.id}`).delete();
+    plansA22.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("22").onSnapshot((snapshot) => {
+db.collection("a22").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo22(change.doc);
-      plans22.classList.add("addedPlans");
+      renderTodoA22(change.doc);
+      plansA22.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos22.removeChild(tbody);
-      plans22.classList.remove("addedPlans");
+      tableTodosA22.removeChild(tbody);
+      plansA22.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos22.removeChild(tbody);
-      renderTodo22(change.doc);
+      tableTodosA22.removeChild(tbody);
+      renderTodoA22(change.doc);
     }
   });
 });
-addTodoForm22.addEventListener("submit", (e) => {
+addTodoFormA22.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("22").add({
-    todo: addTodoForm22.todo.value,
+  db.collection("a22").add({
+    todo: addTodoFormA22.todo.value,
   });
-  addTodoForm22.todo.value = "";
+  addTodoFormA22.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("22").doc(id).update({
+  db.collection("a22").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 23--------------------------------
-const renderTodo23 = (doc) => {
+// Create element and render to-do a23--------------------------------
+const renderTodoA23 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1850,7 +2356,7 @@ const renderTodo23 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos23.insertAdjacentHTML("beforeend", tr);
+  tableTodosA23.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1861,48 +2367,48 @@ const renderTodo23 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("23").doc(`${doc.id}`).delete();
-    plans23.classList.remove("addedPlans");
+    db.collection("a23").doc(`${doc.id}`).delete();
+    plansA23.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("23").onSnapshot((snapshot) => {
+db.collection("a23").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo23(change.doc);
-      plans23.classList.add("addedPlans");
+      renderTodoA23(change.doc);
+      plansA23.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos23.removeChild(tbody);
-      plans23.classList.remove("addedPlans");
+      tableTodosA23.removeChild(tbody);
+      plansA23.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos23.removeChild(tbody);
-      renderTodo23(change.doc);
+      tableTodosA23.removeChild(tbody);
+      renderTodoA23(change.doc);
     }
   });
 });
-addTodoForm23.addEventListener("submit", (e) => {
+addTodoFormA23.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("23").add({
-    todo: addTodoForm23.todo.value,
+  db.collection("a23").add({
+    todo: addTodoFormA23.todo.value,
   });
-  addTodoForm23.todo.value = "";
+  addTodoFormA23.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("23").doc(id).update({
+  db.collection("a23").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 24--------------------------------
-const renderTodo24 = (doc) => {
+// Create element and render to-do a24--------------------------------
+const renderTodoA24 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1912,7 +2418,7 @@ const renderTodo24 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos24.insertAdjacentHTML("beforeend", tr);
+  tableTodosA24.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1923,48 +2429,48 @@ const renderTodo24 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("24").doc(`${doc.id}`).delete();
-    plans24.classList.remove("addedPlans");
+    db.collection("a24").doc(`${doc.id}`).delete();
+    plansA24.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("24").onSnapshot((snapshot) => {
+db.collection("a24").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo24(change.doc);
-      plans24.classList.add("addedPlans");
+      renderTodoA24(change.doc);
+      plansA24.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos24.removeChild(tbody);
-      plans24.classList.remove("addedPlans");
+      tableTodosA24.removeChild(tbody);
+      plansA24.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos24.removeChild(tbody);
-      renderTodo24(change.doc);
+      tableTodosA24.removeChild(tbody);
+      renderTodoA24(change.doc);
     }
   });
 });
-addTodoForm24.addEventListener("submit", (e) => {
+addTodoFormA24.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("24").add({
-    todo: addTodoForm24.todo.value,
+  db.collection("a24").add({
+    todo: addTodoFormA24.todo.value,
   });
-  addTodoForm24.todo.value = "";
+  addTodoFormA24.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("24").doc(id).update({
+  db.collection("a24").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 25--------------------------------
-const renderTodo25 = (doc) => {
+// Create element and render to-do a25--------------------------------
+const renderTodoA25 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -1974,7 +2480,7 @@ const renderTodo25 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos25.insertAdjacentHTML("beforeend", tr);
+  tableTodosA25.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -1985,48 +2491,48 @@ const renderTodo25 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("25").doc(`${doc.id}`).delete();
-    plans25.classList.remove("addedPlans");
+    db.collection("a25").doc(`${doc.id}`).delete();
+    plansA25.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("25").onSnapshot((snapshot) => {
+db.collection("a25").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo25(change.doc);
-      plans25.classList.add("addedPlans");
+      renderTodoA25(change.doc);
+      plansA25.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos25.removeChild(tbody);
-      plans25.classList.remove("addedPlans");
+      tableTodosA25.removeChild(tbody);
+      plansA25.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos25.removeChild(tbody);
-      renderTodo25(change.doc);
+      tableTodosA25.removeChild(tbody);
+      renderTodoA25(change.doc);
     }
   });
 });
-addTodoForm25.addEventListener("submit", (e) => {
+addTodoFormA25.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("25").add({
-    todo: addTodoForm25.todo.value,
+  db.collection("a25").add({
+    todo: addTodoFormA25.todo.value,
   });
-  addTodoForm25.todo.value = "";
+  addTodoFormA25.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("25").doc(id).update({
+  db.collection("a25").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 26--------------------------------
-const renderTodo26 = (doc) => {
+// Create element and render to-do a26--------------------------------
+const renderTodoA26 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -2036,7 +2542,7 @@ const renderTodo26 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos26.insertAdjacentHTML("beforeend", tr);
+  tableTodosA26.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -2047,48 +2553,48 @@ const renderTodo26 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("26").doc(`${doc.id}`).delete();
-    plans26.classList.remove("addedPlans");
+    db.collection("a26").doc(`${doc.id}`).delete();
+    plansA26.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("26").onSnapshot((snapshot) => {
+db.collection("a26").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo26(change.doc);
-      plans26.classList.add("addedPlans");
+      renderTodoA26(change.doc);
+      plansA26.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos26.removeChild(tbody);
-      plans26.classList.remove("addedPlans");
+      tableTodosA26.removeChild(tbody);
+      plansA26.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos26.removeChild(tbody);
-      renderTodo26(change.doc);
+      tableTodosA26.removeChild(tbody);
+      renderTodoA26(change.doc);
     }
   });
 });
-addTodoForm26.addEventListener("submit", (e) => {
+addTodoFormA26.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("26").add({
-    todo: addTodoForm26.todo.value,
+  db.collection("a26").add({
+    todo: addTodoFormA26.todo.value,
   });
-  addTodoForm26.todo.value = "";
+  addTodoFormA26.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("26").doc(id).update({
+  db.collection("a26").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 27--------------------------------
-const renderTodo27 = (doc) => {
+// Create element and render to-do a27--------------------------------
+const renderTodoA27 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -2098,7 +2604,7 @@ const renderTodo27 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos27.insertAdjacentHTML("beforeend", tr);
+  tableTodosA27.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -2109,48 +2615,48 @@ const renderTodo27 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("27").doc(`${doc.id}`).delete();
-    plans27.classList.remove("addedPlans");
+    db.collection("a27").doc(`${doc.id}`).delete();
+    plansA27.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("27").onSnapshot((snapshot) => {
+db.collection("a27").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo27(change.doc);
-      plans27.classList.add("addedPlans");
+      renderTodoA27(change.doc);
+      plansA27.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos27.removeChild(tbody);
-      plans27.classList.remove("addedPlans");
+      tableTodosA27.removeChild(tbody);
+      plansA27.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos27.removeChild(tbody);
-      renderTodo27(change.doc);
+      tableTodosA27.removeChild(tbody);
+      renderTodoA27(change.doc);
     }
   });
 });
-addTodoForm27.addEventListener("submit", (e) => {
+addTodoFormA27.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("27").add({
-    todo: addTodoForm27.todo.value,
+  db.collection("a27").add({
+    todo: addTodoFormA27.todo.value,
   });
-  addTodoForm27.todo.value = "";
+  addTodoFormA27.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("27").doc(id).update({
+  db.collection("a27").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 28--------------------------------
-const renderTodo28 = (doc) => {
+// Create element and render to-do a28--------------------------------
+const renderTodoA28 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -2160,7 +2666,7 @@ const renderTodo28 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos28.insertAdjacentHTML("beforeend", tr);
+  tableTodosA28.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -2171,48 +2677,48 @@ const renderTodo28 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("28").doc(`${doc.id}`).delete();
-    plans28.classList.remove("addedPlans");
+    db.collection("a28").doc(`${doc.id}`).delete();
+    plansA28.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("28").onSnapshot((snapshot) => {
+db.collection("a28").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo28(change.doc);
-      plans28.classList.add("addedPlans");
+      renderTodoA28(change.doc);
+      plansA28.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos28.removeChild(tbody);
-      plans28.classList.remove("addedPlans");
+      tableTodosA28.removeChild(tbody);
+      plansA28.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos28.removeChild(tbody);
-      renderTodo28(change.doc);
+      tableTodosA28.removeChild(tbody);
+      renderTodoA28(change.doc);
     }
   });
 });
-addTodoForm28.addEventListener("submit", (e) => {
+addTodoFormA28.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("28").add({
-    todo: addTodoForm28.todo.value,
+  db.collection("a28").add({
+    todo: addTodoFormA28.todo.value,
   });
-  addTodoForm28.todo.value = "";
+  addTodoFormA28.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("28").doc(id).update({
+  db.collection("a28").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 29--------------------------------
-const renderTodo29 = (doc) => {
+// Create element and render to-do a29--------------------------------
+const renderTodoA29 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -2222,7 +2728,7 @@ const renderTodo29 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos29.insertAdjacentHTML("beforeend", tr);
+  tableTodosA29.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -2233,48 +2739,48 @@ const renderTodo29 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("29").doc(`${doc.id}`).delete();
-    plans29.classList.remove("addedPlans");
+    db.collection("a29").doc(`${doc.id}`).delete();
+    plansA29.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("29").onSnapshot((snapshot) => {
+db.collection("a29").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo29(change.doc);
-      plans29.classList.add("addedPlans");
+      renderTodoA29(change.doc);
+      plansA29.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos29.removeChild(tbody);
-      plans29.classList.remove("addedPlans");
+      tableTodosA29.removeChild(tbody);
+      plansA29.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos29.removeChild(tbody);
-      renderTodo29(change.doc);
+      tableTodosA29.removeChild(tbody);
+      renderTodoA29(change.doc);
     }
   });
 });
-addTodoForm29.addEventListener("submit", (e) => {
+addTodoFormA29.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("29").add({
-    todo: addTodoForm29.todo.value,
+  db.collection("a29").add({
+    todo: addTodoFormA29.todo.value,
   });
-  addTodoForm29.todo.value = "";
+  addTodoFormA29.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("29").doc(id).update({
+  db.collection("a29").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 30--------------------------------
-const renderTodo30 = (doc) => {
+// Create element and render to-do a30--------------------------------
+const renderTodoA30 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -2284,7 +2790,7 @@ const renderTodo30 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos30.insertAdjacentHTML("beforeend", tr);
+  tableTodosA30.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -2295,48 +2801,48 @@ const renderTodo30 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("30").doc(`${doc.id}`).delete();
-    plans30.classList.remove("addedPlans");
+    db.collection("a30").doc(`${doc.id}`).delete();
+    plansA30.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("30").onSnapshot((snapshot) => {
+db.collection("a30").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo30(change.doc);
-      plans30.classList.add("addedPlans");
+      renderTodoA30(change.doc);
+      plansA30.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos30.removeChild(tbody);
+      tableTodosA30.removeChild(tbody);
       plans30.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos30.removeChild(tbody);
-      renderTodo30(change.doc);
+      tableTodosA30.removeChild(tbody);
+      renderTodoA30(change.doc);
     }
   });
 });
-addTodoForm30.addEventListener("submit", (e) => {
+addTodoFormA30.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("30").add({
-    todo: addTodoForm30.todo.value,
+  db.collection("a30").add({
+    todo: addTodoFormA30.todo.value,
   });
-  addTodoForm30.todo.value = "";
+  addTodoFormA30.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("30").doc(id).update({
+  db.collection("a30").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do 31--------------------------------
-const renderTodo31 = (doc) => {
+// Create element and render to-do a31--------------------------------
+const renderTodoA31 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
       <td>${doc.data().todo}</td>
@@ -2346,7 +2852,7 @@ const renderTodo31 = (doc) => {
       </th>
     </tr>
   `;
-  tableTodos31.insertAdjacentHTML("beforeend", tr);
+  tableTodosA31.insertAdjacentHTML("beforeend", tr);
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
@@ -2357,42 +2863,1975 @@ const renderTodo31 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("31").doc(`${doc.id}`).delete();
-    plans31.classList.remove("addedPlans");
+    db.collection("a31").doc(`${doc.id}`).delete();
+    plansA31.classList.remove("addedPlans");
   });
 };
 // Real time listener
-db.collection("31").onSnapshot((snapshot) => {
+db.collection("a31").onSnapshot((snapshot) => {
   snapshot.docChanges().forEach((change) => {
     if (change.type === "added") {
-      renderTodo31(change.doc);
-      plans31.classList.add("addedPlans");
+      renderTodoA31(change.doc);
+      plansA31.classList.add("addedPlans");
     }
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos31.removeChild(tbody);
+      tableTodosA31.removeChild(tbody);
       plans31.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos31.removeChild(tbody);
-      renderTodo31(change.doc);
+      tableTodosA31.removeChild(tbody);
+      renderTodoA31(change.doc);
     }
   });
 });
-addTodoForm31.addEventListener("submit", (e) => {
+addTodoFormA31.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("31").add({
-    todo: addTodoForm31.todo.value,
+  db.collection("a31").add({
+    todo: addTodoFormA31.todo.value,
   });
-  addTodoForm31.todo.value = "";
+  addTodoFormA31.todo.value = "";
 });
 // Click submit in edit to-do
 editModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("31").doc(id).update({
+  db.collection("a31").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+//=================================================================================================================
+//=================================================================================================================
+//=================================================================================================================
+
+// Create element and render to-do a1 ----------------------------------
+const renderTodoB1 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB1.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModaal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b1").doc(`${doc.id}`).delete();
+  });
+};
+// // Real time listener
+db.collection("b1").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB1(change.doc);
+      plansB1.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB1.removeChild(tbody);
+      plansB1.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB1.removeChild(tbody);
+      renderTodoB1(change.doc);
+    }
+  });
+});
+addTodoFormB1.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b1").add({
+    todo: addTodoFormB1.todo.value,
+  });
+  addTodoFormB1.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b1").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+// Create element and render to-do a2----------------------------------
+const renderTodoB2 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB2.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b2").doc(`${doc.id}`).delete();
+  });
+};
+// Real time listener
+db.collection("b2").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB2(change.doc);
+      plansB2.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB2.removeChild(tbody);
+      plansB2.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB2.removeChild(tbody);
+      renderTodoB2(change.doc);
+    }
+  });
+});
+addTodoFormB2.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b2").add({
+    todo: addTodoFormB2.todo.value,
+  });
+  addTodoFormB2.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b2").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+// Create element and render to-do a3--------------------------------
+const renderTodoB3 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB3.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b3").doc(`${doc.id}`).delete();
+  });
+};
+// Real time listener
+db.collection("b3").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB3(change.doc);
+      plansB3.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB3.removeChild(tbody);
+      plansB3.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB3.removeChild(tbody);
+      renderTodoB3(change.doc);
+    }
+  });
+});
+addTodoFormB3.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b3").add({
+    todo: addTodoFormB3.todo.value,
+  });
+  addTodoFormB3.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b3").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+// Create element and render to-do a4--------------------------------
+const renderTodoB4 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB4.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b4").doc(`${doc.id}`).delete();
+    plansB4.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b4").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB4(change.doc);
+      plansB4.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB4.removeChild(tbody);
+      plansB4.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB4.removeChild(tbody);
+      renderTodoB4(change.doc);
+    }
+  });
+});
+addTodoFormB4.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b4").add({
+    todo: addTodoFormB4.todo.value,
+  });
+  addTodoFormB4.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b4").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+// Create element and render to-do a5--------------------------------
+const renderTodoB5 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB5.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b5").doc(`${doc.id}`).delete();
+    plansB5.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b5").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB5(change.doc);
+      plansB5.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB5.removeChild(tbody);
+      plansB5.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB5.removeChild(tbody);
+      renderTodoB5(change.doc);
+    }
+  });
+});
+addTodoFormB5.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b5").add({
+    todo: addTodoFormB5.todo.value,
+  });
+  addTodoFormB5.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b5").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+// Create element and render to-do a6--------------------------------
+const renderTodoB6 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB6.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b6").doc(`${doc.id}`).delete();
+    plansB6.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b6").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB6(change.doc);
+      plansB6.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB6.removeChild(tbody);
+      plansB6.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB6.removeChild(tbody);
+      renderTodoB6(change.doc);
+    }
+  });
+});
+addTodoFormB6.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b6").add({
+    todo: addTodoFormB6.todo.value,
+  });
+  addTodoFormB6.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b6").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+// Create element and render to-do a7--------------------------------
+const renderTodoB7 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB7.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b7").doc(`${doc.id}`).delete();
+    plansB7.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b7").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB7(change.doc);
+      plansB7.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB7.removeChild(tbody);
+      plansB7.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB7.removeChild(tbody);
+      renderTodoB7(change.doc);
+    }
+  });
+});
+addTodoFormB7.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b7").add({
+    todo: addTodoFormB7.todo.value,
+  });
+  addTodoFormB7.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b7").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+// Create element and render to-do a8--------------------------------
+const renderTodoB8 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB8.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b8").doc(`${doc.id}`).delete();
+    plansB8.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b8").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB8(change.doc);
+      plansB8.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB8.removeChild(tbody);
+      plansB8.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB8.removeChild(tbody);
+      renderTodoB8(change.doc);
+    }
+  });
+});
+addTodoFormB8.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b8").add({
+    todo: addTodoFormB8.todo.value,
+  });
+  addTodoFormB8.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b8").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+// Create element and render to-do a9--------------------------------
+const renderTodoB9 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB9.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b9").doc(`${doc.id}`).delete();
+    plansB9.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b9").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB9(change.doc);
+      plansB9.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB9.removeChild(tbody);
+      plansB9.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB9.removeChild(tbody);
+      renderTodoB9(change.doc);
+    }
+  });
+});
+addTodoFormB9.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b9").add({
+    todo: addTodoFormB9.todo.value,
+  });
+  addTodoFormB9.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b9").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+
+// Create element and render to-do a10--------------------------------
+const renderTodoB10 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB10.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b10").doc(`${doc.id}`).delete();
+    plansB10.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b10").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB10(change.doc);
+      plansB10.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB10.removeChild(tbody);
+      plansB10.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB10.removeChild(tbody);
+      renderTodoB10(change.doc);
+    }
+  });
+});
+addTodoFormB10.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b10").add({
+    todo: addTodoFormB10.todo.value,
+  });
+  addTodoFormB10.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b10").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a11--------------------------------
+const renderTodoB11 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB11.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b11").doc(`${doc.id}`).delete();
+    plansB11.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b11").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB11(change.doc);
+      plansB11.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB11.removeChild(tbody);
+      plansB11.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB11.removeChild(tbody);
+      renderTodoB11(change.doc);
+    }
+  });
+});
+addTodoFormB11.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b11").add({
+    todo: addTodoFormB11.todo.value,
+  });
+  addTodoFormB11.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b11").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a12--------------------------------
+const renderTodoB12 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB12.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b12").doc(`${doc.id}`).delete();
+    plansB12.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b12").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB12(change.doc);
+      plansB12.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB12.removeChild(tbody);
+      plansB12.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB12.removeChild(tbody);
+      renderTodoB12(change.doc);
+    }
+  });
+});
+addTodoFormB12.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b12").add({
+    todo: addTodoFormB12.todo.value,
+  });
+  addTodoFormB12.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b12").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a13--------------------------------
+const renderTodoB13 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB13.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b13").doc(`${doc.id}`).delete();
+    plansB13.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b13").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB13(change.doc);
+      plansB13.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB13.removeChild(tbody);
+      plansB13.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB13.removeChild(tbody);
+      renderTodoB13(change.doc);
+    }
+  });
+});
+addTodoFormB13.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b13").add({
+    todo: addTodoFormB13.todo.value,
+  });
+  addTodoFormB13.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b13").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a14--------------------------------
+const renderTodoB14 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB14.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b14").doc(`${doc.id}`).delete();
+    plansB14.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b14").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB14(change.doc);
+      plansB14.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB14.removeChild(tbody);
+      plansB14.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB14.removeChild(tbody);
+      renderTodoB14(change.doc);
+    }
+  });
+});
+addTodoFormB14.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b14").add({
+    todo: addTodoFormB14.todo.value,
+  });
+  addTodoFormB14.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b14").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a15--------------------------------
+const renderTodoB15 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB15.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b15").doc(`${doc.id}`).delete();
+    plansB15.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b15").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB15(change.doc);
+      plansB15.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB15.removeChild(tbody);
+      plansB15.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB15.removeChild(tbody);
+      renderTodoB15(change.doc);
+    }
+  });
+});
+addTodoFormB15.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b15").add({
+    todo: addTodoFormB15.todo.value,
+  });
+  addTodoFormB15.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b15").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a16--------------------------------
+const renderTodoB16 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB16.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b16").doc(`${doc.id}`).delete();
+    plansB16.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b16").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB16(change.doc);
+      plansB16.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB16.removeChild(tbody);
+      plansB16.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB16.removeChild(tbody);
+      renderTodoB16(change.doc);
+    }
+  });
+});
+addTodoFormB16.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b16").add({
+    todo: addTodoFormB16.todo.value,
+  });
+  addTodoFormB16.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b16").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a17--------------------------------
+const renderTodoB17 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB17.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b17").doc(`${doc.id}`).delete();
+    plansB17.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b17").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB17(change.doc);
+      plansB17.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB17.removeChild(tbody);
+      plansB17.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB17.removeChild(tbody);
+      renderTodoB17(change.doc);
+    }
+  });
+});
+addTodoFormB17.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b17").add({
+    todo: addTodoFormB17.todo.value,
+  });
+  addTodoFormB17.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b17").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a18--------------------------------
+const renderTodoB18 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB18.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b18").doc(`${doc.id}`).delete();
+    plansB18.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b18").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB18(change.doc);
+      plansB18.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB18.removeChild(tbody);
+      plansB18.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB18.removeChild(tbody);
+      renderTodoB18(change.doc);
+    }
+  });
+});
+addTodoFormB18.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b18").add({
+    todo: addTodoFormB18.todo.value,
+  });
+  addTodoFormB18.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b18").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a19--------------------------------
+const renderTodoB19 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB19.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b19").doc(`${doc.id}`).delete();
+    plansB19.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b19").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB19(change.doc);
+      plansB19.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB19.removeChild(tbody);
+      plansB19.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB19.removeChild(tbody);
+      renderTodoB19(change.doc);
+    }
+  });
+});
+addTodoFormB19.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b19").add({
+    todo: addTodoFormB19.todo.value,
+  });
+  addTodoFormB19.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b19").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a20--------------------------------
+const renderTodoB20 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB20.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b20").doc(`${doc.id}`).delete();
+    plansB20.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b20").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB20(change.doc);
+      plansB20.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB20.removeChild(tbody);
+      plansB20.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB20.removeChild(tbody);
+      renderTodoB20(change.doc);
+    }
+  });
+});
+addTodoFormB20.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b20").add({
+    todo: addTodoFormB20.todo.value,
+  });
+  addTodoFormB20.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b20").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a21--------------------------------
+const renderTodoB21 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB21.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b21").doc(`${doc.id}`).delete();
+    plansA21.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b21").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB21(change.doc);
+      plansB21.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB21.removeChild(tbody);
+      plansB21.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB21.removeChild(tbody);
+      renderTodoB21(change.doc);
+    }
+  });
+});
+addTodoFormB21.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b21").add({
+    todo: addTodoFormB21.todo.value,
+  });
+  addTodoFormB21.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b21").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a22--------------------------------
+const renderTodoB22 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB22.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b22").doc(`${doc.id}`).delete();
+    plansB22.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b22").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB22(change.doc);
+      plansB22.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB22.removeChild(tbody);
+      plansB22.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB22.removeChild(tbody);
+      renderTodoB22(change.doc);
+    }
+  });
+});
+addTodoFormB22.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b22").add({
+    todo: addTodoFormB22.todo.value,
+  });
+  addTodoFormB22.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b22").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a23--------------------------------
+const renderTodoB23 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB23.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b23").doc(`${doc.id}`).delete();
+    plansB23.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b23").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB23(change.doc);
+      plansB23.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB23.removeChild(tbody);
+      plansB23.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB23.removeChild(tbody);
+      renderTodoB23(change.doc);
+    }
+  });
+});
+addTodoFormB23.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b23").add({
+    todo: addTodoFormB23.todo.value,
+  });
+  addTodoFormB23.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b23").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a24--------------------------------
+const renderTodoB24 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB24.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b24").doc(`${doc.id}`).delete();
+    plansB24.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b24").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB24(change.doc);
+      plansB24.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB24.removeChild(tbody);
+      plansB24.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB24.removeChild(tbody);
+      renderTodoB24(change.doc);
+    }
+  });
+});
+addTodoFormB24.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b24").add({
+    todo: addTodoFormB24.todo.value,
+  });
+  addTodoFormB24.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b24").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a25--------------------------------
+const renderTodoB25 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB25.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b25").doc(`${doc.id}`).delete();
+    plansB25.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b25").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB25(change.doc);
+      plansB25.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB25.removeChild(tbody);
+      plansB25.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB25.removeChild(tbody);
+      renderTodoB25(change.doc);
+    }
+  });
+});
+addTodoFormB25.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b25").add({
+    todo: addTodoFormB25.todo.value,
+  });
+  addTodoFormB25.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b25").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a26--------------------------------
+const renderTodoB26 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB26.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b26").doc(`${doc.id}`).delete();
+    plansB26.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b26").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB26(change.doc);
+      plansB26.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB26.removeChild(tbody);
+      plansA26.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB26.removeChild(tbody);
+      renderTodoB26(change.doc);
+    }
+  });
+});
+addTodoFormB26.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b26").add({
+    todo: addTodoFormB26.todo.value,
+  });
+  addTodoFormB26.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b26").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a27--------------------------------
+const renderTodoB27 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB27.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b27").doc(`${doc.id}`).delete();
+    plansB27.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b27").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB27(change.doc);
+      plansB27.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB27.removeChild(tbody);
+      plansB27.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB27.removeChild(tbody);
+      renderTodoB27(change.doc);
+    }
+  });
+});
+addTodoFormB27.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b27").add({
+    todo: addTodoFormB27.todo.value,
+  });
+  addTodoFormB27.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b27").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a28--------------------------------
+const renderTodoB28 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB28.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b28").doc(`${doc.id}`).delete();
+    plansB28.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b28").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB28(change.doc);
+      plansB28.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB28.removeChild(tbody);
+      plansB28.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB28.removeChild(tbody);
+      renderTodoB28(change.doc);
+    }
+  });
+});
+addTodoFormB28.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b28").add({
+    todo: addTodoFormB28.todo.value,
+  });
+  addTodoFormB28.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b28").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a29--------------------------------
+const renderTodoB29 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB29.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b29").doc(`${doc.id}`).delete();
+    plansB29.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b29").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB29(change.doc);
+      plansB29.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB29.removeChild(tbody);
+      plansB29.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB29.removeChild(tbody);
+      renderTodoB29(change.doc);
+    }
+  });
+});
+addTodoFormB29.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b29").add({
+    todo: addTodoFormB29.todo.value,
+  });
+  addTodoFormB29.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b29").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a30--------------------------------
+const renderTodoB30 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB30.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b30").doc(`${doc.id}`).delete();
+    plansB30.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b30").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB30(change.doc);
+      plansB30.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB30.removeChild(tbody);
+      plans30.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB30.removeChild(tbody);
+      renderTodoB30(change.doc);
+    }
+  });
+});
+addTodoFormB30.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b30").add({
+    todo: addTodoFormB30.todo.value,
+  });
+  addTodoFormB30.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b30").doc(id).update({
+    todo: editModalForm.todo.value,
+  });
+  editModal.classList.remove("modal-show");
+});
+// Create element and render to-do a31--------------------------------
+const renderTodoB31 = (doc) => {
+  const tr = `
+    <tr data-id='${doc.id}'>
+      <td>${doc.data().todo}</td>
+      <th>
+        <button class="btn btn-edit">Edit</button>
+        <button class="btn btn-delete">Del</button>
+      </th>
+    </tr>
+  `;
+  tableTodosB31.insertAdjacentHTML("beforeend", tr);
+  // Click edit to-do
+  const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
+  btnEdit.addEventListener("click", () => {
+    editModal.classList.add("modal-show");
+    id = doc.id;
+    editModalForm.todo.value = doc.data().todo;
+  });
+  // Click delete to-do
+  const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
+  btnDelete.addEventListener("click", () => {
+    db.collection("b31").doc(`${doc.id}`).delete();
+    plansB31.classList.remove("addedPlans");
+  });
+};
+// Real time listener
+db.collection("b31").onSnapshot((snapshot) => {
+  snapshot.docChanges().forEach((change) => {
+    if (change.type === "added") {
+      renderTodoB31(change.doc);
+      plansB31.classList.add("addedPlans");
+    }
+    if (change.type === "removed") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB31.removeChild(tbody);
+      plans31.classList.remove("addedPlans");
+    }
+    if (change.type === "modified") {
+      let tr = document.querySelector(`[data-id='${change.doc.id}']`);
+      let tbody = tr.parentElement;
+      tableTodosB31.removeChild(tbody);
+      renderTodoB31(change.doc);
+    }
+  });
+});
+addTodoFormB31.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b31").add({
+    todo: addTodoFormB31.todo.value,
+  });
+  addTodoFormB31.todo.value = "";
+});
+// Click submit in edit to-do
+editModalForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  db.collection("b31").doc(id).update({
     todo: editModalForm.todo.value,
   });
   editModal.classList.remove("modal-show");

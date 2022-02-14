@@ -100,7 +100,7 @@ button:hover {
   background: #c2c2c5;
 }
 .today {
-  box-shadow: 0 0 6px white;
+  box-shadow: 0 0 15px white;
   color: white;
 }
 header {
