@@ -308,7 +308,7 @@ const plansB21 = document.querySelector(".buttonB21");
 const plansB22 = document.querySelector(".buttonB22");
 const plansB23 = document.querySelector(".buttonB23");
 const plansB24 = document.querySelector(".buttonB24");
-const plansb25 = document.querySelector(".buttonB25");
+const plansB25 = document.querySelector(".buttonB25");
 const plansB26 = document.querySelector(".buttonB26");
 const plansB27 = document.querySelector(".buttonB27");
 const plansB28 = document.querySelector(".buttonB28");
@@ -4402,7 +4402,7 @@ editModalForm.addEventListener("submit", (e) => {
   });
   editModal.classList.remove("modal-show");
 });
-// Create element and render to-do a25--------------------------------
+// Create element and render to-do b25--------------------------------
 const renderTodoB25 = (doc) => {
   const tr = `
     <tr data-id='${doc.id}'>
