@@ -4749,7 +4749,7 @@ db.collection("b30").onSnapshot((snapshot) => {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodosB30.removeChild(tbody);
-      plans30.classList.remove("addedPlans");
+      plansB30.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
