@@ -1450,7 +1450,7 @@ db.collection("a8").onSnapshot((snapshot) => {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodosA8.removeChild(tbody);
-      plans8.classList.remove("addedPlans");
+      plansA8.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
