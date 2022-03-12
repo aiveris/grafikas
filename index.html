@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Grafikas</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="board">
-      <div class="men-pav">Vasaris</div>
+      <div class="men-pav">Kovas</div>
       <button class="workDay">Pi</button>
       <button class="workDay">An</button>
       <button class="workDay">Tr</button>
@@ -22,45 +26,51 @@
       <span></span>
       <button onclick="todo_a1()" id="a1" class="free buttonA1">1</button>
       <button onclick="todo_a2()" id="a2" class="free buttonA2">2</button>
-      <button onclick="todo_a3()" id="a3" class="work buttonA3">3</button>
-      <button onclick="todo_a4()" id="a4" class="work buttonA4">4</button>
-      <button onclick="todo_a5()" id="a5" class="work buttonA5">5</button>
+      <button onclick="todo_a3()" id="a3" class="free buttonA3">3</button>
+      <button onclick="todo_a4()" id="a4" class="free buttonA4">4</button>
+      <button onclick="todo_a5()" id="a5" class="free buttonA5">5</button>
       <button onclick="todo_a6()" id="a6" class="free buttonA6">6</button>
-      <button onclick="todo_a7()" id="a7" class="free buttonA7">7</button>
+      <button onclick="todo_a7()" id="a7" class="work buttonA7">7</button>
       <button onclick="todo_a8()" id="a8" class="work buttonA8">8</button>
       <button onclick="todo_a9()" id="a9" class="work buttonA9">9</button>
       <button onclick="todo_a10()" id="a10" class="work buttonA10">10</button>
-      <button onclick="todo_a11()" id="a11" class="work buttonA11">11</button>
+      <button onclick="todo_a11()" id="a11" class="free buttonA11">11</button>
       <button onclick="todo_a12()" id="a12" class="free buttonA12">12</button>
       <button onclick="todo_a13()" id="a13" class="free buttonA13">13</button>
       <button onclick="todo_a14()" id="a14" class="work buttonA14">14</button>
       <button onclick="todo_a15()" id="a15" class="work buttonA15">15</button>
       <button onclick="todo_a16()" id="a16" class="work buttonA16">16</button>
-      <button onclick="todo_a17()" id="a17" class="work buttonA17">17</button>
-      <button onclick="todo_a18()" id="a18" class="free buttonA18">18</button>
-      <button onclick="todo_a19()" id="a19" class="free buttonA19">19</button>
+      <button onclick="todo_a17()" id="a17" class="free buttonA17">17</button>
+      <button onclick="todo_a18()" id="a18" class="work buttonA18">18</button>
+      <button onclick="todo_a19()" id="a19" class="work buttonA19">19</button>
       <button onclick="todo_a20()" id="a20" class="work buttonA20">20</button>
-      <button onclick="todo_a21()" id="a21" class="free buttonA21">21</button>
-      <button onclick="todo_a22()" id="a22" class="work buttonA22">22</button>
+      <button onclick="todo_a21()" id="a21" class="work buttonA21">21</button>
+      <button onclick="todo_a22()" id="a22" class="free buttonA22">22</button>
       <button onclick="todo_a23()" id="a23" class="work buttonA23">23</button>
-      <button onclick="todo_a24()" id="a24" class="free buttonA24">24</button>
+      <button onclick="todo_a24()" id="a24" class="work buttonA24">24</button>
       <button onclick="todo_a25()" id="a25" class="work buttonA25">25</button>
       <button onclick="todo_a26()" id="a26" class="work buttonA26">26</button>
-      <button onclick="todo_a27()" id="a27" class="work buttonA27">27</button>
-      <button onclick="todo_a28()" id="a28" class="work buttonA28">28</button>
-      <!-- <button onclick="todo_29()" id="29" class="work buttonA29">29</button>
-      <button onclick="todo_30()" id="30" class="work buttonA30">30</button>
-      <button onclick="todo_31()" id="31" class="work buttonA31">31</button> -->
+      <button onclick="todo_a27()" id="a27" class="free buttonA27">27</button>
+      <button onclick="todo_a28()" id="a28" class="free buttonA28">28</button>
+      <button onclick="todo_a29()" id="a29" class="work buttonA29">29</button>
+      <button onclick="todo_a30()" id="a30" class="work buttonA30">30</button>
+      <button onclick="todo_a31()" id="a31" class="work buttonA31">31</button>
 
       <!-- Add Modal -->
       <div class="show-modal-a1 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>1</h3></div>
+          <div class="modal-header"><h3>1</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a1"></table>
             <div class="add-todo-a1">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -68,12 +78,18 @@
       </div>
       <div class="show-modal-a2 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>2</h3></div>
+          <div class="modal-header"><h3>2</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a2"></table>
             <div class="add-todo-a2">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -81,12 +97,18 @@
       </div>
       <div class="show-modal-a3 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>3</h3></div>
+          <div class="modal-header"><h3>3</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a3"></table>
             <div class="add-todo-a3">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -94,12 +116,18 @@
       </div>
       <div class="show-modal-a4 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>4</h3></div>
+          <div class="modal-header"><h3>4</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a4"></table>
             <div class="add-todo-a4">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -107,12 +135,18 @@
       </div>
       <div class="show-modal-a5 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>5</h3></div>
+          <div class="modal-header"><h3>5</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a5"></table>
             <div class="add-todo-a5">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -120,12 +154,18 @@
       </div>
       <div class="show-modal-a6 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>6</h3></div>
+          <div class="modal-header"><h3>6</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a6"></table>
             <div class="add-todo-a6">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -133,12 +173,18 @@
       </div>
       <div class="show-modal-a7 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>7</h3></div>
+          <div class="modal-header"><h3>7</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a7"></table>
             <div class="add-todo-a7">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -146,12 +192,18 @@
       </div>
       <div class="show-modal-a8 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>8</h3></div>
+          <div class="modal-header"><h3>8</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a8"></table>
             <div class="add-todo-a8">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -159,12 +211,18 @@
       </div>
       <div class="show-modal-a9 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>9</h3></div>
+          <div class="modal-header"><h3>9</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a9"></table>
             <div class="add-todo-a9">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -172,12 +230,18 @@
       </div>
       <div class="show-modal-a10 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>10</h3></div>
+          <div class="modal-header"><h3>10</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a10"></table>
             <div class="add-todo-a10">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -185,12 +249,18 @@
       </div>
       <div class="show-modal-a11 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>11</h3></div>
+          <div class="modal-header"><h3>11</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a11"></table>
             <div class="add-todo-a11">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo" maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -198,12 +268,18 @@
       </div>
       <div class="show-modal-a12 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>12</h3></div>
+          <div class="modal-header"><h3>12</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a12"></table>
             <div class="add-todo-a12">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -211,12 +287,18 @@
       </div>
       <div class="show-modal-a13 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>13</h3></div>
+          <div class="modal-header"><h3>13</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a13"></table>
             <div class="add-todo-a13">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -224,12 +306,18 @@
       </div>
       <div class="show-modal-a14 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>14</h3></div>
+          <div class="modal-header"><h3>14</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a14"></table>
             <div class="add-todo-a14">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo" maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -237,12 +325,18 @@
       </div>
       <div class="show-modal-a15 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>15</h3></div>
+          <div class="modal-header"><h3>15</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a15"></table>
             <div class="add-todo-a15">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -250,12 +344,18 @@
       </div>
       <div class="show-modal-a16 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>16</h3></div>
+          <div class="modal-header"><h3>16</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a16"></table>
             <div class="add-todo-a16">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -263,12 +363,18 @@
       </div>
       <div class="show-modal-a17 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>17</h3></div>
+          <div class="modal-header"><h3>17</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a17"></table>
             <div class="add-todo-a17">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -276,12 +382,18 @@
       </div>
       <div class="show-modal-a18 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>18</h3></div>
+          <div class="modal-header"><h3>18</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a18"></table>
             <div class="add-todo-a18">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -289,12 +401,18 @@
       </div>
       <div class="show-modal-a19 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>19</h3></div>
+          <div class="modal-header"><h3>19</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a19"></table>
             <div class="add-todo-a19">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -302,12 +420,18 @@
       </div>
       <div class="show-modal-a20 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>20</h3></div>
+          <div class="modal-header"><h3>20</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a20"></table>
             <div class="add-todo-a20">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -315,12 +439,18 @@
       </div>
       <div class="show-modal-a21 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>21</h3></div>
+          <div class="modal-header"><h3>21</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a21"></table>
             <div class="add-todo-a21">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -328,12 +458,18 @@
       </div>
       <div class="show-modal-a22 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>22</h3></div>
+          <div class="modal-header"><h3>22</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a22"></table>
             <div class="add-todo-a22">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -341,12 +477,18 @@
       </div>
       <div class="show-modal-a23 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>23</h3></div>
+          <div class="modal-header"><h3>23</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a23"></table>
             <div class="add-todo-a23">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -354,12 +496,18 @@
       </div>
       <div class="show-modal-a24 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>24</h3></div>
+          <div class="modal-header"><h3>24</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a24"></table>
             <div class="add-todo-a24">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -367,12 +515,18 @@
       </div>
       <div class="show-modal-a25 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>25</h3></div>
+          <div class="modal-header"><h3>25</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a25"></table>
             <div class="add-todo-a25">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -380,12 +534,18 @@
       </div>
       <div class="show-modal-a26 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>26</h3></div>
+          <div class="modal-header"><h3>26</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a26"></table>
             <div class="add-todo-a26">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo" maxlength="20"
+                       required="required" />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -393,12 +553,18 @@
       </div>
       <div class="show-modal-a27 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>27</h3></div>
+          <div class="modal-header"><h3>27</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a27"></table>
             <div class="add-todo-a27">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -406,12 +572,18 @@
       </div>
       <div class="show-modal-a28 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>28</h3></div>
+          <div class="modal-header"><h3>28</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a28"></table>
             <div class="add-todo-a28">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -419,12 +591,18 @@
       </div>
       <div class="show-modal-a29 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>29</h3></div>
+          <div class="modal-header"><h3>29</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a29"></table>
             <div class="add-todo-a29">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -432,12 +610,18 @@
       </div>
       <div class="show-modal-a30 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>30</h3></div>
+          <div class="modal-header"><h3>30</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a30"></table>
             <div class="add-todo-a30">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -445,12 +629,18 @@
       </div>
       <div class="show-modal-a31 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>31</h3></div>
+          <div class="modal-header"><h3>31</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-a31"></table>
             <div class="add-todo-a31">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -459,10 +649,15 @@
       <!-- Edit Modal -->
       <div class="edit-modal modal-wrapper edit">
         <div class="modal">
-          <div class="modal-header"><h3>Edit todo</h3></div>
+          <div class="modal-header"><h3>Edit todo</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="modal-body">
             <form class="form" autocomplete="off">
-              <input type="text" name="todo" placeholder="Todo" />
+              <input type="text" name="todo" placeholder="Todo"  maxlength="20"
+                     required="required"/>
               <button class="btn btn-modal">Submit</button>
             </form>
           </div>
@@ -471,7 +666,7 @@
     </div>
     <!-- ----------------------------------------------- -->
     <div class="board">
-      <div class="men-pav">Kovas</div>
+      <div class="men-pav">Balandis</div>
       <button class="workDay">Pi</button>
       <button class="workDay">An</button>
       <button class="workDay">Tr</button>
@@ -481,6 +676,9 @@
       <button class="weekend">Se</button>
       <div class="men-pav"></div>
 
+      <span></span>
+      <span></span>
+      <span></span>
       <span></span>
       <button onclick="todo_b1()" id="b1" class="free buttonB1">1</button>
       <button onclick="todo_b2()" id="b2" class="free buttonB2">2</button>
@@ -512,17 +710,23 @@
       <button onclick="todo_b28()" id="b28" class="free buttonB28">28</button>
       <button onclick="todo_b29()" id="b29" class="work buttonB29">29</button>
       <button onclick="todo_b30()" id="b30" class="work buttonB30">30</button>
-      <button onclick="todo_b31()" id="b31" class="work buttonB31">31</button>
+<!--      <button onclick="todo_b31()" id="b31" class="work buttonB31">31</button>-->
 
       <!-- Add Modal -->
       <div class="show-modal-b1 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>1</h3></div>
+          <div class="modal-header"><h3>1</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b1"></table>
             <div class="add-todo-b1">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -530,12 +734,18 @@
       </div>
       <div class="show-modal-b2 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>2</h3></div>
+          <div class="modal-header"><h3>2</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b2"></table>
             <div class="add-todo-b2">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo" maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -543,12 +753,18 @@
       </div>
       <div class="show-modal-b3 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>3</h3></div>
+          <div class="modal-header"><h3>3</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b3"></table>
             <div class="add-todo-b3">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -556,12 +772,18 @@
       </div>
       <div class="show-modal-b4 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>4</h3></div>
+          <div class="modal-header"><h3>4</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b4"></table>
             <div class="add-todo-b4">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -569,12 +791,18 @@
       </div>
       <div class="show-modal-b5 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>5</h3></div>
+          <div class="modal-header"><h3>5</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b5"></table>
             <div class="add-todo-b5">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -582,12 +810,18 @@
       </div>
       <div class="show-modal-b6 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>6</h3></div>
+          <div class="modal-header"><h3>6</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b6"></table>
             <div class="add-todo-b6">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -595,12 +829,18 @@
       </div>
       <div class="show-modal-b7 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>7</h3></div>
+          <div class="modal-header"><h3>7</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b7"></table>
             <div class="add-todo-b7">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -608,12 +848,18 @@
       </div>
       <div class="show-modal-b8 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>8</h3></div>
+          <div class="modal-header"><h3>8</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b8"></table>
             <div class="add-todo-b8">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -621,12 +867,18 @@
       </div>
       <div class="show-modal-b9 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>9</h3></div>
+          <div class="modal-header"><h3>9</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b9"></table>
             <div class="add-todo-b9">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -634,12 +886,18 @@
       </div>
       <div class="show-modal-b10 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>10</h3></div>
+          <div class="modal-header"><h3>10</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b10"></table>
             <div class="add-todo-b10">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -647,12 +905,18 @@
       </div>
       <div class="show-modal-b11 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>11</h3></div>
+          <div class="modal-header"><h3>11</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b11"></table>
             <div class="add-todo-b11">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -660,12 +924,18 @@
       </div>
       <div class="show-modal-b12 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>12</h3></div>
+          <div class="modal-header"><h3>12</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b12"></table>
             <div class="add-todo-b12">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -673,12 +943,18 @@
       </div>
       <div class="show-modal-b13 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>13</h3></div>
+          <div class="modal-header"><h3>13</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b13"></table>
             <div class="add-todo-b13">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -686,12 +962,18 @@
       </div>
       <div class="show-modal-b14 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>14</h3></div>
+          <div class="modal-header"><h3>14</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b14"></table>
             <div class="add-todo-b14">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -699,12 +981,18 @@
       </div>
       <div class="show-modal-b15 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>15</h3></div>
+          <div class="modal-header"><h3>15</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b15"></table>
             <div class="add-todo-b15">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo" maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -712,12 +1000,18 @@
       </div>
       <div class="show-modal-b16 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>16</h3></div>
+          <div class="modal-header"><h3>16</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b16"></table>
             <div class="add-todo-b16">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -725,12 +1019,18 @@
       </div>
       <div class="show-modal-b17 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>17</h3></div>
+          <div class="modal-header"><h3>17</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b17"></table>
             <div class="add-todo-b17">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo" maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -738,12 +1038,18 @@
       </div>
       <div class="show-modal-b18 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>18</h3></div>
+          <div class="modal-header"><h3>18</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b18"></table>
             <div class="add-todo-b18">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -751,12 +1057,18 @@
       </div>
       <div class="show-modal-b19 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>19</h3></div>
+          <div class="modal-header"><h3>19</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b19"></table>
             <div class="add-todo-b19">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -764,12 +1076,18 @@
       </div>
       <div class="show-modal-b20 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>20</h3></div>
+          <div class="modal-header"><h3>20</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b20"></table>
             <div class="add-todo-b20">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -777,12 +1095,18 @@
       </div>
       <div class="show-modal-b21 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>21</h3></div>
+          <div class="modal-header"><h3>21</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b21"></table>
             <div class="add-todo-b21">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -790,12 +1114,18 @@
       </div>
       <div class="show-modal-b22 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>22</h3></div>
+          <div class="modal-header"><h3>22</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b22"></table>
             <div class="add-todo-b22">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -803,12 +1133,18 @@
       </div>
       <div class="show-modal-b23 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>23</h3></div>
+          <div class="modal-header"><h3>23</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b23"></table>
             <div class="add-todo-b23">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -816,12 +1152,18 @@
       </div>
       <div class="show-modal-b24 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>24</h3></div>
+          <div class="modal-header"><h3>24</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b24"></table>
             <div class="add-todo-b24">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -829,12 +1171,18 @@
       </div>
       <div class="show-modal-b25 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>25</h3></div>
+          <div class="modal-header"><h3>25</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b25"></table>
             <div class="add-todo-b25">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo" maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -842,12 +1190,18 @@
       </div>
       <div class="show-modal-b26 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>26</h3></div>
+          <div class="modal-header"><h3>26</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b26"></table>
             <div class="add-todo-b26">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -855,12 +1209,18 @@
       </div>
       <div class="show-modal-b27 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>27</h3></div>
+          <div class="modal-header"><h3>27</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b27"></table>
             <div class="add-todo-b27">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -868,12 +1228,18 @@
       </div>
       <div class="show-modal-b28 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>28</h3></div>
+          <div class="modal-header"><h3>28</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b28"></table>
             <div class="add-todo-b28">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -881,12 +1247,18 @@
       </div>
       <div class="show-modal-b29 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>29</h3></div>
+          <div class="modal-header"><h3>29</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b29"></table>
             <div class="add-todo-b29">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -894,12 +1266,18 @@
       </div>
       <div class="show-modal-b30 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>30</h3></div>
+          <div class="modal-header"><h3>30</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b30"></table>
             <div class="add-todo-b30">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -907,12 +1285,18 @@
       </div>
       <div class="show-modal-b31 modal-wrapper">
         <div class="modal">
-          <div class="modal-header"><h3>31</h3></div>
+          <div class="modal-header"><h3>31</h3><i
+                  class="fa fa-close"
+                  onclick="close_modal()"
+                  style="font-size: 24px"
+          ></i></div>
           <div class="table-wrapper">
             <table class="table-b31"></table>
             <div class="add-todo-b31">
               <form class="form" autocomplete="off">
-                <input type="text" name="todo" placeholder="Add todo" />
+                <input type="text" name="todo" placeholder="Add todo"  maxlength="20"
+                       required="required"/>
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
