@@ -9,7 +9,7 @@
 body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
-  background: url(../assets/winter1.jpg);
+  background: url(../assets/nature2.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -221,11 +221,11 @@ input {
 .addedPlans {
   color: red;
 }
-h3{
-display: inline-block;
-margin-left: 120px;
+h3 {
+  display: inline-block;
+  margin-left: 120px;
 }
-i{
-margin-left: 110px;
-cursor: pointer;
+i {
+  margin-left: 110px;
+  cursor: pointer;
 }
