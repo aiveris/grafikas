@@ -403,7 +403,7 @@ function today() {
       document.getElementById("a22").className = "free today";
       break;
     case 23:
-      document.getElementById("a23").className = "work today";
+      document.getElementById("a23").className = "free today";
       break;
     case 24:
       document.getElementById("a24").className = "work today";
