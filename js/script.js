@@ -436,10 +436,10 @@ function today() {
       document.getElementById("b2").className = "work today";
       break;
     case 103:
-      document.getElementById("b3").className = "work today";
+      document.getElementById("b3").className = "free today";
       break;
     case 104:
-      document.getElementById("b4").className = "work today";
+      document.getElementById("b4").className = "free today";
       break;
     case 105:
       document.getElementById("b5").className = "work today";
@@ -448,10 +448,10 @@ function today() {
       document.getElementById("b6").className = "work today";
       break;
     case 107:
-      document.getElementById("b7").className = "work today";
+      document.getElementById("b7").className = "free today";
       break;
     case 108:
-      document.getElementById("b8").className = "free today";
+      document.getElementById("b8").className = "work today";
       break;
     case 109:
       document.getElementById("b9").className = "work today";
@@ -460,10 +460,10 @@ function today() {
       document.getElementById("b10").className = "work today";
       break;
     case 111:
-      document.getElementById("b11").className = "work today";
+      document.getElementById("b11").className = "free today";
       break;
     case 112:
-      document.getElementById("b12").className = "work today";
+      document.getElementById("b12").className = "free today";
       break;
     case 113:
       document.getElementById("b13").className = "work today";
@@ -997,7 +997,10 @@ const renderTodoA1 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a1").doc(`${doc.id}`).delete();
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a1").doc(`${doc.id}`).delete();
+    }
   });
 };
 // // Real time listener
@@ -1059,7 +1062,10 @@ const renderTodoA2 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a2").doc(`${doc.id}`).delete();
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a2").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1121,7 +1127,10 @@ const renderTodoA3 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a3").doc(`${doc.id}`).delete();
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a3").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1183,8 +1192,10 @@ const renderTodoA4 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a4").doc(`${doc.id}`).delete();
-    plansA4.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a4").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1246,8 +1257,10 @@ const renderTodoA5 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a5").doc(`${doc.id}`).delete();
-    plansA5.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a5").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1309,8 +1322,10 @@ const renderTodoA6 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a6").doc(`${doc.id}`).delete();
-    plansA6.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a6").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1372,8 +1387,10 @@ const renderTodoA7 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a7").doc(`${doc.id}`).delete();
-    plansA7.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a7").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1435,8 +1452,10 @@ const renderTodoA8 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a8").doc(`${doc.id}`).delete();
-    plansA8.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a8").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1498,8 +1517,10 @@ const renderTodoA9 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a9").doc(`${doc.id}`).delete();
-    plansA9.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a9").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1561,8 +1582,10 @@ const renderTodoA10 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a10").doc(`${doc.id}`).delete();
-    plansA10.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a10").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1623,8 +1646,10 @@ const renderTodoA11 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a11").doc(`${doc.id}`).delete();
-    plansA11.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a11").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1685,8 +1710,10 @@ const renderTodoA12 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a12").doc(`${doc.id}`).delete();
-    plansA12.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a12").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1747,8 +1774,10 @@ const renderTodoA13 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a13").doc(`${doc.id}`).delete();
-    plansA13.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a13").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1809,8 +1838,10 @@ const renderTodoA14 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a14").doc(`${doc.id}`).delete();
-    plansA14.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a14").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1871,8 +1902,10 @@ const renderTodoA15 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a15").doc(`${doc.id}`).delete();
-    plansA15.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a15").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1933,8 +1966,10 @@ const renderTodoA16 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a16").doc(`${doc.id}`).delete();
-    plansA16.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a16").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -1995,8 +2030,10 @@ const renderTodoA17 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a17").doc(`${doc.id}`).delete();
-    plansA17.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a17").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2057,8 +2094,10 @@ const renderTodoA18 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a18").doc(`${doc.id}`).delete();
-    plansA18.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a18").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2119,8 +2158,10 @@ const renderTodoA19 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a19").doc(`${doc.id}`).delete();
-    plansA19.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a19").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2181,8 +2222,10 @@ const renderTodoA20 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a20").doc(`${doc.id}`).delete();
-    plansA20.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a20").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2243,8 +2286,10 @@ const renderTodoA21 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a21").doc(`${doc.id}`).delete();
-    plansA21.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a21").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2305,8 +2350,10 @@ const renderTodoA22 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a22").doc(`${doc.id}`).delete();
-    plansA22.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a22").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2367,8 +2414,10 @@ const renderTodoA23 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a23").doc(`${doc.id}`).delete();
-    plansA23.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a23").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2429,8 +2478,10 @@ const renderTodoA24 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a24").doc(`${doc.id}`).delete();
-    plansA24.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a24").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2491,8 +2542,10 @@ const renderTodoA25 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a25").doc(`${doc.id}`).delete();
-    plansA25.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a25").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2553,8 +2606,10 @@ const renderTodoA26 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a26").doc(`${doc.id}`).delete();
-    plansA26.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a26").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2615,8 +2670,10 @@ const renderTodoA27 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a27").doc(`${doc.id}`).delete();
-    plansA27.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a27").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2677,8 +2734,10 @@ const renderTodoA28 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a28").doc(`${doc.id}`).delete();
-    plansA28.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a28").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2739,8 +2798,10 @@ const renderTodoA29 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a29").doc(`${doc.id}`).delete();
-    plansA29.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a29").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2801,8 +2862,10 @@ const renderTodoA30 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a30").doc(`${doc.id}`).delete();
-    plansA30.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a30").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2863,8 +2926,10 @@ const renderTodoA31 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("a31").doc(`${doc.id}`).delete();
-    plansA31.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("a31").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -2930,7 +2995,10 @@ const renderTodoB1 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b1").doc(`${doc.id}`).delete();
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b1").doc(`${doc.id}`).delete();
+    }
   });
 };
 // // Real time listener
@@ -2992,7 +3060,10 @@ const renderTodoB2 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b2").doc(`${doc.id}`).delete();
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b2").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3054,7 +3125,10 @@ const renderTodoB3 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b3").doc(`${doc.id}`).delete();
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b3").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3116,8 +3190,10 @@ const renderTodoB4 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b4").doc(`${doc.id}`).delete();
-    plansB4.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b4").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3179,8 +3255,10 @@ const renderTodoB5 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b5").doc(`${doc.id}`).delete();
-    plansB5.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b5").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3242,8 +3320,10 @@ const renderTodoB6 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b6").doc(`${doc.id}`).delete();
-    plansB6.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b6").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3305,8 +3385,10 @@ const renderTodoB7 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b7").doc(`${doc.id}`).delete();
-    plansB7.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b7").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3368,8 +3450,10 @@ const renderTodoB8 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b8").doc(`${doc.id}`).delete();
-    plansB8.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b8").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3431,8 +3515,10 @@ const renderTodoB9 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b9").doc(`${doc.id}`).delete();
-    plansB9.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b9").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3494,8 +3580,10 @@ const renderTodoB10 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b10").doc(`${doc.id}`).delete();
-    plansB10.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b10").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3556,8 +3644,10 @@ const renderTodoB11 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b11").doc(`${doc.id}`).delete();
-    plansB11.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b11").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3618,8 +3708,10 @@ const renderTodoB12 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b12").doc(`${doc.id}`).delete();
-    plansB12.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b12").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3680,8 +3772,10 @@ const renderTodoB13 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b13").doc(`${doc.id}`).delete();
-    plansB13.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b13").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3742,8 +3836,10 @@ const renderTodoB14 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b14").doc(`${doc.id}`).delete();
-    plansB14.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b14").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3804,8 +3900,10 @@ const renderTodoB15 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b15").doc(`${doc.id}`).delete();
-    plansB15.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b15").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3866,8 +3964,10 @@ const renderTodoB16 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b16").doc(`${doc.id}`).delete();
-    plansB16.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b16").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3928,8 +4028,10 @@ const renderTodoB17 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b17").doc(`${doc.id}`).delete();
-    plansB17.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b17").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -3990,8 +4092,10 @@ const renderTodoB18 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b18").doc(`${doc.id}`).delete();
-    plansB18.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b18").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4052,8 +4156,10 @@ const renderTodoB19 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b19").doc(`${doc.id}`).delete();
-    plansB19.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b19").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4114,8 +4220,10 @@ const renderTodoB20 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b20").doc(`${doc.id}`).delete();
-    plansB20.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b20").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4176,8 +4284,10 @@ const renderTodoB21 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b21").doc(`${doc.id}`).delete();
-    plansA21.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b21").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4238,8 +4348,10 @@ const renderTodoB22 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b22").doc(`${doc.id}`).delete();
-    plansB22.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b22").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4300,8 +4412,10 @@ const renderTodoB23 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b23").doc(`${doc.id}`).delete();
-    plansB23.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b23").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4362,8 +4476,10 @@ const renderTodoB24 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b24").doc(`${doc.id}`).delete();
-    plansB24.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b24").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4424,8 +4540,10 @@ const renderTodoB25 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b25").doc(`${doc.id}`).delete();
-    plansB25.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b25").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4486,8 +4604,10 @@ const renderTodoB26 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b26").doc(`${doc.id}`).delete();
-    plansB26.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b26").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4548,8 +4668,10 @@ const renderTodoB27 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b27").doc(`${doc.id}`).delete();
-    plansB27.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b27").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4610,8 +4732,10 @@ const renderTodoB28 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b28").doc(`${doc.id}`).delete();
-    plansB28.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b28").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4672,8 +4796,10 @@ const renderTodoB29 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b29").doc(`${doc.id}`).delete();
-    plansB29.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b29").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4734,8 +4860,10 @@ const renderTodoB30 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b30").doc(`${doc.id}`).delete();
-    plansB30.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b30").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
@@ -4796,8 +4924,10 @@ const renderTodoB31 = (doc) => {
   // Click delete to-do
   const btnDelete = document.querySelector(`[data-id='${doc.id}'] .btn-delete`);
   btnDelete.addEventListener("click", () => {
-    db.collection("b31").doc(`${doc.id}`).delete();
-    plansB31.classList.remove("addedPlans");
+    var result = confirm("Want to delete?");
+    if (result) {
+      db.collection("b31").doc(`${doc.id}`).delete();
+    }
   });
 };
 // Real time listener
