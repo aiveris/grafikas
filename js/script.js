@@ -400,19 +400,19 @@ function today() {
       document.getElementById("a21").className = "work today";
       break;
     case 22:
-      document.getElementById("a22").className = "free today";
+      document.getElementById("a22").className = "work today";
       break;
     case 23:
       document.getElementById("a23").className = "work today";
       break;
     case 24:
-      document.getElementById("a24").className = "work today";
+      document.getElementById("a24").className = "free today";
       break;
     case 25:
-      document.getElementById("a25").className = "work today";
+      document.getElementById("a25").className = "free today";
       break;
     case 26:
-      document.getElementById("a26").className = "free today";
+      document.getElementById("a26").className = "work today";
       break;
     case 27:
       document.getElementById("a27").className = "work today";
@@ -421,10 +421,10 @@ function today() {
       document.getElementById("a28").className = "work today";
       break;
     case 29:
-      document.getElementById("a29").className = "work today";
+      document.getElementById("a29").className = "free today";
       break;
     case 30:
-      document.getElementById("a30").className = "free today";
+      document.getElementById("a30").className = "work today";
       break;
     case 31:
       document.getElementById("a31").className = "work today";
