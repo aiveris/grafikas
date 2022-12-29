@@ -176,7 +176,7 @@ table th {
   box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
   border-radius: 10px 10px 10px 10px;
   animation-name: animatetop;
-  animation-duration: 0.4s;
+  animation-duration: 0.3s;
 }
 @keyframes animatetop {
   from {
