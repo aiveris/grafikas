@@ -328,7 +328,7 @@ function today() {
   let date2 = new Date();
   let day = date2.getDate();
 
-  if (month == 8) {
+  if (month == 2) {
     day = date2.getDate() + 100;
   }
   // const day = 3;
@@ -430,7 +430,7 @@ function today() {
       document.getElementById("a31").className = "work today";
       break;
     case 101:
-      document.getElementById("b1").className = "free today";
+      document.getElementById("b1").className = "work today";
       break;
     case 102:
       document.getElementById("b2").className = "work today";
