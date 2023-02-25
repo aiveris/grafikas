@@ -328,7 +328,7 @@ function today() {
   let date2 = new Date();
   let day = date2.getDate();
 
-  if (month == 8) {
+  if (month == 3) {
     day = date2.getDate() + 100;
   }
   // const day = 3;
@@ -346,7 +346,7 @@ function today() {
       document.getElementById("a3").className = "free today";
       break;
     case 4:
-      document.getElementById("a4").className = "work today";
+      document.getElementById("a4").className = "free today";
       break;
     case 5:
       document.getElementById("a5").className = "work today";
@@ -355,7 +355,7 @@ function today() {
       document.getElementById("a6").className = "work today";
       break;
     case 7:
-      document.getElementById("a7").className = "work today";
+      document.getElementById("a7").className = "free today";
       break;
     case 8:
       document.getElementById("a8").className = "free today";
@@ -370,22 +370,22 @@ function today() {
       document.getElementById("a11").className = "free today";
       break;
     case 12:
-      document.getElementById("a12").className = "work today";
+      document.getElementById("a12").className = "free today";
       break;
     case 13:
-      document.getElementById("a13").className = "work today";
+      document.getElementById("a13").className = "free today";
       break;
     case 14:
-      document.getElementById("a14").className = "work today";
+      document.getElementById("a14").className = "free today";
       break;
     case 15:
       document.getElementById("a15").className = "free today";
       break;
     case 16:
-      document.getElementById("a16").className = "work today";
+      document.getElementById("a16").className = "free today";
       break;
     case 17:
-      document.getElementById("a17").className = "work today";
+      document.getElementById("a17").className = "free today";
       break;
     case 18:
       document.getElementById("a18").className = "work today";
@@ -430,7 +430,7 @@ function today() {
       document.getElementById("a31").className = "work today";
       break;
     case 101:
-      document.getElementById("b1").className = "free today";
+      document.getElementById("b1").className = "work today";
       break;
     case 102:
       document.getElementById("b2").className = "work today";
@@ -442,19 +442,19 @@ function today() {
       document.getElementById("b4").className = "free today";
       break;
     case 105:
-      document.getElementById("b5").className = "work today";
+      document.getElementById("b5").className = "free today";
       break;
     case 106:
       document.getElementById("b6").className = "work today";
       break;
     case 107:
-      document.getElementById("b7").className = "free today";
+      document.getElementById("b7").className = "work today";
       break;
     case 108:
-      document.getElementById("b8").className = "work today";
+      document.getElementById("b8").className = "free today";
       break;
     case 109:
-      document.getElementById("b9").className = "work today";
+      document.getElementById("b9").className = "free today";
       break;
     case 110:
       document.getElementById("b10").className = "work today";
@@ -469,37 +469,37 @@ function today() {
       document.getElementById("b13").className = "free today";
       break;
     case 114:
-      document.getElementById("b14").className = "free today";
+      document.getElementById("b14").className = "work today";
       break;
     case 115:
-      document.getElementById("b15").className = "free today";
+      document.getElementById("b15").className = "work today";
       break;
     case 116:
-      document.getElementById("b16").className = "free today";
+      document.getElementById("b16").className = "work today";
       break;
     case 117:
       document.getElementById("b17").className = "free today";
       break;
     case 118:
-      document.getElementById("b18").className = "free today";
+      document.getElementById("b18").className = "work today";
       break;
     case 119:
-      document.getElementById("b19").className = "free today";
+      document.getElementById("b19").className = "work today";
       break;
     case 120:
-      document.getElementById("b20").className = "free today";
+      document.getElementById("b20").className = "work today";
       break;
     case 121:
       document.getElementById("b21").className = "free today";
       break;
     case 122:
-      document.getElementById("b22").className = "free today";
+      document.getElementById("b22").className = "work today";
       break;
     case 123:
-      document.getElementById("b23").className = "free today";
+      document.getElementById("b23").className = "work today";
       break;
     case 124:
-      document.getElementById("b24").className = "free today";
+      document.getElementById("b24").className = "work today";
       break;
     case 125:
       document.getElementById("b25").className = "work today";
@@ -508,10 +508,10 @@ function today() {
       document.getElementById("b26").className = "free today";
       break;
     case 127:
-      document.getElementById("b27").className = "work today";
+      document.getElementById("b27").className = "free today";
       break;
     case 128:
-      document.getElementById("b28").className = "work today";
+      document.getElementById("b28").className = "free today";
       break;
     case 129:
       document.getElementById("b29").className = "free today";
