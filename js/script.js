@@ -337,13 +337,13 @@ function today() {
 
   switch (day) {
     case 1:
-      document.getElementById("a1").className = "free today";
+      document.getElementById("a1").className = "work today";
       break;
     case 2:
       document.getElementById("a2").className = "free today";
       break;
     case 3:
-      document.getElementById("a3").className = "work today";
+      document.getElementById("a3").className = "free today";
       break;
     case 4:
       document.getElementById("a4").className = "work today";
@@ -364,7 +364,7 @@ function today() {
       document.getElementById("a9").className = "free today";
       break;
     case 10:
-      document.getElementById("a10").className = "free today";
+      document.getElementById("a10").className = "work today";
       break;
     case 11:
       document.getElementById("a11").className = "work today";
@@ -379,16 +379,16 @@ function today() {
       document.getElementById("a14").className = "work today";
       break;
     case 15:
-      document.getElementById("a15").className = "work today";
+      document.getElementById("a15").className = "free today";
       break;
     case 16:
-      document.getElementById("a16").className = "free today";
+      document.getElementById("a16").className = "work today";
       break;
     case 17:
-      document.getElementById("a17").className = "free today";
+      document.getElementById("a17").className = "work today";
       break;
     case 18:
-      document.getElementById("a18").className = "work today";
+      document.getElementById("a18").className = "free today";
       break;
     case 19:
       document.getElementById("a19").className = "work today";
@@ -397,10 +397,10 @@ function today() {
       document.getElementById("a20").className = "work today";
       break;
     case 21:
-      document.getElementById("a21").className = "free today";
+      document.getElementById("a21").className = "work today";
       break;
     case 22:
-      document.getElementById("a22").className = "free today";
+      document.getElementById("a22").className = "work today";
       break;
     case 23:
       document.getElementById("a23").className = "work today";
@@ -409,7 +409,7 @@ function today() {
       document.getElementById("a24").className = "work today";
       break;
     case 25:
-      document.getElementById("a25").className = "work today";
+      document.getElementById("a25").className = "free today";
       break;
     case 26:
       document.getElementById("a26").className = "free today";
@@ -430,7 +430,7 @@ function today() {
       document.getElementById("a31").className = "work today";
       break;
     case 101:
-      document.getElementById("b1").className = "free today";
+      document.getElementById("b1").className = "work today";
       break;
     case 102:
       document.getElementById("b2").className = "work today";
@@ -1983,7 +1983,7 @@ db.collection("a16").onSnapshot((snapshot) => {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodosA16.removeChild(tbody);
-      plans16.classList.remove("addedPlans");
+      plansA16.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -2943,7 +2943,7 @@ db.collection("a31").onSnapshot((snapshot) => {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodosA31.removeChild(tbody);
-      plans31.classList.remove("addedPlans");
+      plansA31.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -4621,7 +4621,7 @@ db.collection("b26").onSnapshot((snapshot) => {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodosB26.removeChild(tbody);
-      plansA26.classList.remove("addedPlans");
+      plansB26.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
@@ -4941,7 +4941,7 @@ db.collection("b31").onSnapshot((snapshot) => {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
       tableTodosB31.removeChild(tbody);
-      plans31.classList.remove("addedPlans");
+      plansB31.classList.remove("addedPlans");
     }
     if (change.type === "modified") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
