@@ -87,21 +87,13 @@ button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-.free {
-  background: #f586ca;
-}
-.work {
-  background: #78f711;
-}
 .workDay {
   background: #c2c2c5;
 }
-.weekend {
-  background: #c2c2c5;
-}
 .today {
-  box-shadow: 0 0 15px white;
-  color: white;
+  box-shadow: 0 0 15px #fbff12;
+  border: 2px solid #fbff12;
+  /*color: white;  */
 }
 header {
   width: 100%;
@@ -228,4 +220,13 @@ h3 {
 i {
   margin-left: 110px;
   cursor: pointer;
+
+}
+/*work*/
+#a1,#a2,#a4,#a5,#a6,#a9,#a10,#a11,#a12,#a14,#a15,#a16,#a17,#a19,#a20,#a23,#a24,#a25,#a27,#a28,#a29,#a30{
+  background: #78f711;
+}
+/*work*/
+#b2,#b3,#b4,#b7,#b8,#b11,#b12,#b13,#b15,#b16,#b17,#b18,#b21,#b22,#b23,#b24,#b27,#b28,#b29{
+  background: #78f711;
 }
