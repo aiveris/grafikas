@@ -9,7 +9,7 @@
 body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
-  background: url(../assets/spring3.jpg);
+  background: url(../assets/autumn2.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -223,7 +223,7 @@ i {
 
 }
 /*work*/
-#a1,#a2,#a4,#a5,#a6,#a9,#a10,#a11,#a12,#a14,#a15,#a16,#a17,#a19,#a20,#a23,#a24,#a25,#a27,#a28,#a29,#a30{
+#a1,#a2,#a4,#a5,#a6,#a9,#a10,#a11,#a12,#a14,#a15,#a16,#a17,#a20,#a22,#a23,#a24,#a25,#a27,#a28,#a29,#a30{
   background: #78f711;
 }
 /*work*/
