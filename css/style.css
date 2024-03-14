@@ -9,7 +9,7 @@
 body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
-  background: url(../assets/winter6.jpg);
+  background: url(../assets/spring2.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -227,6 +227,6 @@ i {
   background: #78f711;
 }
 /*work*/
-#b2,#b4,#b5,#b6,#b9,#b10,#b11,#b14,#b15,#b17,#b25,#b26,#b27,#b28,#b29{
+#b2,#b3,#b4,#b8,#b9,#b10,#b13,#b14,#b15,#b17,#b18,#b19,#b20,#b21,#b24,#b25,#b26,#b29,#b30{
   background: #78f711;
 }
