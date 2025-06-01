@@ -328,7 +328,7 @@ function today() {
   let date2 = new Date();
   let day = date2.getDate();
 
-  if (month == 4) {
+  if (month == 5) {
     day = date2.getDate() + 100;
   }
   // const day = 3;
