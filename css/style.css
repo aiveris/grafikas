@@ -9,7 +9,7 @@
 body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
-  background: url(../assets/nature2.jpg);
+  background: url(../assets/autumn1.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -226,7 +226,7 @@ i {
   background: #78f711;
 }
 /*work*/
-#b1,#b2,#b4,#b5,#b8,#b9,#b10,#b13,#b14,#b15,#b16,#b18,#b19,#b20,#b23,#b24,#b27,#b28,#b29,#b30{
+#b1,#b2,#b3,#b4,#b8,#b9,#b10,#b12,#b13,#b14,#b15,#b17,#b18,#b19,#b20,#b23,#b26,#b27{
   background: #78f711;
 }
 
