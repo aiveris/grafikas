@@ -205,10 +205,16 @@ table th {
 }
 input {
   width: 10rem;
-  height: 2.2rem;
+  min-height: 2.2rem;
+  max-height: 200px;
   outline: none;
   text-indent: 0.5rem;
   font-size: large;
+  resize: vertical;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow-y: auto;
 }
 .addedPlans {
   color: red;
