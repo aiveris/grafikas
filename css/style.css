@@ -188,6 +188,37 @@ table th {
   background: #f586ca;
   padding: 1rem;
   border-radius: 10px 10px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-header h3 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+.modal-header i {
+  margin: 0;
+}
+.btn-protein {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: white;
+  color: #457b9d;
+  border: 2px solid #457b9d;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.btn-protein:hover {
+  background: #457b9d;
+  color: white;
+  transform: scale(1.05);
 }
 .modal-body {
   padding: 2rem;
