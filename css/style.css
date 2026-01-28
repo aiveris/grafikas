@@ -24,7 +24,7 @@ body {
   /* margin: auto; */
   margin-top: 20px;
   margin-bottom: 0px;
-  background: #f586ca;
+  background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #e88aab 100%);
   padding: 2px;
 }
 .men-pav {
@@ -57,7 +57,7 @@ body {
   background: #fff;
 }
 button {
-  background: #f586ca;
+  background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 100%);
   border: 0px solid #201d1c;
   border-radius: 10px;
   box-shadow: 0 0 6px #201d1c;
@@ -97,7 +97,7 @@ button:hover {
 }
 header {
   width: 100%;
-  background: #f586ca;
+  background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #e88aab 100%);
   padding: 1rem;
   border-radius: 10px 10px 0px 0px;
 }
@@ -149,9 +149,12 @@ table th {
   height: 100%;
   left: 0;
   top: 0px;
-  background: #00000067;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: none;
   padding-top: 20px;
+  z-index: 1000;
 }
 .edit {
   padding-top: 35px;
@@ -167,17 +170,16 @@ table th {
   -moz-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
   border-radius: 10px 10px 10px 10px;
-  animation-name: animatetop;
-  animation-duration: 0.3s;
+  animation: modalSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-@keyframes animatetop {
+@keyframes modalSlideIn {
   from {
-    top: -300px;
     opacity: 0;
+    transform: translateY(-50px) scale(0.95);
   }
   to {
-    top: 0;
     opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 .modal-show {
@@ -185,7 +187,7 @@ table th {
 }
 .modal-header {
   width: 100%;
-  background: #f586ca;
+  background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #e88aab 100%);
   padding: 1rem;
   border-radius: 10px 10px 0px 0px;
   display: flex;
@@ -201,24 +203,43 @@ table th {
   margin: 0;
 }
 .btn-protein {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background: white;
-  color: #457b9d;
-  border: 2px solid #457b9d;
-  border-radius: 5px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
   transition: all 0.3s ease;
 }
 .btn-protein:hover {
-  background: #457b9d;
-  color: white;
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+.btn-protein .icon-egg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../assets/egg.svg') no-repeat center center;
+  background-size: contain;
+}
+.btn-protein-f {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 12px;
+}
+.btn-protein-f:hover {
+  transform: scale(1.1);
+}
+.btn-protein-f .icon-chart {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../assets/chart.svg') no-repeat center center;
+  background-size: contain;
 }
 .modal-body {
   padding: 2rem;
