@@ -5032,3 +5032,32 @@ function close_modal() {
   showTodoB30.classList.remove("modal-show");
   showTodoB31.classList.remove("modal-show");
 }
+
+// Delete all plans for a collection
+function deleteCollection(collectionName) {
+  db.collection(collectionName).get().then((snapshot) => {
+    snapshot.forEach((doc) => {
+      db.collection(collectionName).doc(doc.id).delete();
+    });
+  });
+}
+
+// Clear all plans for Kovas (March) - collections a1 to a31
+function clearMonthA() {
+  var result = confirm("Ar tikrai norite ištrinti visus Kovo mėnesio planus?");
+  if (result) {
+    for (let i = 1; i <= 31; i++) {
+      deleteCollection("a" + i);
+    }
+  }
+}
+
+// Clear all plans for Vasaris (February) - collections b1 to b31
+function clearMonthB() {
+  var result = confirm("Ar tikrai norite ištrinti visus Vasario mėnesio planus?");
+  if (result) {
+    for (let i = 1; i <= 31; i++) {
+      deleteCollection("b" + i);
+    }
+  }
+}
