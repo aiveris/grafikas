@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
@@ -17,6 +18,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
 .board {
   width: 312px;
   border-radius: 10px;
@@ -27,6 +29,7 @@ body {
   background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #e88aab 100%);
   padding: 2px;
 }
+
 .men-pav {
   font: 20px "Roboto";
   font-weight: bold;
@@ -38,6 +41,7 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
 }
+
 .board span {
   font: 20px "Roboto";
   text-align: center;
@@ -47,6 +51,7 @@ body {
   overflow: hidden;
   line-height: 40px;
 }
+
 .container {
   max-width: 20rem;
   margin: 2rem auto;
@@ -57,6 +62,7 @@ body {
   border-radius: 10px;
   background: #fff;
 }
+
 button {
   background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 100%);
   border: 0px solid #201d1c;
@@ -69,6 +75,7 @@ button {
   font-size: 1.05em;
   font-weight: bold;
 }
+
 .btn {
   background: transparent;
   width: 40px;
@@ -84,61 +91,74 @@ button {
   margin-left: 0;
   margin-bottom: 0;
 }
+
 button:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+
 .workDay {
   background: #c2c2c5;
 }
+
 .today {
   box-shadow: 0 0 15px #fbff12;
   border: 2px solid #fbff12;
   /*color: white;  */
 }
+
 header {
   width: 100%;
   background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #e88aab 100%);
   padding: 1rem;
   border-radius: 10px 10px 0px 0px;
 }
+
 header h3 {
   color: black;
   margin-left: 1rem;
 }
+
 table {
   width: 90%;
   margin: 2rem auto;
   border-collapse: collapse;
 }
+
 table td {
   text-align: left;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 0.3rem;
 }
+
 table th {
   padding: 1rem auto;
   text-align: right;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
+
 .btn-edit {
   color: #78f711;
   border: 1px solid #78f711;
 }
+
 .btn-edit:hover {
   background: #78f711;
   color: #ffff;
 }
+
 .btn-delete {
   color: red;
   border: 1px solid red;
 }
+
 .btn-delete:hover {
   background: red;
   color: #ffff;
 }
+
 .table-wrapper {
   text-align: center;
 }
@@ -157,9 +177,11 @@ table th {
   padding-top: 20px;
   z-index: 1000;
 }
+
 .edit {
   padding-top: 35px;
 }
+
 .modal {
   position: relative;
   background: white;
@@ -173,19 +195,23 @@ table th {
   border-radius: 10px 10px 10px 10px;
   animation: modalSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+
 @keyframes modalSlideIn {
   from {
     opacity: 0;
     transform: translateY(-50px) scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
 }
+
 .modal-show {
   display: block;
 }
+
 .modal-header {
   width: 100%;
   background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #e88aab 100%);
@@ -195,14 +221,17 @@ table th {
   justify-content: space-between;
   align-items: center;
 }
+
 .modal-header h3 {
   flex: 1;
   text-align: center;
   margin: 0;
 }
+
 .modal-header i {
   margin: 0;
 }
+
 .btn-protein {
   display: inline-block;
   width: 24px;
@@ -212,9 +241,11 @@ table th {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+
 .btn-protein:hover {
   transform: scale(1.1);
 }
+
 .btn-protein .icon-egg {
   display: inline-block;
   width: 24px;
@@ -222,6 +253,7 @@ table th {
   background: url('../assets/egg.svg') no-repeat center center;
   background-size: contain;
 }
+
 .btn-protein-f {
   display: inline-block;
   width: 24px;
@@ -232,9 +264,11 @@ table th {
   transition: all 0.3s ease;
   margin-left: 12px;
 }
+
 .btn-protein-f:hover {
   transform: scale(1.1);
 }
+
 .btn-protein-f .icon-chart {
   display: inline-block;
   width: 24px;
@@ -242,9 +276,11 @@ table th {
   background: url('../assets/chart.svg') no-repeat center center;
   background-size: contain;
 }
+
 .modal-body {
   padding: 2rem;
 }
+
 .btn-modal {
   width: 65px;
   height: 25px;
@@ -252,10 +288,12 @@ table th {
   border: 1px solid #457b9d;
   margin-left: 18px;
 }
+
 .btn-modal:hover {
   background: #457b9d;
   color: #ffff;
 }
+
 input {
   width: 10rem;
   min-height: 2.2rem;
@@ -269,46 +307,58 @@ input {
   border-radius: 4px;
   overflow-y: auto;
 }
+
 .addedPlans {
   color: red;
 }
+
 h3 {
   display: inline-block;
   margin-left: 120px;
 }
+
 i {
   margin-left: 110px;
   cursor: pointer;
 }
+
 /*work*/
-#a2,#a3,#a4,#a5,#a6,#a9,#a10,#a11,#a14,#a15,#a16,#a17,#a20,#a21,#a22,#a23,#a25,#a26{
+#a2,
+#a3,
+#a4,
+#a5,
+#a6,
+#a9,
+#a10,
+#a11,
+#a14,
+#a15,
+#a16,
+#a17,
+#a20,
+#a21,
+#a22,
+#a23,
+#a25,
+#a26 {
   background: #78f711;
 }
+
 /*work*/
-#b1,#b4,#b5,#b6,#b9,#b10,#b11,#b12,#b14,#b15,#b23,#b24,#b25,#b26,#b27,#b28{
+#b1,
+#b4,
+#b5,
+#b6,
+#b9,
+#b10,
+#b11,
+#b12,
+#b14,
+#b15,
+#b23,
+#b24,
+#b25,
+#b26,
+#b27 {
   background: #78f711;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
