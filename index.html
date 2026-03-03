@@ -1251,11 +1251,9 @@
 
   <!-- ----------------------------------------------- -->
 
-  <!-- Use type="module" for Vite to handle environment variables -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
   <script type="module">
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js'
-    import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js'
-
     const firebaseConfig = {
       apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
       authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
@@ -1265,17 +1263,13 @@
       appId: import.meta.env.VITE_FIREBASE_APP_ID,
     };
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-    
-    // Make db available globally for script.js if it's not a module yet
-    window.db = db;
-    window.firebase = {
-      firestore: () => db
-    };
+    // Initialize Firebase using global firebase object (Compat API)
+    firebase.initializeApp(firebaseConfig);
+
+    // Make db available globally for script.js
+    window.db = firebase.firestore();
   </script>
-  <script src="js/script.js"></script>
+  <script defer src="js/script.js"></script>
 
 
 </body>
