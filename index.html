@@ -1251,26 +1251,26 @@
 
   <!-- ----------------------------------------------- -->
 
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
-  <script type="module">
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
     const firebaseConfig = {
-      apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-      authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-      projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-      storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-      messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-      appId: import.meta.env.VITE_FIREBASE_APP_ID,
+      apiKey: "AIzaSyBRGzlhoLa3nF5GvrVNyujEUnFfZScIgfI",
+      authDomain: "todo-cffb3.firebaseapp.com",
+      projectId: "todo-cffb3",
+      storageBucket: "todo-cffb3.appspot.com",
+      messagingSenderId: "443340056048",
+      appId: "1:443340056048:web:2d2f242baa6bcc9ccda935",
     };
-
-    // Initialize Firebase using global firebase object (Compat API)
+    // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-
-    // Make db available globally for script.js
-    window.db = firebase.firestore();
+    const db = firebase.firestore();
   </script>
-  <script defer src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 
 </body>
 
