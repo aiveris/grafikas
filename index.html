@@ -1251,26 +1251,32 @@
 
   <!-- ----------------------------------------------- -->
 
+  <!-- Use type="module" for Vite to handle environment variables -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js'
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js'
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
-
-  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
-  <script>
-    // Your web app's Firebase configuration
     const firebaseConfig = {
-      apiKey: "AIzaSyBRGzlhoLa3nF5GvrVNyujEUnFfZScIgfI",
-      authDomain: "todo-cffb3.firebaseapp.com",
-      projectId: "todo-cffb3",
-      storageBucket: "todo-cffb3.appspot.com",
-      messagingSenderId: "443340056048",
-      appId: "1:443340056048:web:2d2f242baa6bcc9ccda935",
+      apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+      authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+      projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+      storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+      appId: import.meta.env.VITE_FIREBASE_APP_ID,
     };
+
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    
+    // Make db available globally for script.js if it's not a module yet
+    window.db = db;
+    window.firebase = {
+      firestore: () => db
+    };
   </script>
   <script src="js/script.js"></script>
+
 
 </body>
 
