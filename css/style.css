@@ -24,10 +24,14 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px #201d1c;
   /* margin: auto; */
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 0px;
   background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #e88aab 100%);
   padding: 2px;
+}
+
+.board:first-of-type {
+  margin-top: 20px;
 }
 
 .men-pav {
@@ -99,6 +103,10 @@ button:hover {
 
 .workDay {
   background: #c2c2c5;
+}
+
+.scheduled-day {
+  background: #78f711;
 }
 
 .today {
@@ -250,7 +258,7 @@ table th {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url('../assets/egg.svg') no-repeat center center;
+  background: url("../assets/egg.svg") no-repeat center center;
   background-size: contain;
 }
 
@@ -273,7 +281,7 @@ table th {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url('../assets/chart.svg') no-repeat center center;
+  background: url("../assets/chart.svg") no-repeat center center;
   background-size: contain;
 }
 
@@ -356,6 +364,6 @@ i {
 #b25,
 #b26,
 #b29,
-#b30{
+#b30 {
   background: #78f711;
 }
