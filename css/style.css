@@ -20,14 +20,16 @@ body {
 }
 
 .board {
-  width: 312px;
+  width: min(312px, calc(100vw - 24px));
   border-radius: 10px;
   box-shadow: 0 0 10px #201d1c;
-  /* margin: auto; */
   margin-top: 10px;
   margin-bottom: 0px;
   background: linear-gradient(135deg, #f8a5c2 0%, #f78fb3 50%, #e88aab 100%);
-  padding: 2px;
+  padding: 10px 6px 8px;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px 6px;
 }
 
 .board:first-of-type {
@@ -46,14 +48,24 @@ body {
   cursor: pointer;
 }
 
+.board-title {
+  grid-column: 1 / -1;
+  margin: 0 0 4px 0;
+}
+
 .board span {
   font: 20px "Roboto";
   text-align: center;
-  width: 39px;
-  /* height: 20px; */
-  display: inline-block;
+  width: 100%;
+  min-height: 35px;
+  display: block;
   overflow: hidden;
-  line-height: 40px;
+  line-height: 35px;
+}
+
+.month-empty {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .container {
@@ -72,9 +84,9 @@ button {
   border: 0px solid #201d1c;
   border-radius: 10px;
   box-shadow: 0 0 6px #201d1c;
-  margin-left: 4px;
-  margin-bottom: 8px;
-  width: 35px;
+  margin-left: 0;
+  margin-bottom: 0;
+  width: 100%;
   height: 35px;
   font-size: 1.05em;
   font-weight: bold;
@@ -328,42 +340,4 @@ h3 {
 i {
   margin-left: 110px;
   cursor: pointer;
-}
-
-/*work*/
-#a2,
-#a3,
-#a4,
-#a5,
-#a6,
-#a9,
-#a10,
-#a11,
-#a14,
-#a15,
-#a16,
-#a17,
-#a20,
-#a21,
-#a22,
-#a23,
-#a25,
-#a26 {
-  background: #78f711;
-}
-
-/*work*/
-#b13,
-#b14,
-#b15,
-#b16,
-#b18,
-#b19,
-#b22,
-#b23,
-#b25,
-#b26,
-#b29,
-#b30 {
-  background: #78f711;
 }

@@ -3,17 +3,6 @@
 const monthConfigs = [
   {
     prefix: "a",
-    title: "Kovas",
-    clearTitle: "Kovo",
-    monthIndex: 2,
-    days: 31,
-    offset: 6,
-    workDays: [
-      2, 3, 4, 5, 6, 9, 10, 11, 14, 15, 16, 17, 20, 21, 22, 23, 25, 26,
-    ],
-  },
-  {
-    prefix: "b",
     title: "Balandis",
     clearTitle: "Balandžio",
     monthIndex: 3,
@@ -22,12 +11,21 @@ const monthConfigs = [
     workDays: [13, 14, 15, 16, 18, 19, 22, 23, 25, 26, 29, 30],
   },
   {
-    prefix: "c",
+    prefix: "b",
     title: "Gegužė",
     clearTitle: "Gegužės",
     monthIndex: 4,
     days: 31,
     offset: 4,
+    workDays: [],
+  },
+  {
+    prefix: "c",
+    title: "Birželis",
+    clearTitle: "Birželio",
+    monthIndex: 5,
+    days: 30,
+    offset: 0,
     workDays: [],
   },
 ];
@@ -67,8 +65,7 @@ function resolveFirestoreDb() {
 }
 
 function initializeApp() {
-  ensureMonthMetadata();
-  insertMayBoard();
+  renderBoards();
   exposeGlobalActions();
   applyWorkDayStyling();
   highlightToday();
@@ -77,32 +74,31 @@ function initializeApp() {
   initializeTaskCollections();
 }
 
-function ensureMonthMetadata() {
-  const boards = document.querySelectorAll(".board");
-  monthConfigs.slice(0, 2).forEach((config, index) => {
-    if (boards[index]) {
-      boards[index].dataset.month = config.prefix;
+function renderBoards() {
+  const boards = Array.from(document.querySelectorAll(".board"));
+
+  if (editModal && boards[0] && boards[0].contains(editModal)) {
+    boards[0].insertAdjacentElement("afterend", editModal);
+  }
+
+  monthConfigs.forEach((config, index) => {
+    const board = boards[index] || document.createElement("div");
+    board.className = "board";
+    board.dataset.month = config.prefix;
+    board.innerHTML = createBoardMarkup(config);
+
+    if (!boards[index]) {
+      if (editModal) {
+        editModal.insertAdjacentElement("beforebegin", board);
+      } else {
+        document.body.appendChild(board);
+      }
     }
   });
-}
 
-function insertMayBoard() {
-  if (document.querySelector('.board[data-month="c"]')) {
-    return;
-  }
-
-  const boards = document.querySelectorAll(".board");
-  const aprilBoard = boards[1];
-  const mayBoard = document.createElement("div");
-  mayBoard.className = "board";
-  mayBoard.dataset.month = "c";
-  mayBoard.innerHTML = createBoardMarkup(monthConfigs[2]);
-
-  if (aprilBoard) {
-    aprilBoard.insertAdjacentElement("afterend", mayBoard);
-  } else {
-    document.body.appendChild(mayBoard);
-  }
+  boards.slice(monthConfigs.length).forEach((board) => {
+    board.remove();
+  });
 }
 
 function createBoardMarkup(config) {
@@ -112,7 +108,7 @@ function createBoardMarkup(config) {
 
   const emptyCells = Array.from(
     { length: config.offset },
-    () => "<span></span>",
+    () => '<span class="month-empty"></span>',
   ).join("\n    ");
   const dayButtons = Array.from({ length: config.days }, (_, index) => {
     const day = index + 1;
@@ -146,9 +142,8 @@ function createBoardMarkup(config) {
   }).join("");
 
   return `
-    <div class="men-pav" onclick="clearMonth${config.prefix.toUpperCase()}()">${config.title}</div>
+    <div class="men-pav board-title" onclick="clearMonth${config.prefix.toUpperCase()}()">${config.title}</div>
     ${headerButtons}
-    <div class="men-pav"></div>
     ${emptyCells}
     ${dayButtons}
     ${modals}
