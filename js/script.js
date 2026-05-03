@@ -5035,29 +5035,59 @@ function close_modal() {
 
 // Delete all plans for a collection
 function deleteCollection(collectionName) {
-  db.collection(collectionName).get().then((snapshot) => {
-    snapshot.forEach((doc) => {
-      db.collection(collectionName).doc(doc.id).delete();
+  db.collection(collectionName)
+    .get()
+    .then((snapshot) => {
+      snapshot.forEach((doc) => {
+        db.collection(collectionName).doc(doc.id).delete();
+      });
     });
-  });
 }
 
-// Clear all plans for Kovas (March) - collections a1 to a31
-function clearMonthA() {
-  var result = confirm("Ar tikrai norite ištrinti visus Kovo mėnesio planus?");
+// Clear all plans for Gegužė (May) - collections b1 to b31
+function clearMonthB() {
+  var result = confirm(
+    "Ar tikrai norite ištrinti visus Gegužės mėnesio planus?",
+  );
   if (result) {
     for (let i = 1; i <= 31; i++) {
-      deleteCollection("a" + i);
+      deleteCollection("b" + i);
     }
   }
 }
 
-// Clear all plans for Vasaris (February) - collections b1 to b31
-function clearMonthB() {
-  var result = confirm("Ar tikrai norite ištrinti visus Vasario mėnesio planus?");
+// Clear all plans for Birželis (June) - collections c1 to c30
+function clearMonthC() {
+  var result = confirm(
+    "Ar tikrai norite ištrinti visus Birželio mėnesio planus?",
+  );
+  if (result) {
+    for (let i = 1; i <= 30; i++) {
+      deleteCollection("c" + i);
+    }
+  }
+}
+
+// Clear all plans for Liepa (July) - collections d1 to d31
+function clearMonthD() {
+  var result = confirm(
+    "Ar tikrai norite ištrinti visus Liepos mėnesio planus?",
+  );
   if (result) {
     for (let i = 1; i <= 31; i++) {
-      deleteCollection("b" + i);
+      deleteCollection("d" + i);
+    }
+  }
+}
+
+// Clear all plans for Rugpjūtis (August) - collections e1 to e31
+function clearMonthE() {
+  var result = confirm(
+    "Ar tikrai norite ištrinti visus Rugpjūčio mėnesio planus?",
+  );
+  if (result) {
+    for (let i = 1; i <= 31; i++) {
+      deleteCollection("e" + i);
     }
   }
 }

@@ -2,15 +2,6 @@
 
 const monthConfigs = [
   {
-    prefix: "a",
-    title: "Balandis",
-    clearTitle: "Balandžio",
-    monthIndex: 3,
-    days: 30,
-    offset: 2,
-    workDays: [13, 14, 15, 16, 18, 19, 22, 23, 25, 26, 29, 30],
-  },
-  {
     prefix: "b",
     title: "Gegužė",
     clearTitle: "Gegužės",
@@ -28,6 +19,60 @@ const monthConfigs = [
     monthIndex: 5,
     days: 30,
     offset: 0,
+    workDays: [],
+  },
+  {
+    prefix: "d",
+    title: "Liepa",
+    clearTitle: "Liepos",
+    monthIndex: 6,
+    days: 31,
+    offset: 2,
+    workDays: [],
+  },
+  {
+    prefix: "e",
+    title: "Rugpjūtis",
+    clearTitle: "Rugpjūčio",
+    monthIndex: 7,
+    days: 31,
+    offset: 5,
+    workDays: [],
+  },
+  {
+    prefix: "f",
+    title: "Rugsėjis",
+    clearTitle: "Rugsėjo",
+    monthIndex: 8,
+    days: 30,
+    offset: 1,
+    workDays: [],
+  },
+  {
+    prefix: "g",
+    title: "Spalis",
+    clearTitle: "Spalio",
+    monthIndex: 9,
+    days: 31,
+    offset: 3,
+    workDays: [],
+  },
+  {
+    prefix: "h",
+    title: "Lapkritis",
+    clearTitle: "Lapkričio",
+    monthIndex: 10,
+    days: 30,
+    offset: 6,
+    workDays: [],
+  },
+  {
+    prefix: "i",
+    title: "Gruodis",
+    clearTitle: "Gruodžio",
+    monthIndex: 11,
+    days: 31,
+    offset: 1,
     workDays: [],
   },
 ];
@@ -76,14 +121,20 @@ function initializeApp() {
   initializeTaskCollections();
 }
 
+function getVisibleMonthConfigs() {
+  const today = new Date();
+  return monthConfigs.filter((config) => config.monthIndex >= today.getMonth());
+}
+
 function renderBoards() {
+  const visibleConfigs = getVisibleMonthConfigs();
   const boards = Array.from(document.querySelectorAll(".board"));
 
   if (editModal && boards[0] && boards[0].contains(editModal)) {
     boards[0].insertAdjacentElement("afterend", editModal);
   }
 
-  monthConfigs.forEach((config, index) => {
+  visibleConfigs.forEach((config, index) => {
     const board = boards[index] || document.createElement("div");
     board.className = "board";
     board.dataset.month = config.prefix;
@@ -98,7 +149,7 @@ function renderBoards() {
     }
   });
 
-  boards.slice(monthConfigs.length).forEach((board) => {
+  boards.slice(visibleConfigs.length).forEach((board) => {
     board.remove();
   });
 }
