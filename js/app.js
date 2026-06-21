@@ -19,7 +19,7 @@ const monthConfigs = [
     monthIndex: 5,
     days: 30,
     offset: 0,
-    workDays: [1,4,5,6,7,10,11,12,15,16,17,19,20,29,30],
+    workDays: [1, 4, 5, 6, 7, 10, 11, 12, 15, 16, 17, 19, 20, 29, 30],
   },
   {
     prefix: "d",
@@ -28,7 +28,9 @@ const monthConfigs = [
     monthIndex: 6,
     days: 31,
     offset: 2,
-    workDays: [],
+    workDays: [
+      2, 3, 4, 7, 8, 9, 10, 13, 14, 15, 16, 17, 20, 23, 24, 25, 26, 27, 30, 31,
+    ],
   },
   {
     prefix: "e",
