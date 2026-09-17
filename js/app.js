@@ -120,6 +120,7 @@ function resolveFirestoreDb() {
 
 function initializeApp() {
   renderBoards();
+  focusCurrentMonth();
   exposeGlobalActions();
   applyWorkDayStyling();
   highlightToday();
@@ -129,8 +130,23 @@ function initializeApp() {
 }
 
 function getVisibleMonthConfigs() {
-  const today = new Date();
-  return monthConfigs.filter((config) => config.monthIndex >= today.getMonth());
+  return monthConfigs;
+}
+
+function focusCurrentMonth() {
+  const currentMonth = new Date().getMonth();
+  const currentMonthConfig = monthConfigs.find(
+    (config) => config.monthIndex === currentMonth,
+  );
+
+  if (!currentMonthConfig) {
+    return;
+  }
+
+  const currentBoard = document.querySelector(
+    `.board[data-month="${currentMonthConfig.prefix}"]`,
+  );
+  currentBoard?.scrollIntoView({ block: "start", behavior: "auto" });
 }
 
 function renderBoards() {
